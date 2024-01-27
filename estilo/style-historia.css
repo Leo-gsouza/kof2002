@@ -95,7 +95,7 @@ main h2{
     color: darkred;
 }
 
-main p{
+main aside p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
     font-size: 1em;
@@ -143,8 +143,9 @@ main audio{
 }
 
 main aside{
+    width: 80%;
     background-color: lightgoldenrodyellow;
-    margin: 10px 30px;
+    margin: auto;
     border-radius: 30px 30px;
     padding: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.253);
