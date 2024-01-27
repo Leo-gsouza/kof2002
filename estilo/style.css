@@ -95,12 +95,12 @@ main h1{
 div {
     display: inline-block;
     background-color: white;
-    height: 115px; width: 115px;
+    height: 70px; width: 70px;
     border: 7px solid white;
 }
 
 div img{
-    width: 100%; height: 100%;
+    width: 101%; height: 101%;
 
 }
 
