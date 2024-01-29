@@ -89,10 +89,11 @@ main h1.especial{
 }
 
 main h2{
-    text-align: center;
+    text-align: left;
     font-family: var(--fonte_padrao);
+    font-size: 1.2em;
     padding-top: 15px;
-    padding-left: 25px;
+    padding-left: 50px;
     color: darkred;
 }
 
@@ -137,7 +138,7 @@ main a{
 }
 
 main a:hover{
-    color: yellow;
+    color: red;
 }
 
 main img.gif{
@@ -157,5 +158,4 @@ main aside{
     background-color: white;
     margin: auto;
     padding: 10px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.253);
 }
