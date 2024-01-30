@@ -108,12 +108,16 @@ main p{
 }
 
 main p.video{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:var(--fonte_padrao);
     text-align: center;
-    font-size: 1em;
+    font-size: 1.2em;
     color: white;
-    padding: 5px 40px;
+    padding: 10px 40px;
     background-color: var(--cor1);
+}
+
+main a.video{
+    color: white
 }
 
 div.video{
@@ -158,4 +162,31 @@ main aside{
     background-color: white;
     margin: auto;
     padding: 10px;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    width: 100%;
+}
+footer p{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px 10px ;
+}
+footer p.borda{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px 10px ;
+}
+
+footer ul{
+    background-color:black ;
+    padding: 30px 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    columns: 2;
+    width: 100%;
+    margin: auto;
 }
