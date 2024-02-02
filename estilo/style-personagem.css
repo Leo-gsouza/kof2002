@@ -31,7 +31,8 @@
 }
 
 body {
-    background-color: var(--cor1)
+    background: black url('../jpeg/fundo1.jpg') center center no-repeat fixed;
+    background-size: cover;
 }
 
 header > h1 {

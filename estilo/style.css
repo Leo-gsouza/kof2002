@@ -31,7 +31,9 @@
 }
 
 body {
-    background-color: var(--cor1);
+    
+    background: black  url('../jpeg/fundo.jpg') left top no-repeat fixed;
+    background-size: cover;
 }
 
 
