@@ -97,7 +97,7 @@ div {
 }
 
 main > section{
-    margin: auto;
+    margin-left: 5px;
 }
 
 div img{
