@@ -95,12 +95,11 @@ main h1.especial{
 }
 
 main section{
-    margin: 5px 50px;
+    margin-top: 25px;
+    padding-left: 20%;
+    padding-right: 5%;
 }
 
-main section.imagens{
-    margin-left: 90px;
-}
 
 main section h2{
     text-align: left;
@@ -112,22 +111,26 @@ main section h2{
 }
 
 main p.time{
+    display: block;
+    font-size: 0.7em;
     font-family: var(--fonte_titulo);
     text-align: center;
-    font-size: 1em;
-    color: lightgrey;
-    padding: 0px 10px;
-    margin-top: 20px;
-    text-shadow: 0px 0px 40px rgb(0, 0, 0);
+    background-color: darkred;
+    color: white;
+    padding: 10px 0px;
+    margin-top: -20px;
+
+    
 }
 
 main section div{
     display:inline-block;
-    max-width: 200px;
-    min-width: 100px;
-    padding: 10px;
+    width: 25%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.541);
-    margin: 2px 2px;
+    margin-left: 1%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
 }
 
 div img{
