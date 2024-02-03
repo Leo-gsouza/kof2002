@@ -76,13 +76,6 @@ main {
     padding-top: 0px;
 }
 
-main section{
-    margin: 5px 50px;
-}
-
-main section.imagens{
-    margin-left: 90px;
-}
 main img{
     width: 100%;
     margin: auto;
@@ -101,23 +94,21 @@ main h1.especial{
     text-align: center;
 }
 
-main h2{
+main section{
+    margin: 5px 50px;
+}
+
+main section.imagens{
+    margin-left: 90px;
+}
+
+main section h2{
     text-align: left;
     font-family: var(--fonte_padrao);
     font-size: 1.2em;
     padding-top: 15px;
     padding-left: 50px;
     color: darkred;
-}
-
-main p{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: justify;
-    font-size: 1em;
-    color: black;
-    padding: 5px 50px;
-    padding-bottom: 20px;
-    text-indent: 20px;
 }
 
 main p.time{
@@ -130,20 +121,7 @@ main p.time{
     text-shadow: 0px 0px 40px rgb(0, 0, 0);
 }
 
-main p.video{
-    font-family:var(--fonte_padrao);
-    text-align: center;
-    font-size: 1.2em;
-    color: white;
-    padding: 10px 40px;
-    background-color: var(--cor1);
-}
-
-main a.video{
-    color: white
-}
-
-main div{
+main section div{
     display:inline-block;
     max-width: 200px;
     min-width: 100px;
