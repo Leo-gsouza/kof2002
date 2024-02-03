@@ -77,7 +77,7 @@ main {
     max-width: 800px;
     margin: auto;
     margin-bottom: 30px;
-    padding: 35px 30px;
+    padding-left: 20px;
     border-radius: 0px 0px 20px 20px ;
     box-shadow: 0px 5px 10px var(--cor1);
 }
@@ -96,13 +96,13 @@ div {
     
 }
 
-main aside{
-    margin-left: 30px;
-    margin-right: -10px;
+main > section{
+    margin: auto;
 }
 
 div img{
-    width: 101%; height: 101%;
+    width: 101%;
+    margin: auto; 
 
 }
 
