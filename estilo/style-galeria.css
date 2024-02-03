@@ -79,6 +79,10 @@ main {
 main section{
     margin: 5px 50px;
 }
+
+main section.imagens{
+    margin-left: 90px;
+}
 main img{
     width: 100%;
     margin: auto;
@@ -88,12 +92,6 @@ main img.pequena{
     display: block;
     max-width: 800px;
     min-width: 300px;
-    margin: auto;
-}
-
-main img.time{
-    display: block;
-    width: 50%;
     margin: auto;
 }
 
@@ -125,12 +123,11 @@ main p{
 main p.time{
     font-family: var(--fonte_titulo);
     text-align: center;
-    font-size: 1.6em;
-    color: darkred;
-    padding: 5px 50px;
-    padding-bottom: 20px;
-    text-indent: 20px;
-    margin-top: 30px;
+    font-size: 1em;
+    color: lightgrey;
+    padding: 0px 10px;
+    margin-top: 20px;
+    text-shadow: 0px 0px 40px rgb(0, 0, 0);
 }
 
 main p.video{
@@ -148,8 +145,11 @@ main a.video{
 
 main div{
     display:inline-block;
-    width: 200px;
+    max-width: 200px;
+    min-width: 100px;
     padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.541);
+    margin: 2px 2px;
 }
 
 div img{
