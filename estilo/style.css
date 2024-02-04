@@ -105,13 +105,28 @@ main section div {
     border: 7px solid white;  
 }
 
+main section div.ok {
+    background-color: #BD2A2E;
+    display: inline-block;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border: 7px solid rgb(196, 196, 196);  
+}
+
 section div img{
     width: 102%;
     height: 102%;
-
 }
 
 div:hover{
+    border: 7px solid var(--cor0);
+    box-shadow: 0px 0px 5px red;
+    transition-duration: 0.75s;
+    bor
+}
+
+div.ok:hover{
     border: 7px solid var(--cor0);
     box-shadow: 0px 0px 5px red;
     transition-duration: 0.75s;
