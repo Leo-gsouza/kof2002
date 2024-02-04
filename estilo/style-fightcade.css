@@ -78,13 +78,20 @@ main {
     margin: auto;
     margin-bottom: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
+    border-radius: 0px 0px 10px 10px;
 }
 main img{
     width: 100%;
     margin: auto;
 }
+main img.rodape{
+    display: block;
+    width: 70%;
+    margin: auto;
+    
+}
 main h1.especial{
-    font-family: var(--fonte_padrao);
+    font-family: var(--fonte_destaque);
     padding-top: 20px;
     text-align: center;
 }
@@ -95,7 +102,7 @@ main h2{
     font-size: 1.2em;
     padding-top: 15px;
     padding-left: 50px;
-    color: darkred;
+    color: var(--cor1);
 }
 
 main p{
@@ -112,19 +119,19 @@ main p.video{
     font-family:var(--fonte_padrao);
     text-align: center;
     font-size: 1.2em;
-    color: white;
-    padding: 10px 40px;
-    background-color: var(--cor1);
+    color: black;
+    padding-top: 15px;
+    margin-bottom: -20px;
 }
 
 main a.video{
-    color: white
+    color: darkred
 }
 
 div.video{
-    background-color: black;
+    background-color: white;
     padding: 20px;
-    padding-bottom: 55%;
+    padding-bottom: 57%;
     position: relative;
 }
 
@@ -146,18 +153,6 @@ main a:hover{
     color: red;
 }
 
-main img.gif{
-    width: 15%;
-    display: block;
-    margin: auto;
-}
-
-main audio{
-    display: block;
-    margin: auto;
-    width: 40%;
-}
-
 main aside{
     width: 80%;
     background-color: white;
@@ -166,31 +161,47 @@ main aside{
 }
 
 footer{
+    margin-top: 5px;
     background-color: white;
-    min-width: 300px;
-    
+    box-shadow: 0px -2px 6px black;
 }
+
 footer p{
-    background-color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
     text-align: center;
-    padding: 20px 10px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 6px;
+    background-image: linear-gradient(to right , var(--cor0), darkred);
+}
+
+footer p a{
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+}
+footer a:hover{
+    color: red;
+    text-shadow: 0px 0px 20px black;
 }
 
 footer ul{
-    background-color:white ;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    columns:3;
+    text-align: center;
+    padding: 2px;
+    max-width: 600px;
+    min-width: 250px;
     margin: auto;
-    padding: 30px 50px;
+    columns: 3;
 }
-
 footer li{
-    padding-bottom: 15px;
+    text-align: center;
+    text-align: left;
+    font-family: var(--fonte_padrao); 
+    padding: 15px 0px 15px 15px
+}
+footer li a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 80%;
 }
 
-footer a{
-    font-size: 0.9em;
-    text-decoration: none;
-    color: var(--cor1);
-}
