@@ -35,17 +35,16 @@ body {
     background-size: cover;
 }
 header{
+    background-image: linear-gradient(to top, var(--cor0), rgb(124, 7, 7));
     min-width: 300px;
+    box-shadow: 2px 2px 10px black;
 }
 header > h1 {
-    background-image: linear-gradient(to top, var(--cor0), rgb(124, 7, 7));
     font-family: var(--fonte_destaque);
     padding: 45px 0px;
     text-align: center;
     font-size: 3em;
-    font-weight: normal;
-    color: white;
-    box-shadow: 2px 2px 10px black;
+    color: white;  
 }
 
 nav{
@@ -73,7 +72,7 @@ nav a:hover{
 main {
     background-color: white;
     min-width: 300px;
-    padding-top: 0px;
+    padding-top: 15px;
 }
 
 main img{
@@ -98,33 +97,14 @@ main section{
     margin-top: 25px;
     padding-left: 20%;
     padding-right: 5%;
-}
-
-
-main section h2{
-    text-align: left;
-    font-family: var(--fonte_padrao);
-    font-size: 1.2em;
-    padding-top: 15px;
-    padding-left: 50px;
-    color: darkred;
-}
-
-main p.time{
-    display: block;
-    font-size: 0.7em;
-    font-family: var(--fonte_titulo);
-    text-align: center;
-    background-color: darkred;
-    color: white;
-    padding: 10px 0px;
-    margin-top: -20px;  
+    min-width: 300px;
+    margin: manual;
 }
 
 main section div{
     display:inline-block;
     width: 40%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.541);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.541);
     margin-left: 1%;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -133,22 +113,15 @@ main section div{
 
 div img{
     width: 100%;
+    height: 100%;
+    transition: 0.5s;
 }
 
-div.video{
-    background-color: black;
-    padding: 20px;
-    padding-bottom: 55%;
-    position: relative;
-}
-
-div.video iframe{
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-}
+div:hover img{
+    -webkit-transform: scale(2);
+    transform: scale(1.2);
+    box-shadow: 0px 0px 15px var(--cor0);
+ }
 
 main a{
     color: rgb(94, 7, 94);
@@ -170,13 +143,6 @@ main audio{
     display: block;
     margin: auto;
     width: 40%;
-}
-
-main aside{
-    width: 80%;
-    background-color: white;
-    margin: auto;
-    padding: 10px;
 }
 
 footer{
