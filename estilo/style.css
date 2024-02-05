@@ -111,7 +111,7 @@ main section div.ok {
     background-color: white;
     width: 80px;
     height: 80px;
-    border: 7px solid rgb(196, 196, 196);  
+    border: 7px solid rgb(245, 244, 168);  
 }
 
 section div img{
@@ -123,13 +123,58 @@ div:hover{
     border: 7px solid var(--cor0);
     box-shadow: 0px 0px 5px red;
     transition-duration: 0.75s;
-    bor
 }
 
 div.ok:hover{
     border: 7px solid var(--cor0);
     box-shadow: 0px 0px 5px red;
     transition-duration: 0.75s;
+}
+
+footer{
+    margin-top: 5px;
+    background-color: white;
+    box-shadow: 0px -2px 6px black;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 6px;
+    background-image: linear-gradient(to right , var(--cor3), rgb(88, 88, 88));
+}
+
+footer p a{
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+}
+footer a:hover{
+    color: red;
+    text-shadow: 0px 0px 20px white;
+    font-weight: bolder;
+}
+
+footer ul{
+    text-align: center;
+    padding: 2px;
+    max-width: 600px;
+    min-width: 250px;
+    margin: auto;
+    columns: 3;
+}
+footer li{
+    text-align: center;
+    text-align: left;
+    font-family: var(--fonte_padrao); 
+    padding: 15px 0px 15px 15px
+}
+footer li a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 80%;
 }
 
 
