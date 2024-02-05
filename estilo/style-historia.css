@@ -38,6 +38,7 @@ body {
 header{
     background-image: linear-gradient(to top, var(--cor0), rgb(124, 7, 7));
     box-shadow: 2px 2px 10px black;
+    min-width: 300px;
 }
 
 header > h1 {
@@ -53,6 +54,7 @@ nav{
     padding: 15px 3px;
     margin: auto;
     box-shadow: 0px 0px 6px var(--cor2);
+    min-width: 300px;
 }
 
 nav a{
