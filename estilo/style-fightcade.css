@@ -78,7 +78,7 @@ main {
     margin: auto;
     margin-bottom: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
-    border-radius: 0px 0px 10px;
+    border-radius: 0px 0px 10px 10px;
 }
 main img{
     width: 100%;
@@ -171,7 +171,7 @@ footer p{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 6px;
-    background-image: linear-gradient(to right , var(--cor0), darkred);
+    background-image: linear-gradient(to right , var(--cor3), rgb(88, 88, 88));
 }
 
 footer p a{
@@ -180,7 +180,8 @@ footer p a{
 }
 footer a:hover{
     color: red;
-    text-shadow: 0px 0px 20px black;
+    text-shadow: 0px 0px 20px white;
+    font-weight: bolder;
 }
 
 footer ul{
@@ -204,4 +205,3 @@ footer li a{
     font-weight: bold;
     font-size: 80%;
 }
-

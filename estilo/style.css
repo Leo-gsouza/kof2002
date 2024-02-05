@@ -77,7 +77,7 @@ main {
     max-width: 800px;
     margin: auto;
     margin-bottom: 30px;
-    border-radius: 0px 0px 20px 20px ;
+    border-radius: 0px 0px 10px 10px ;
     box-shadow: 0px 5px 10px var(--cor1);
 }
 
@@ -87,17 +87,15 @@ main h1{
     text-align: center;
 }
 
-main > section{
-    max-width: 800px;
-    min-width: 300px;
-    margin: auto;
-    padding-left: 9%;
+main  section{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-left: 12%;
     padding-right: 5%;
-
+    border-radius: 0px 0px 10px 10px;
 }
 
 main section div {
-    background-color: #BD2A2E;
     display: inline-block;
     background-color: white;
     width: 80px;
@@ -105,30 +103,31 @@ main section div {
     border: 7px solid white;  
 }
 
-main section div.ok {
-    background-color: #BD2A2E;
-    display: inline-block;
-    background-color: white;
-    width: 80px;
-    height: 80px;
-    border: 7px solid rgb(245, 244, 168);  
-}
-
 section div img{
     width: 102%;
     height: 102%;
 }
 
-div:hover{
+section div:hover{
     border: 7px solid var(--cor0);
     box-shadow: 0px 0px 5px red;
     transition-duration: 0.75s;
 }
 
-div.ok:hover{
-    border: 7px solid var(--cor0);
-    box-shadow: 0px 0px 5px red;
-    transition-duration: 0.75s;
+main div.audio{
+    background-image: linear-gradient(to right, var(--cor0), darkred);
+    max-width: 800px;
+    min-width: 300px;
+    padding: 10px 5px;
+}
+
+main div.audio audio{
+    width: 40%;
+    display: block;
+    background-color: white;
+    margin: auto;
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px red;
 }
 
 footer{
