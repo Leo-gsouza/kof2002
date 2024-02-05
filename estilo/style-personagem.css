@@ -76,10 +76,13 @@ main {
     margin: auto;
     margin-bottom: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
+    border-radius: 0px 0px 8px 8px;
 }
 main img{
+    display: block;
     width: 100%;
     margin: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
 }
 main h1{
     font-family: var(--fonte_titulo);
@@ -93,17 +96,19 @@ main h2{
 }
 
 main p{
+    margin-left: 30px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    font-size: 1.2em;
-    background-color: darkred;
-    color: white;
+    font-size: 1.1em;
+    color: var(--cor1);
     padding: 15px;
-    margin-top: -10px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    text-shadow: 0px 0px 10px lightgoldenrodyellow;
 }
 
 div.video{
-    background-color: black;
+    background-color: white;
     padding: 20px;
     padding-bottom: 55%;
     position: relative;
@@ -118,14 +123,14 @@ div.video iframe{
 }
 
 main a{
-    color: lightgoldenrodyellow;
+    color: darkred;
     text-decoration: none;
     font-weight: bold;
 }
 
 main a:hover{
     color: red;
-    text-shadow: 0px 0px 20px black;
+    text-shadow: 0px 0px 20px lightgoldenrodyellow;
 }
 
 footer{
