@@ -84,8 +84,9 @@ main img{
 }
 main h1.especial{
     font-family: var(--fonte_destaque);
-    font-size: 2em;
+    font-size: 1.5em;
     padding-top: 20px;
+    margin-bottom: 25px;
     text-align: center;
     text-shadow: 0px 0px 10px lightgoldenrodyellow;
 }
@@ -110,12 +111,13 @@ main p{
 
 main p.video{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+    text-align: left;
     font-size: 1em;
     color: var(--cor1);
-    padding: 5px 40px;
+    padding: 2px 0px;
+    margin: 5px 50px;
     background-color: white;
-    font-weight: bolder;
+    background-image: linear-gradient(to right, rgba(246, 198, 255, 0.555), transparent);
 }
 
 div.video{
