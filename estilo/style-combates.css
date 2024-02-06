@@ -112,15 +112,14 @@ main section{
     padding-top: 10px;
     padding-left: 10px;
     margin-top: 25px;
-    max-width: 945px;
+    max-width: 970px;
     min-width: 200px;
-    background-color: lightgoldenrodyellow;
 }
 
 main section div.video{
     display:inline-block;
-    width: 310px;
-    padding-bottom: 30px;
+    width: 320px;
+    padding-bottom: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.541);
     margin: auto;
 
@@ -146,7 +145,7 @@ div.video{
 }
 
 div.video:hover {
-    background-color: rgb(223, 223, 156);
+    background-color: lightgray;
     box-shadow: 0px 0px 15px var(--cor0);
  }
 
