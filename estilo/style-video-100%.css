@@ -1,3 +1,7 @@
+main div{
+    max-widht: 800px
+}
+
 main div.video{
     background-color: white;
     padding: 20px;
