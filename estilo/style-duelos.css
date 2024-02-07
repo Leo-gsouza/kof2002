@@ -37,10 +37,25 @@ main p{
     text-indent: 20px;
 }
 
+div.video{
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 55%;
+    position: relative;
+}
+
+div.video iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
 main p.video{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
-    font-size: 1em;
+    font-size: 1.1em;
     color: var(--cor1);
     padding: 2px 0px;
     margin: 5px 50px;
