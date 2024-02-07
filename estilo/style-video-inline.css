@@ -1,21 +1,22 @@
 /* Usar SECTION DIV.VIDEO*/
 
-main section{
+main section.video{
     display: block;
     margin: auto;
     padding-top: 10px;
     padding-left: 10px;
     margin-top: 25px;
-    max-width: 970px;
-    min-width: 200px;
+    max-width: 70%;
+    min-width: 300px;
 }
 
 main section div.video{
     display:inline-block;
-    width: 320px;
-    padding-bottom: 15px;
+    width: 282px;
+    padding: 5px 5px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.541);
-    margin: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
 }
 
 main section div.video p{
@@ -32,12 +33,4 @@ main section div.video iframe{
 }
 
 
-div.video{
-    width: 100%;
-    transition: 0.25s;
-}
 
-div.video:hover {
-    background-color: lightgray;
-    box-shadow: 0px 0px 15px var(--cor0);
- }
