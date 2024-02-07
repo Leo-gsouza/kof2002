@@ -1,11 +1,11 @@
-div.video{
+main div.video{
     background-color: white;
     padding: 20px;
     padding-bottom: 55%;
     position: relative;
 }
 
-div.video iframe{
+main div.video iframe{
     position: absolute;
     top: 5%;
     left: 5%;
