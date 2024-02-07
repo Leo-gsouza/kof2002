@@ -12,6 +12,12 @@ main > img.capa{
     width: 100%;
     margin: auto;
 }
+
+main > img{
+    display: block;
+    width: 85%;
+    margin: auto;
+}
 main img.rodape{
     display: block;
     width: 70%;
