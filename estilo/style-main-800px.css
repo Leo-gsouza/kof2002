@@ -8,12 +8,13 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
     border-radius: 0px 0px 10px 10px;
 }
-main > img.capa{
+main  img.capa{
     width: 100%;
     margin: auto;
+    box-shadow: 0px 0px 5px var(--cor1);
 }
 
-main > img{
+main  img.conteudo{
     display: block;
     width: 85%;
     margin: auto;
@@ -32,6 +33,7 @@ main h1.especial{
 
 main h2{
     text-align: left;
+    font-style: italic;
     font-family: var(--fonte_padrao);
     font-size: 1.2em;
     padding-top: 15px;
@@ -50,31 +52,15 @@ main p{
 }
 
 main p.video{
+    min-width: 300px;
+    max-width: 720px;
+    margin: auto;
     font-family:var(--fonte_padrao);
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: black;
-    padding-top: 15px;
-    margin-bottom: -20px;
-}
-
-main a.video{
-    color: darkred
-}
-
-div.video{
-    background-color: white;
-    padding: 20px;
-    padding-bottom: 57%;
-    position: relative;
-}
-
-div.video iframe{
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
+    padding: 15px 0px;
+    margin-bottom: -10px;
 }
 
 main a{
@@ -87,10 +73,5 @@ main a:hover{
     color: red;
 }
 
-main aside{
-    width: 80%;
-    background-color: white;
-    margin: auto;
-    padding: 10px;
-}
+
 
