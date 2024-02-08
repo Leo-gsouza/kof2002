@@ -31,6 +31,16 @@ main h1.especial{
     text-align: center;
 }
 
+main h1.titulo{
+    font-family: var(--fonte_destaque);
+    color: var(--cor1);
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-left: 50px;
+    text-align: left;
+    background-image: linear-gradient(to right, rgb(255, 255, 202), transparent);
+}
+
 main h2{
     text-align: left;
     font-style: italic;
