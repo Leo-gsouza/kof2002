@@ -25,13 +25,15 @@ footer a:hover{
 
 footer ul{
     text-align: center;
+    margin-top: 20px;
     padding: 2px;
-    max-width: 600px;
+    max-width: 700px;
     min-width: 250px;
     margin: auto;
     columns: 3;
 }
 footer li{
+    margin-left: 20px;
     text-align: center;
     text-align: left;
     font-family: var(--fonte_padrao); 
