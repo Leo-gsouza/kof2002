@@ -8,7 +8,7 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
     border-radius: 0px 0px 10px 10px;
 }
-main  img.capa{
+main > img.capa{
     width: 100%;
     margin: auto;
     box-shadow: 0px 0px 5px var(--cor1);
@@ -19,19 +19,19 @@ main  img.conteudo{
     width: 85%;
     margin: auto;
 }
-main img.rodape{
+main > img.rodape{
     display: block;
     width: 70%;
     margin: auto;
     
 }
-main h1.especial{
+main > h1.especial{
     font-family: var(--fonte_destaque);
     padding-top: 20px;
     text-align: center;
 }
 
-main h1.titulo{
+main > h1.titulo{
     font-family: var(--fonte_destaque);
     color: var(--cor1);
     font-size: 1.5em;
@@ -41,7 +41,7 @@ main h1.titulo{
     background-image: linear-gradient(to right, rgb(255, 255, 202), transparent);
 }
 
-main h2{
+main > h2{
     text-align: left;
     font-style: italic;
     font-family: var(--fonte_padrao);
@@ -51,7 +51,7 @@ main h2{
     color: var(--cor1);
 }
 
-main p{
+main > p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
     font-size: 1em;
