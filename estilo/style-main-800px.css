@@ -84,7 +84,6 @@ main a:hover{
 }
 
 section.widht-600{
-    background-color: aqua;
     max-width: 600px;
     min-width: 300px;
     padding-left: 15px;
