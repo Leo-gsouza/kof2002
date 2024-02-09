@@ -12,6 +12,14 @@ main img.capa{
     margin-top: -15px;
     box-shadow: 0px 1px 15px gray;
 }
+
+main img.capa50{
+    width: 50%;
+    min-width: 300px;
+    display: block;
+    margin: auto;
+    margin-top: -15px;
+}
 main h1.especial{
     font-size: 1.5em;
     font-family: var(--fonte_destaque);
@@ -25,6 +33,13 @@ section.conteudo{
     min-width: 300px;
     margin: auto;
 }
+
+section.conteudo800{
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+}
+
 section h2{
     text-align: left;
     font-style: italic;
