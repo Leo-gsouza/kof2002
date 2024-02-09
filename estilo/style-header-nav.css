@@ -50,6 +50,16 @@ header > h1 {
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.404);
 }
 
+header > h1.menor {
+    font-family: var(--fonte_destaque);
+    font-size: 1.6em;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.404);
+}
+
 nav {
     background-image: linear-gradient(to right, var(--cor3), var(--cor4));
     min-width: 300px;

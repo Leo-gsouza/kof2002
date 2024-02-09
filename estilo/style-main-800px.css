@@ -19,6 +19,19 @@ main  img.conteudo{
     width: 85%;
     margin: auto;
 }
+
+main  img.transicao{
+    display: block;
+    width: 85%;
+    margin: auto;
+    transition: 0.5s;
+}
+
+main  img.transicao:hover{
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.37);
+}
 main > img.rodape{
     display: block;
     width: 70%;
@@ -28,6 +41,14 @@ main > img.rodape{
 main > h1.especial{
     font-family: var(--fonte_destaque);
     padding-top: 20px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+main > h1.especial2{
+    font-family: var(--fonte_destaque);
+    padding-top: 20px;
+    font-size: 1.6em;
     text-align: center;
 }
 
