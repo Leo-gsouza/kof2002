@@ -30,7 +30,6 @@ main  img.transicao{
 main  img.transicao:hover{
     -webkit-transform: scale(1.15);
     transform: scale(1.15);
-    box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.37);
 }
 main > img.rodape{
     display: block;
@@ -62,7 +61,7 @@ main > h1.titulo{
     background-image: linear-gradient(to right, rgb(255, 255, 202), transparent);
 }
 
-main > h2{
+main  h2{
     text-align: left;
     font-style: italic;
     font-family: var(--fonte_padrao);
@@ -72,7 +71,19 @@ main > h2{
     color: var(--cor1);
 }
 
-main > p{
+main  h2.espacado{
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+    font-style: italic;
+    font-family: var(--fonte_padrao);
+    font-size: 1.4em;
+    padding: 40px;
+    color: var(--cor1);
+    text-shadow: 0px 0px 10px rgb(238, 159, 159);
+}
+
+main  p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
     font-size: 1em;
@@ -110,6 +121,7 @@ section.widht-600{
     padding-left: 8%;
     margin: auto;
     margin-bottom: 20px;
+    
 }
 
 section h2{
