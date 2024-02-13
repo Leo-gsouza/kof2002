@@ -1,14 +1,14 @@
 header {
     background-image: linear-gradient(to top, var(--cor0), rgb(112, 8, 8));
     min-width: 300px;
+    text-align: center;
+    color: white;
 }
 
 header > h1 {
     font-family: var(--fonte_destaque);
-    
-    font-size: 4em;
-    text-align: center;
-    color: white;
+    font-variant: small-caps;
+    font-size: 7.5vw;
     padding-top: 40px;
     padding-bottom: 40px;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.404);
@@ -24,10 +24,9 @@ nav {
 
 nav a{
     color: white;
-    padding: 20px 7px 17px 7px;
+    padding: 20px 8px;
     font-size: 0.7em;
     text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
 }
 
@@ -35,6 +34,6 @@ nav a:hover{
     color: white;
     background-color: var(--cor0);
     transition-duration: 0.5s;
-    border-radius: 0px 0px 7px 7px;
+    border-radius: 0px 0px 10px 10px;
     box-shadow: 0px 0px 10px var(--cor0);
 }

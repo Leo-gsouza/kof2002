@@ -25,12 +25,7 @@ div.person {
     width: 80px;
     height: 80px;
     border: 7px solid white;
-    margin: auto; 
-}
-
-div.person img{
-    width: 102%;
-    height: 102%;
+    margin: auto;
 }
 
 div.person:hover{
@@ -38,3 +33,14 @@ div.person:hover{
     box-shadow: 0px 0px 5px red;
     transition-duration: 0.75s;
 }
+
+div.person img{
+    width: 102%;
+    height: 102%;
+    transition-duration: 0.5s;
+}
+
+div.person img:hover{
+    transform: scale(1.05);
+}
+

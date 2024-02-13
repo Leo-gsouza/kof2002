@@ -1,9 +1,9 @@
 aside{
     width: 80%;
-    background-color: lightgoldenrodyellow;
+    background-color: lightgray;
     margin: auto;
-    border-radius: 20px 20px;
-    padding: 10px;
+    border-radius: 10px 10px;
+    padding: 10px 5px;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.253);
     margin-bottom: 20px;
 }
@@ -11,9 +11,9 @@ aside{
 aside > h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2em;
-    padding: 2px 15px;
+    padding: 4px 5px;
     color: var(--cor1);
-    background-image: linear-gradient(to right, rgb(235, 235, 170), transparent);
+    background-image: linear-gradient(to right, transparent, rgb(224, 224, 224), transparent);
     text-shadow: 0px 0px 55px rgb(235, 235, 170);
 }
 

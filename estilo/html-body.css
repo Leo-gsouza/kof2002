@@ -30,7 +30,9 @@
     padding: 0px;
 }
 
-body {
+html, body {
+    min-height: 100vh;
     background: black  url('../jpeg/fundo5.jpg') left top no-repeat fixed;
     background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
