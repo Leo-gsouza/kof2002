@@ -134,6 +134,13 @@ section.personagens{
     
 }
 
+section.audios{
+    width: 250px;
+    margin: auto;
+    margin-bottom: 40px;
+  
+}
+
 section h2{
     text-align: left;
     font-style: italic;
