@@ -120,8 +120,17 @@ section.widht-600{
     min-width: 300px;
     padding-left: 8%;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding: 20px 5px;
+    
+}
+section.personagens{
+    max-width: 700px;
+    min-width: 300px;
+    padding-left: 8%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 25px 20px;
     
 }
 
