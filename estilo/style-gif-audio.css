@@ -22,26 +22,22 @@ div.audio audio{
 
 div.golpes{
     display: inline-block;
-    width: 100%;
     margin: 3px 0px;
-    background-image: linear-gradient(to right, var(--cor0), darkred);
-    box-shadow: 0px 0px 3px red;
-    border-radius: 25px;
-
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.466);
+    border-radius: 10px;
 }
 
 p.golpes{
-    color: white;
-    width: 150px;
-    margin: 3px 0px;
+    color: black;
+    width: 130px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.9em;
-    text-transform: capitalize;
+    font-size: 0.6em;
+    font-variant: small-caps;
     text-align: center;
 }
 
 div.golpes audio{
     display: block;
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
