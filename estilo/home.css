@@ -70,6 +70,22 @@ div.person img:hover{
     transform: scale(1.05);
 }
 
+div.audio{
+    background-image: linear-gradient(to right, var(--cor0), darkred);
+    max-width: 800px;
+    min-width: 300px;
+    padding: 10px 5px;
+}
+
+div.audio audio{
+    width: 40%;
+    display: block;
+    background-color: white;
+    margin: auto;
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px red;
+}
+
 /*-----------------------------------------Pagina Online ------------------------------------*/
 
 main > img.capa{
@@ -137,4 +153,41 @@ img.rodape{
 }
 
 
+/*-----------------------------------------Pagina Galeria ------------------------------------*/
 
+div.imagem{
+    display:inline-block;
+    width: 28%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.541);
+    margin-left: 3%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+div.imagem img{
+    width: 100%;
+    transition: 0.6s;
+}
+
+div.imagem:hover img{
+    -webkit-transform: scale(2);
+    transform: scale(1.4);
+    box-shadow: 0px 0px 15px var(--cor0);
+ }
+
+/*-----------------------------------------Pagina combates ------------------------------------*/
+
+p.video{
+    background-image: linear-gradient(to right, transparent, rgb(238, 218, 237), transparent);
+    color: rgb(109, 108, 108);
+    font-size: 0.8em;
+    font-weight: bolder;
+    text-align: center;
+    width: 250px;
+    padding: 15px 2px 0px 2px;
+    margin: auto;
+}
+
+#largura600{
+    max-width: 600px;
+}
