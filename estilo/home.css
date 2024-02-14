@@ -22,14 +22,14 @@ main  img.transicao:hover{
     transform: scale(1.15);
 }
 
-main > h1.especial{
+main  h1.especial{
     font-family: var(--fonte_destaque);
     padding-top: 20px;
     font-size: 1.75em;
     text-align: center;
 }
 
-main > h1.titulo{
+main  h1.titulo{
     font-family: var(--fonte_titulo);
     padding: 35px 10px 20px 10px;
     font-size: 1.75em;
@@ -118,9 +118,9 @@ section  h2.subtitulo{
 section  > p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
-    font-size: 0.9em;
+    font-size: 0.95em;
     color: black;
-    padding: 20px 30px;
+    padding: 10px 30px;
     padding-bottom: 20px;
     text-indent: 20px;
 }
@@ -222,19 +222,74 @@ section.imagem-fundo{
 
 section.imagem-fundo p{
     background-color: rgba(0, 0, 0, 0.753);
-    font-size: 1.5vw;
+    font-size: 1em;
     color: white;
     background-attachment: fixed;
     background-size: cover;
 }
 
 section#img01{
-    background-image: url('../jpeg/k-paper2.jpg');
+    background-image: url('../jpeg/k-paper1.jpg');
     background-position: left center;
+}
+
+#historia{
+    max-width: 600px;
+    min-width: 300px;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.384);
+    font-size: 1.1em;
 }
 
 img.gif{
     display: block;
     margin: auto;
     width: 1.5vw;
+}
+
+/*-----------------------------------------Pagina curiosidades ------------------------------------*/
+
+div.golpes{
+    display: inline-block;
+    width: 120px;
+    height: 80px;
+    margin: 3px 0px;
+    box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.466);
+    border-radius: 10px;
+    padding-left: 30px;
+}
+
+div.golpes:hover{
+   font-weight: bolder;
+   box-shadow: 0px 0px 15px rgb(241, 142, 142);
+}
+
+p.golpes{
+    margin-left: -10px;
+    color: black;
+    width: 100%;
+    padding: 5px 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.6em;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+div.golpes audio{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+#espaco{
+    margin: 30px 5px;
+}
+
+#sinopse{
+    color: white;
+    background-color: darkred;
+    box-shadow: inset 0px 0px 1px 2px black;
+    font-size: 1.1;
+    width: 82%;
+    margin: auto;
 }
