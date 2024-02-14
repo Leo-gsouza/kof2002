@@ -88,8 +88,9 @@ div.audio audio{
 
 /*-----------------------------------------Pagina Online ------------------------------------*/
 
-main > img.capa{
+img.capa{
     width: 100%;
+    min-width: 300px;
     margin: auto;
     box-shadow: 0px 0px 5px var(--cor1);
 }
@@ -103,7 +104,7 @@ section.conteudo{
 }
 
 
-section > h2.subtitulo{
+section  h2.subtitulo{
     text-align: left;
     max-width: 300px;
     margin-left: 20px;
@@ -114,7 +115,7 @@ section > h2.subtitulo{
     text-shadow: 0px 0px 10px rgb(238, 159, 159);
 }
 
-section > p{
+section  > p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
     font-size: 0.9em;
@@ -190,4 +191,50 @@ p.video{
 
 #largura600{
     max-width: 600px;
+}
+
+/*-----------------------------------------Pagina golpes ------------------------------------*/
+.destaque{
+    font-size: 0.9em;
+    text-align: left;
+    width: 85%;
+    color: rgb(73, 73, 73);
+    margin:auto;
+    text-indent: 0px;
+    background-image: linear-gradient(to right, transparent, rgb(238, 218, 237), transparent);
+    margin-bottom: 0px;
+}
+/*-----------------------------------------Pagina hstorias ------------------------------------*/
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem-fundo{
+    background-color: black;
+    color: white;
+    box-shadow: inset 4px 4px 13px 0px rgba(0, 0, 0, 0.452);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20px 20px;
+}
+
+section.imagem-fundo p{
+    background-color: rgba(0, 0, 0, 0.753);
+    font-size: 1.5vw;
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section#img01{
+    background-image: url('../jpeg/k-paper2.jpg');
+    background-position: left center;
+}
+
+img.gif{
+    display: block;
+    margin: auto;
+    width: 1.5vw;
 }
