@@ -292,3 +292,34 @@ div.golpes audio{
     width: 82%;
     margin: auto;
 }
+
+table{
+    max-width: 600px;
+    min-width: 300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+}
+
+tr.cabecalho{
+    background-image: linear-gradient(to right, var(--cor0), darkred);
+    color: white;
+    text-align: center;
+}
+
+td > p{
+    padding: 2px 5px;
+    font-size: 0.6em;
+    width: 80px;
+    font-weight: bolder;
+    margin: auto;
+}
+
+td > img{
+    width: 100%;
+}
+
+td.sound audio{
+    width: 100px;
+}
+
+
