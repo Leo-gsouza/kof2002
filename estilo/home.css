@@ -302,23 +302,22 @@ table{
     margin-bottom: 20px;
 }
 
-tr.cabecalho{
+th{
     background-image: linear-gradient(to right, var(--cor0), darkred);
     color: white;
-    text-align: center;
+    padding: 15px 5px;
 }
 
 td > p{
     padding: 2px 5px;
     font-size: 0.6em;
-    width: 80px;
     font-weight: bolder;
     margin: auto;
     font-variant: small-caps;
 }
 
 td > img{
-    width: 100%;
+    width: 90%;
 }
 
 td.sound audio{
