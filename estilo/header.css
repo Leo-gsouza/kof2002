@@ -20,6 +20,7 @@ nav {
     padding: 15px 3px;
     box-shadow: 0px 2px 4px var(--cor1);
     margin: auto;
+    position: relative;
 }
 
 nav a{
@@ -37,4 +38,10 @@ nav a:hover{
     border-radius: 0px 0px 5px 5px;
     box-shadow: 0px 0px 10px var(--cor0);
     padding: 20px 8px 17px 8px;
+}
+
+nav{
+    position: sticky;
+    top: -1px;
+    
 }
