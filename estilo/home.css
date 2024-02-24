@@ -324,4 +324,13 @@ td.sound audio{
     width: 100px;
 }
 
+#centro{
+    max-width: 600px;
+    min-width: 300px;
+    display: block;
+    margin: auto;
+}
 
+#frame{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+}
