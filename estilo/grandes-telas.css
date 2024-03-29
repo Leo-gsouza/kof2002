@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+
+
+
+header > h1{
+    font-size: 6em;
+}
+
+header > span#burguer{
+    display: none;
+}
+
+header > nav#versoes{
+    padding: 20px 5px;
+    display: inline-block;
+}
+
+header > nav#versoes > a{
+    border-radius: 0px 0px 7px 7px;
+    font-family: var(--fonte_titulo);
+    text-transform: uppercase;
+    padding: 20px 30px;
+    font-size: 1.5em;  
+}
+
+
+main{
+    width: 900px ;
+    background-color: rgb(255, 255, 255);
+}
+
+main > div.team{
+    width: 650px;
+}
