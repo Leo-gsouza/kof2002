@@ -101,7 +101,7 @@ header > nav#versoes{
     width: 100vw;
     display: block;
     text-align: center;
-    background-image: linear-gradient(to right, rgb(211, 211, 211) , rgb(190, 190, 190));
+    background-image: linear-gradient(to bottom, rgb(211, 211, 211) , rgb(190, 190, 190));
     box-shadow: 0px 0px 15px gray;
     margin: auto;
 }
@@ -168,67 +168,94 @@ main > div.team > div > a > img{
     border-radius: 5px;
 }
 
-div.audio{
-    background-image: linear-gradient(to right, var(--cor0), darkred);
-    padding: 10px 5px;
-}
+/*-----------------------------------------Pagina Home ------------------------------------*/
 
-div.audio audio{
-    width: 40%;
-    display: block;
-    background-color: white;
-    margin: auto;
-    border-radius: 50px;
-    box-shadow: 0px 0px 30px red;
-}
-
-/*-----------------------------------------Pagina Online ------------------------------------*/
-
-img.capa{
-    width: 100%;
-    min-width: 300px;
+main > img.capa{
+    width: 100vw;
     margin: auto;
     box-shadow: 0px 0px 5px var(--cor1);
 }
 
-section.conteudo{
-    max-width: 720px;
-    min-width: 300px;
+main > div.audio audio{
+    width: 100vw;
+    display: block;
+    background-color: white;
     margin: auto;
-    margin-bottom: 40px;
-    padding: 20px 5px;    
+    border-radius: 50px;
 }
 
+main > nav#personagem{
+    width: 100vw;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 7px;
+    background-color: white;
+    box-shadow: inset 0px 0px 5px gray;
+}
 
-section  h2.subtitulo{
-    text-align: left;
-    max-width: 300px;
-    margin-left: 20px;
+main > nav#personagem > a{
+    margin: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2px 2px;
+    font-weight: bolder;
+    font-size: 0.75em;
+    background-color: white;
+    color: darkred;
+}
+
+main > nav#personagem > a:hover{
+    background-color: darkred;
+    padding: 7px;
+    color: white;
+    border-radius: 5px;
+}
+
+main > iframe{
+    display: block;
+    margin:auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*---------------------------------------------HISTORIA-----------------------------------------*/
+
+main > section#historia{
+    width: 100vw;
+    background-color: white;
+    padding: 5px;
+}
+main > section#historia > h2{
+    padding: 10px;
+    color: darkred;
+    text-align: center;
     font-style: italic;
     font-family: var(--fonte_padrao);
-    font-size: 1.2em;
-    color: var(--cor1);
-    text-shadow: 0px 0px 10px rgb(238, 159, 159);
+    font-size: 1.3em;  
 }
 
-section  > p{
+section#historia  > p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
-    font-size: 0.95em;
+    font-size: 1.1em;
     color: black;
     padding: 10px 30px;
     padding-bottom: 20px;
     text-indent: 20px;
 }
 
-div.video-full{
+/*---------------------------------------------GOLPES-----------------------------------------*/
+
+main > section > div.video-full{
     background-color: white;
     padding: 20px;
     padding-bottom: 55%;
     position: relative;
 }
 
-div.video-full iframe{
+main > section > div.video-full iframe{
     position: absolute;
     top: 5%;
     left: 5%;
@@ -236,43 +263,6 @@ div.video-full iframe{
     height: 90%;
 }
 
-img.conteudo{
-    display: block;
-    width: 90%;
-    margin: auto;
-}
-
-img.rodape{
-    display: block;
-    width: 70%;
-    margin: auto;
-    margin-bottom: -20px;
-}
-
-
-/*-----------------------------------------Pagina Galeria ------------------------------------*/
-
-div.imagem{
-    display:inline-block;
-    width: 28%;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.541);
-    margin-left: 3%;
-    margin-top: 10px;
-    margin-bottom: 10px; 
-}
-
-div.imagem img{
-    width: 100%;
-    transition: 0.6s;
-}
-
-div.imagem:hover img{
-    -webkit-transform: scale(2);
-    transform: scale(1.4);
-    box-shadow: 0px 0px 15px var(--cor0);
- }
-
-/*-----------------------------------------Pagina combates ------------------------------------*/
 
 p.video{
     background-image: linear-gradient(to right, transparent, rgb(238, 218, 237), transparent);
@@ -284,23 +274,6 @@ p.video{
     padding: 15px 2px 0px 2px;
     margin: auto;
 }
-
-#largura600{
-    max-width: 600px;
-}
-
-/*-----------------------------------------Pagina golpes ------------------------------------*/
-.destaque{
-    font-size: 0.9em;
-    text-align: left;
-    width: 85%;
-    color: rgb(73, 73, 73);
-    margin:auto;
-    text-indent: 0px;
-    background-image: linear-gradient(to right, transparent, rgb(238, 218, 237), transparent);
-    margin-bottom: 0px;
-}
-/*-----------------------------------------Pagina hstorias ------------------------------------*/
 
 section.normal{
     background-color: white;
@@ -324,18 +297,6 @@ section.imagem-fundo p{
     background-size: cover;
 }
 
-section#img01{
-    background-image: url('../jpeg/k-paper1.jpg');
-    background-position: left center;
-}
-
-#historia{
-    max-width: 600px;
-    min-width: 300px;
-    background-color: lightgoldenrodyellow;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.384);
-    font-size: 1.1em;
-}
 
 img.gif{
     display: block;
