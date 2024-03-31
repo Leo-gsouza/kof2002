@@ -35,7 +35,7 @@
 html, body {
     width: 100vw;
     height: 100vh;
-    background: url('../jpeg/fundo-person.jpg') no-repeat fixed ;
+    background: url('../jpeg/fundo-pagina.jpg') no-repeat fixed ;
     background-size: cover;
 
 }
@@ -66,25 +66,30 @@ header > menu {
 }
 
 header > menu > ul > a > li{
-    background-image:linear-gradient(to right, var(--cor0), darkred);
+    background-image:linear-gradient(to right, rgb(197, 197, 197), rgb(255, 255, 255));
     margin: 0px;
     padding: 10px 5px;
-    border: 0.2px solid black;
+    box-shadow: 0px 0px 2px black;
 }
 
 header > menu > ul > a{
-    color: white;
-    font-weight: bolder;
+    color: black;
     font-size: 1em;
     text-decoration: none;
+    text-shadow: 0px 0px 20px white;
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
+    font-weight: bolder;
 }
 
 header > menu > ul > a > li:hover{
+    background-image: linear-gradient(to right, darkred, red);
+    transition-duration: 1s;
+}
+
+header > menu > ul > a:hover{
     color: white;
-    background-color: var(--cor0);
-    transition-duration: 0.5s;
+    transition: 0.2s;
 }
 
 header > span#burguer{
@@ -124,9 +129,9 @@ header > nav#versoes{
     display: none;
 }
 
-/*-------------------------------------------------PAGINA HOME --------------------------------------*/
+/*----------------------------------------------PAGINA PRICIPAL--------------------------------------*/
 main {
-    background-color: rgba(255, 255, 255, 0.582);
+    background-color: rgb(255, 255, 255);
     padding-top: 0px;
     margin: auto;
     margin-bottom: 30px;
@@ -140,19 +145,32 @@ main  > h1{
     padding: 20px;
     font-size: 1.75em;
     text-align: center;
+    margin-bottom: -15px;
+}
+
+main > audio{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 322px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.315);
 }
 
 main > div.team{
     display: block;
     width: 320px;
     margin: auto;
+    padding: 10px 1px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.315);
 }
 
 main > div.team > div{
     display: inline-block;
-    padding: 3px;
+    padding: 3px 1px;
     transition: 0.5s;
-    background-color: white;
+    border: 3px solid lightgray;
     transition: 1s;
 }
 
@@ -164,11 +182,15 @@ main > div.team > div:hover{
 main > div.team > div > a > img{
     display: block;
     margin: auto;
-    width: 95%;
+    width: 90%;
     border-radius: 5px;
 }
 
-/*-----------------------------------------Pagina Home ------------------------------------*/
+footer{
+    display: none;
+}
+
+/*-------------------------------------------PAGINA PERSONAGEM--------------------------------------*/
 
 main > img.capa{
     width: 100vw;
@@ -186,11 +208,10 @@ main > div.audio audio{
 
 main > nav#personagem{
     width: 100vw;
-    display: inline-block;
-    margin: auto;
+    padding: 7px 2px;
     margin-bottom: 5px;
-    padding: 7px;
-    background-color: white;
+    padding-left: 7px;
+    background-image: linear-gradient(to bottom, lightgray, gray);
     box-shadow: inset 0px 0px 5px gray;
 }
 
@@ -198,17 +219,17 @@ main > nav#personagem > a{
     margin: auto;
     text-decoration: none;
     text-transform: uppercase;
+    text-shadow: 0px 0px 5px black;
     text-align: center;
-    padding: 2px 2px;
-    font-weight: bolder;
+    padding: 10px 5px;
     font-size: 0.75em;
-    background-color: white;
-    color: darkred;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
 }
 
 main > nav#personagem > a:hover{
     background-color: darkred;
-    padding: 7px;
+    padding: 10px 5px;
     color: white;
     border-radius: 5px;
 }
@@ -249,13 +270,13 @@ section#historia  > p{
 /*---------------------------------------------GOLPES-----------------------------------------*/
 
 main > section > div.video-full{
-    background-color: white;
+    background-image: linear-gradient(to right, darkred, red);
     padding: 20px;
     padding-bottom: 55%;
     position: relative;
 }
 
-main > section > div.video-full iframe{
+main > section > div.video-full > iframe{
     position: absolute;
     top: 5%;
     left: 5%;
@@ -264,15 +285,24 @@ main > section > div.video-full iframe{
 }
 
 
-p.video{
-    background-image: linear-gradient(to right, transparent, rgb(238, 218, 237), transparent);
-    color: rgb(109, 108, 108);
+main > section > p#rodape-video{
+    color: black;
     font-size: 0.8em;
-    font-weight: bolder;
     text-align: center;
-    width: 250px;
-    padding: 15px 2px 0px 2px;
+    width: 75vw;
+    padding: 3px;
     margin: auto;
+}
+
+main > section > p > a{
+    color: darkred;
+    font-weight: normal;
+}
+
+main > section > p > a:hover{
+    color: red;
+    font-weight: bolder;
+    
 }
 
 section.normal{

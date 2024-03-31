@@ -16,24 +16,27 @@
 <body>
     <header>
         <h1>K Dash</h1>
+        <!--MENU HAMBURGUER PARA DISPOSITIVO CELULAR-->
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <menu id="itens">
             <ul>
+                <a href="../../index.html"><li>Personagens</li></a>
                 <a href="paginas/fightcade.html"><li>Jogue Online</li></a>
                 <a href="paginas/galeria.html"><li>Galeria</li></a>
                 <a href="paginas/combates.html"><li>Combates</li></a>
             </ul>
         </menu>
+        <!--MENU DE NAVEGAÇÃO PARA TODOS OS OUTROS DISPOSITIVOS-->
         <nav id="versoes">
+            <a href="../../index.html">Personagens</a>
             <a href="paginas/fightcade.html">Jogue Online</a>
             <a href="paginas/galeria.html">Galeria</a>
             <a href="paginas/combates.html">Combates</a>
         </nav>
      </header>
 
-
     <main>
-        <img class="capa" src="../../jpeg/k_capa.jpg" alt=""> 
+        <img class="capa" src="../../jpeg/k_capa_1.jpg" alt=""> 
         <div class="audio">
             <audio  src="../../audio/team-k.mp3" controls autoplay loop ></audio>
         </div> 
@@ -57,5 +60,14 @@
             <li><a href="../paginas/fatal-fury_curiosidades.html">Fatal Fury</a></li>
         </ul>
     </footer>
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+        }   else{
+                itens.style.display = 'block'
+        }
+    }
+    </script>
 </body>
 </html>
