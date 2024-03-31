@@ -45,7 +45,6 @@ html, body {
 /*-----------------------------------------HEADER--------------------------------------------*/
 header {
     background-image: linear-gradient(to top, var(--cor0), rgb(112, 8, 8));
-    width: 100vw;
     text-align: center;
     color: white;
 }
@@ -153,29 +152,31 @@ main > audio{
     margin: auto;
     margin-bottom: 10px;
     width: 322px;
+    color: red;
     background-color: white;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.315);
 }
 
 main > div.team{
     display: block;
-    width: 320px;
+    width: 310px;
     margin: auto;
-    padding: 10px 1px;
+    padding: 10px 0px;
     background-color: white;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.315);
 }
 
 main > div.team > div{
     display: inline-block;
-    padding: 3px 1px;
+    padding: 3.5px;
     transition: 0.5s;
-    border: 3px solid lightgray;
+    background-color: black;
     transition: 1s;
 }
 
 main > div.team > div:hover{
     background-color: red;
+    box-shadow: 0px 0px 15px black;
     transition: 1s;
 }
 
@@ -198,30 +199,22 @@ main > img.capa{
     box-shadow: 0px 0px 5px var(--cor1);
 }
 
-main > div.audio audio{
-    width: 100vw;
-    display: block;
-    background-color: white;
-    margin: auto;
-    border-radius: 50px;
-}
-
 main > nav#personagem{
-    width: 100vw;
-    padding: 7px 2px;
+    width: 98vw;
+    padding: 7px 0px;
     margin-bottom: 5px;
     padding-left: 7px;
     background-image: linear-gradient(to bottom, lightgray, gray);
-    box-shadow: inset 0px 0px 5px gray;
+    box-shadow: 0px 0px 5px rgb(71, 71, 71);
 }
 
 main > nav#personagem > a{
     margin: auto;
     text-decoration: none;
     text-transform: uppercase;
-    text-shadow: 0px 0px 5px black;
+    text-shadow: 0px 0px 2px black;
     text-align: center;
-    padding: 10px 5px;
+    padding: 7px 5px;
     font-size: 0.75em;
     background-color: rgba(255, 255, 255, 0);
     color: white;
@@ -229,7 +222,7 @@ main > nav#personagem > a{
 
 main > nav#personagem > a:hover{
     background-color: darkred;
-    padding: 10px 5px;
+    padding: 12px 7px 8px 7px;
     color: white;
     border-radius: 5px;
 }
@@ -238,17 +231,17 @@ main > iframe{
     display: block;
     margin:auto;
     width: 100vw;
-    height: 100vh;
+    height: 52vh;
 }
 
 /*---------------------------------------------HISTORIA-----------------------------------------*/
 
-main > section#historia{
+main > section{
     width: 100vw;
     background-color: white;
-    padding: 5px;
+
 }
-main > section#historia > h2{
+main > section > h2{
     padding: 10px;
     color: darkred;
     text-align: center;
@@ -257,7 +250,7 @@ main > section#historia > h2{
     font-size: 1.3em;  
 }
 
-section#historia  > p{
+section  > p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
     font-size: 1.1em;
@@ -270,10 +263,11 @@ section#historia  > p{
 /*---------------------------------------------GOLPES-----------------------------------------*/
 
 main > section > div.video-full{
-    background-image: linear-gradient(to right, darkred, red);
+    background-color: rgb(202, 202, 202);
     padding: 20px;
     padding-bottom: 55%;
     position: relative;
+    box-shadow: 0px 0px 10px black;
 }
 
 main > section > div.video-full > iframe{
@@ -286,201 +280,81 @@ main > section > div.video-full > iframe{
 
 
 main > section > p#rodape-video{
-    color: black;
-    font-size: 0.8em;
+    background-color: rgb(170, 170, 170);
+    text-shadow: 0px 0px 10px black;
     text-align: center;
-    width: 75vw;
-    padding: 3px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.65em;
     margin: auto;
+    margin-top: -5px;
 }
 
-main > section > p > a{
-    color: darkred;
-    font-weight: normal;
-}
-
-main > section > p > a:hover{
-    color: red;
-    font-weight: bolder;
+main > section > p#rodape-video > a{
+    color: yellow;
+    text-decoration: none;
     
 }
 
-section.normal{
-    background-color: white;
-    color: black;
-}
-
-section.imagem-fundo{
-    background-color: black;
-    color: white;
-    box-shadow: inset 4px 4px 13px 0px rgba(0, 0, 0, 0.452);
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 20px 20px;
-}
-
-section.imagem-fundo p{
-    background-color: rgba(0, 0, 0, 0.753);
-    font-size: 1em;
-    color: white;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-
-img.gif{
-    display: block;
-    margin: auto;
-    width: 1.5vw;
-}
-
-/*-----------------------------------------Pagina curiosidades ------------------------------------*/
-
-div.golpes{
-    display: inline-block;
-    width: 120px;
-    height: 80px;
-    margin: 3px 0px;
-    border-radius: 10px;
-    padding-left: 30px;
-}
-
-div.golpes:hover{
-   font-weight: bolder;
-   box-shadow: 0px 0px 15px rgb(241, 142, 142);
-}
-
-p.golpes{
-    margin-left: -10px;
-    color: black;
-    width: 100%;
-    padding: 5px 1px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.6em;
-    font-variant: small-caps;
-    text-align: center;
-}
-
-div.golpes audio{
-    display: block;
-    width: 100%;
-    margin: auto;
-}
-
-#espaco{
-    margin: 30px 5px;
-}
-
-#sinopse{
-    color: white;
-    background-color: darkred;
-    box-shadow: inset 0px 0px 1px 2px black;
-    font-size: 1.1;
-    width: 82%;
-    margin: auto;
-}
-
-table{
-    max-width: 600px;
-    min-width: 300px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: auto;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.384);
-    margin-bottom: 20px;
-    border-collapse: collapse;
-}
-
-th{
-    background-image: linear-gradient(to right, rgb(255, 219, 219), transparent);
-    color: darkred;
-    padding: 15px 5px;
-    font-size: 0.9em;
-}
-
-td > p{
-    padding: 2px 5px;
-    font-size: 0.6em;
+main > section > p#rodape-video > a:hover{
+    color: red;
     font-weight: bolder;
-    margin: auto;
-    font-variant: small-caps;
-}
-
-tbody.pessoal > tr:nth-child(2n){
-    background-color: rgb(252, 216, 216);
+    text-shadow: 0px 0px 10px white;
+    text-decoration: none;
     
 }
 
-tbody.pessoal > tr > td{
-    padding: 5px 5px;
-    font-size: 0.6em;
-    margin: auto;
-    font-variant: small-caps;
-}
+/*-------------------------------------------COMBATES----------------------------------------------*/
 
-td > img{
-    width: 90%;
-}
-
-td.sound audio{
-    width: 100px;
-}
-
-
-#frame{
-    display: block;
-    margin: auto;
-    max-width: 600px;
-    min-width: 300px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
-}
-
-/*--------------------------------------FOOTER---------------------------------------------*/
-footer{
-    min-width: 300px;
-    margin-top: 5px;
-    background-color: white;
-    box-shadow: 0px -2px 6px black;
-}
-
-footer p{
+main > section > p.titulo-video{
+    background-color: rgb(170, 170, 170);
+    text-align: center;
     color: white;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 2px;
-    background-image: linear-gradient(to right , var(--cor3), rgb(88, 88, 88));
-}
-
-footer a{
-    color: lightgoldenrodyellow;
-    text-decoration: none;
-}
-footer a:hover{
-    color: red;
-    text-shadow: 0px 0px 20px white;
-    font-weight: bolder;
-}
-
-footer ul{
-    text-align: center;
-    margin-top: 20px;
-    padding: 2px;
-    max-width: 700px;
-    min-width: 250px;
+    text-shadow: 0px 0px 10px black;
+    text-transform: uppercase;
+    font-size: 0.65em;
     margin: auto;
-    columns: 3;
-}
-footer li{
-    margin-left: 20px;
-    text-align: center;
-    text-align: left;
-    font-family: var(--fonte_padrao); 
-    padding: 5px 5px 2px 5px
-}
-footer li a{
-    text-align: center;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 80%;
+    margin-bottom: -10px;
 }
 
+main > section > p.titulo-video > a{
+    color: yellow;
+    text-shadow: black;
+    text-decoration: none;
+}
+
+main > section > p.titulo-video > a:hover{
+    color: red;
+    text-shadow: 0px 0px 10px white;
+    text-decoration: none;
+}
+
+/*-----------------------------------------CURIOSIDADE---------------------------------------------*/
+
+main > section > div#tabela-mobile > table{
+    width: 90vw;
+    margin: auto;
+    padding: 15px;
+}
+
+main > section > div#tabela-mobile > table > thead >tr >th{
+    text-shadow: 0px 0px 10px white;
+    padding: 10px;
+}
+
+main > section > div#tabela-mobile > table > tbody > tr {
+    padding: 4px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.664);
+    font-size: 0.7em;
+}
+
+main > section > div#tabela-mobile > table > tbody > tr > td{
+    padding: 6px 2px;
+    margin: 2px 0px;
+}
+
+main > section > iframe#personagens{
+    display: block;
+    width: 92vw;
+    margin: auto;
+}
