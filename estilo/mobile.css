@@ -159,31 +159,30 @@ main > audio{
 
 main > div.team{
     display: block;
-    width: 310px;
+    width: 270px;
     margin: auto;
-    padding: 10px 0px;
+    padding: 20px 25px;
     background-color: white;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.315);
 }
 
 main > div.team > div{
     display: inline-block;
-    padding: 3.5px;
+    padding-left: 1.5px;
     transition: 0.5s;
-    background-color: black;
     transition: 1s;
 }
 
 main > div.team > div:hover{
     background-color: red;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 0px 10px red;
     transition: 1s;
 }
 
 main > div.team > div > a > img{
     display: block;
     margin: auto;
-    width: 90%;
+    width: 100%;
     border-radius: 5px;
 }
 
