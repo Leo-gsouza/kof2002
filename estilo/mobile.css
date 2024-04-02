@@ -251,7 +251,7 @@ main > section > h2{
     font-size: 1.3em;  
 }
 
-section  > p{
+main > section  > p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
     font-size: 1.1em;
@@ -260,6 +260,17 @@ section  > p{
     padding-bottom: 20px;
     text-indent: 20px;
 }
+
+main > section > p > a{
+    color: darkred;
+    text-decoration: none;
+}
+
+main > section > p > a:hover{
+    color: red;
+    font-weight: bolder;
+}
+
 
 /*---------------------------------------------GOLPES-----------------------------------------*/
 
@@ -350,15 +361,11 @@ main > section > table#mobile > tbody > tr > td{
     margin: 2px;
 }
 
-main > section > table#mobile > tbody > tr > td > iframe#personagens{
-    display: block;
-    margin: auto;
-}
 
 main > section > table#selecao{
     width: 90vw;
     margin: auto;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.384);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.384);
     border-collapse: collapse;
 }
 
@@ -372,11 +379,25 @@ main > section > table#selecao > tbody > tr >td {
     border: 1px solid black;
 }
 
+main > section > table#selecao > tbody > tr > td > h1{
+    text-align: center;
+    color: darkred;
+    font-variant: small-caps;
+    padding-bottom: 10px;
+    font-size: 2em;
+
+}
+
 main > section > table#selecao > tbody > tr >td.texto {
-    padding: 5px;
-    font-size: 0.8em;
+    padding: 0px 5px;
+    font-size: 0.75em;
 }
 
 main > section > table#selecao > tbody > tr > td > img{
     width: 18vw;
+}
+
+/*-------------------------------------------FIGHTCADE---------------------------------------*/
+main > section > img{
+    width: 100vw;
 }
