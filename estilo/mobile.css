@@ -401,3 +401,68 @@ main > section > table#selecao > tbody > tr > td > img{
 main > section > img{
     width: 100vw;
 }
+/*-------------------------------------------GALERIA---------------------------------------*/
+main > section > div.galeria{
+    padding-left: 15px;
+}
+
+main > section > div.galeria > img{
+    width: 100px;
+    padding-bottom: 5px;
+}
+
+main > section > div.galeria > img:hover{
+    box-shadow: 0px 0px 10px black;
+}
+
+/*-------------------------------------------ENQUETES---------------------------------------*/
+main > section > form{
+    margin: auto;
+    width: 300px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.404);
+}
+
+main > section > form > h2{
+    font-size: 0.9em;
+    color: darkred;
+    padding: 20px;
+    text-align: center;
+    font-variant: small-caps;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main > section > form > label{
+    padding-left: 10px;
+}
+
+main > section > form > input{
+    width: 140px;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.37);
+    text-align: center;
+}
+
+main > section > form > div#radio label{
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+
+main > section > form > div#radio input{
+    margin-bottom: 8px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.37);
+    text-align: center;
+    margin-left: 10px;
+}
+
+main > section > form > div#submit{
+    width: 130px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+main > section > form > div#submit > input{
+    width: 60px;
+    padding: 5px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.26);
+}
