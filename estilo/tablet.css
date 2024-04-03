@@ -3,7 +3,7 @@
 html, body{
     width: 100vw;
     height: 100vh;
-    background: black;
+    background: white;
 }
 
 header > h1{
@@ -16,19 +16,19 @@ header > span#burguer{
 
 header > nav#versoes{
     display: block;
-    padding: 20px 10px;
+    padding: 13px 9px;
 }
 
 header > nav#versoes > a{
     border-radius: 0px 0px 7px 7px;
     font-family: var(--fonte_titulo);
     text-transform: uppercase;
-    padding: 20px 30px;
-    font-size: 1.2em;  
+    padding: 14px 9px;
+    font-size: 1em;  
 }
 
 main{
-    background: white url('../jpeg/fundo-person.jpg') center center no-repeat;
+    background: white url('../jpeg/fundo-abstrato.jpg') top center no-repeat;
     background-size: cover;
     width: 100vw;
     height: 75vh;
@@ -37,11 +37,11 @@ main{
 main > h1{
     color: darkred;
     font-size: 2em;
-    text-shadow: 2px 2px 2px white;
+    text-shadow: 0px 0px 15px white;
 }
 
 main > audio{
-    width: 655px;
+    width: 250px;
     box-shadow: 0px 0px 10px white;
 }
 
@@ -49,4 +49,74 @@ main > div.team{
     width: 610px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.541);
     background-color: white;
+}
+
+/*=============================================JOGUE ONLINE========================================*/
+
+main > section >h2{
+    font-size: 1.5em;
+}
+
+main > section > p{
+    width: 600px;
+    font-size: 1.2em;
+    margin: auto;
+}
+
+/*=================================================GALERIA============================================*/
+
+main > section > div.galeria{
+    width: 640px;
+    box-shadow: 0px 0px 10px rgba(255, 1, 1, 0.24);
+}
+
+main > section > div.galeria > img{
+    width: 150px;
+}
+
+main > section > p.titulo-video{
+    width: 100vw;
+    font-size: 1.1em;
+}
+
+/*=================================================ENQUETE============================================*/
+
+main > section > form{
+    width: 600px;
+}
+
+main > section > form > input{
+    width: 250px;
+    font-size: 1.2em;
+}
+
+main > section > form > h2{
+    font-size: 1.15em;
+}
+main > section > form > div#radio > label{
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+}
+
+main > section > form > div#submit{
+    margin-bottom: 20px;
+}
+
+/*========================================PERSONAGEM_PRINCIPAL=======================================*/
+
+main > nav#personagem > div{
+    display:block;
+    width: 520px;
+    margin: auto;
+}
+
+main > nav#personagem > div > a{
+    font-size: 1.2em;
+    text-align: center;
+}
+
+main > iframe{
+    width: 100vw;
+    height: 100vh;
 }
