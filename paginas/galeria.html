@@ -33,7 +33,12 @@
         </nav>
     </header>
     <main>
-        <img class="capa" src="../jpeg/galeria.jpg" alt=""> 
+        <picture>
+            <source media="(max-width: 768px)" srcset="../jpeg/galeria-capa-mobile.jpg">
+            <source media="(max-width: 992px)" srcset="../jpeg/galeria-capa-tablet.jpg">
+            <source media="(max-width: 1200px)" srcset="../jpeg/galeria-capa-desktop.jpg">
+            <img class="capa" src="../jpeg/galeria-capa-grande.jpg" alt="">
+        </picture> 
         <section>
             <h2 class="especial">Times do KOF 2002</h2>
             <div class="galeria">

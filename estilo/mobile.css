@@ -197,11 +197,12 @@ footer{
 
 /*-------------------------------------------PAGINA PERSONAGEM--------------------------------------*/
 
-main > img.capa{
+main > picture > img.capa{
     width: 100vw;
     margin: auto;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.39);
 }
+
 
 main > nav#personagem{
     width: 100vw;
@@ -283,6 +284,12 @@ main > section > p > a:hover{
 
 
 /*---------------------------------------------GOLPES-----------------------------------------*/
+main > section > img.golpes{
+    display: block;
+    margin: auto;
+    width: 100vw;
+}
+
 
 main > section > div.video-full{
     padding: 20px;

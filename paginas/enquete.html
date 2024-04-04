@@ -33,7 +33,12 @@
         </nav>
     </header>
     <main>
-        <img class="capa" src="../jpeg/enquete-capa.jpg" alt="">
+        <picture>
+            <source media="(max-width: 768px)" srcset="../jpeg/enquete-capa-mobile.jpg">
+            <source media="(max-width: 992px)" srcset="../jpeg/enquete-capa-tablet.jpg">
+            <source media="(max-width: 1200px)" srcset="../jpeg/enquete-capa-desktop.jpg">
+            <img class="capa" src="../jpeg/enquete-capa-grande.jpg" alt="">
+        </picture>
         <section>
             <h2>Cadastro</h2>
             <p>O cadastro é opcional! Vamos pedir algumas informações simples</p>

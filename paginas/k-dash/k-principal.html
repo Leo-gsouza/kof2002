@@ -37,7 +37,12 @@
      </header>
 
     <main>
-        <img class="capa" src="../../jpeg/k_capa_1.jpg" alt=""> 
+        <picture>
+            <source media="(max-width:768px )" srcset="../../jpeg/k_capa_mobile.jpg">
+            <source media="(max-width:992px)" srcset="../../jpeg/k_capa_tablet.jpg">
+            <source media="(max-width:1200 )" srcset="../../jpeg/k_capa_desktop.jpg">
+            <img class="capa" src="../../jpeg/k_capa_grande.jpg" alt=""> 
+        </picture>
         <nav id="personagem">
             <div>
                 <a href="k_historia.html" target="tela">Historia</a>

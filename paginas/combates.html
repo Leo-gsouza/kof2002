@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <h1>Galeria</h1>
+        <h1>Combates</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <menu id="itens">
             <ul>
@@ -33,7 +33,12 @@
         </nav>
     </header>
     <main>
-        <img class="capa" src="../jpeg/combates_capa.jpg" alt="">
+        <picture>
+            <source media="(max-width: 768px)" srcset="../jpeg/combate-capa-mobile.jpg">
+            <source media="(max-width: 992px)" srcset="../jpeg/combate-capa-tablet.jpg">
+            <source media="(max-width: 1200px)" srcset="../jpeg/combate-capa-desktop.jpg">
+            <img class="capa" src="../jpeg/combate-capa-grande.jpg" alt="">
+        </picture>
         <section class="conteudo">
             <h2>Combates do Fightcade</h2>
             <p>Aqui você pode assistir as lutas completas! Acima do vídeo está o número da luta e o nome dos jogadores. Todos os combates são obtidos no programa do fightcade.</p>
