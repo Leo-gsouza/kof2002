@@ -102,8 +102,7 @@ header > span#burguer{
 /* =============================================================================================================================== Configurações gerais para outros dispositivos ==================================
 ===================================================================================================== */
 header > nav#versoes{
-    width: 99vw;
-    text-align: center;
+    width: 98vw;
     background-image:linear-gradient(to right, rgb(228, 228, 228), rgb(255, 255, 255));
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.438);
     margin: auto;
@@ -152,7 +151,6 @@ main > audio{
     margin-top: 10px;
     width: 100vw;
     background-color: rgb(241,243,244);
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.438);
 }
 
 main > section#paralax{
@@ -243,7 +241,6 @@ main > iframe{
     margin:auto;
     width: 100vw;
     height: 53vh;
-    box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.411);
 }
 
 /*---------------------------------------------HISTORIA-----------------------------------------*/
@@ -402,7 +399,6 @@ main > section > table#selecao > tbody > tr > td > h1{
     font-variant: small-caps;
     padding-bottom: 10px;
     font-size: 2em;
-
 }
 
 main > section > table#selecao > tbody > tr >td.texto {
@@ -415,7 +411,7 @@ main > section > table#selecao > tbody > tr > td > img{
 }
 
 /*-------------------------------------------FIGHTCADE---------------------------------------*/
-main > section > img{
+main > section >  img{
     width: 100vw;
 }
 /*-------------------------------------------GALERIA---------------------------------------*/
