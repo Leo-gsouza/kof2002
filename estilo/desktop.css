@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+html, body{
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
 
 header{
     width: 100vw;
@@ -15,7 +21,7 @@ header > span#burguer{
 
 header > nav#versoes{
     display: block;
-    width: 100vw;
+    width: 99vw;
     padding: 20px 5px;
 }
 
@@ -29,13 +35,12 @@ header > nav#versoes > a{
 
 main{
     margin: auto;
-    background-color: white;
-    box-shadow: 0px 0px 0px white;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.521);
 }
 
 main > h1{
     font-size: 2em;
-    margin-top: 10px;
 }
 
 main > div.team{
@@ -49,6 +54,7 @@ main > div.team > div{
 
 main > audio{
     width: 400px;
+    background-color: white;
 }
 
 footer{
@@ -56,10 +62,16 @@ footer{
 }
 
 /*----------------------------------------------JOGUE ONLINE--------------------------------------*/
+main > picture > img.capa{
+    display: block;
+    margin: auto;
+    width: 850px;
+}
 
 main > section{
     margin: auto;
     width: 850px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.377);
 }
 
 main > section > p{
@@ -98,3 +110,64 @@ main > section > div.box-video{
     display: inline-block;
     width: 270px;
 }
+
+/*-------------------------------------------PERSONAGEM PRINCIPAL-----------------------------------*/
+
+main > nav#personagem{
+    width: 840px;
+    padding: 10px 5px;
+}
+
+main > nav#personagem > div{
+    width: 600px;
+}
+
+main > nav#personagem > div > a{
+    font-size: 1.1em;
+    padding: 10px 15px;
+}
+
+main > nav#personagem > div > a:hover{
+    background-color: darkred;
+    padding: 14px 15px 10px 15px;
+}
+
+main > iframe{
+    width: 98vw;
+    height: 100vh;
+}
+
+/*-------------------------------------------GOLPES-----------------------------------*/
+
+main > section > img.golpes{
+    width: 80%;
+}
+
+main > section > p#rodape-video{
+    font-size: 1em;
+}
+
+/*-------------------------------------------HISTORIA-----------------------------------*/
+main > section > p{
+    margin: auto;
+    width: 700px;
+}
+
+/*-------------------------------------------CURIOSIDADES-----------------------------------*/
+main > section > table#mobile{
+    width: 600px;
+}
+
+main > section > table#mobile > tbody > tr > td{
+  font-size: 1.5em;
+}
+
+main > section > table#selecao{
+    width: 600px;
+}
+
+main > section > table#selecao > tbody > tr > td.texto{
+    font-size: 1.075em;
+    padding: 25px;
+  }
+

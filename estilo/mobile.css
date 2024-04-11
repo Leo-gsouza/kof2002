@@ -480,3 +480,39 @@ main > section > form > div#submit > input{
     padding: 5px;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.26);
 }
+
+/*-------------------------------------------FOOTER---------------------------------------*/
+footer{
+    background-image: linear-gradient(to right, rgb(36, 36, 36), black , rgb(36, 36, 36));
+    box-shadow: inset 0px 0px 55px black;
+}
+
+footer > ul{
+    margin: auto;
+    width: 700px;
+    columns: 4;
+    padding: 30px 2px;
+}
+
+footer > ul > li{
+    
+    width: 150px;
+    padding: 7px 3px;   
+}
+
+footer > ul > li > a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer > p{
+    text-align: center;
+    padding: 10px 0px;
+    color: white;
+}
+
+footer > p > a{
+    color: yellow;
+    text-decoration: none;
+}
