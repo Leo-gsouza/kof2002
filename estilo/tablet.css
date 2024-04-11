@@ -109,16 +109,31 @@ main > section > form > div#submit{
 
 main > nav#personagem > div{
     display:block;
-    width: 520px;
+    width: 540px;
     margin: auto;
 }
 
 main > nav#personagem > div > a{
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: center;
+    font-family: var(--fonte_titulo);
 }
 
 main > iframe{
     width: 100vw;
     height: 100vh;
+}
+
+/*========================================CURIOSIDADES=======================================*/
+
+main > section > table#selecao{
+    width: 600px;
+}
+
+main > section > table#mobile{
+    width: 600px;
+}
+
+main > section > table#selecao > tbody > tr > td > img{
+    width: 50px;
 }
