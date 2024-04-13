@@ -1,10 +1,18 @@
 @charset "UTF-8";
 
+html, body{
+    background-color: white;
+    width: 99vw;
+    height: 100vh;
+}
 
 
+header{
+    width: 99vw;
+}
 
 header > h1{
-    font-size: 6em;
+    font-size: 4em;
 }
 
 header > span#burguer{
@@ -12,24 +20,188 @@ header > span#burguer{
 }
 
 header > nav#versoes{
-    padding: 20px 5px;
-    display: inline-block;
+    display: block;
+    width: 99vw;
+    padding: 11px 5px;
 }
 
 header > nav#versoes > a{
     border-radius: 0px 0px 7px 7px;
     font-family: var(--fonte_titulo);
     text-transform: uppercase;
-    padding: 20px 30px;
-    font-size: 1.5em;  
+    padding: 15px 25px;
+    font-size: 1em;  
 }
 
-
 main{
-    width: 900px ;
-    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.171);
+}
+
+main > h1{
+    font-size: 1.7em;
 }
 
 main > div.team{
+    width: 700px;
+    padding: 25px 15px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.315);
+}
+
+main > div.team > div{
+    border: 2px solid white;
+    width: 58px;
+}
+
+main > div.team > div:hover{
+    border: 2px solid red;
+}
+
+main > audio{
+    width: 400px;
+    background-color: white;
+}
+
+footer{
+    display: block;
+}
+
+/*----------------------------------------------JOGUE ONLINE--------------------------------------*/
+main > picture > img.capa{
+    display: block;
+    margin: auto;
+    width: 850px;
+}
+
+main > section{
+    margin: auto;
+    width: 850px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.377);
+}
+
+main > section > h2{
+    font-size: 1.3em;
+    padding-top: 45px;
+}
+
+main > section > p{
+    padding: 15px;
+    font-size: 1em;
+}
+
+main > section > img{
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+/*----------------------------------------------GALERIA--------------------------------------*/
+
+
+main > section > div.galeria{
+    width: 700px;
+}
+
+main > section > div.galeria > img{
+    width: 155px;
+    padding: 5px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.171);
+}
+
+/*----------------------------------------------COMBATES--------------------------------------*/
+
+main > section > p.titulo-video{
+    display: none;
+    font-size: 1.35em;
+}
+
+main > section > div.box-video{
+    display: inline-block;
+    width: 270px;
+}
+
+/*-------------------------------------------PERSONAGEM PRINCIPAL-----------------------------------*/
+
+main > nav#personagem{
+    width: 840px;
+    padding: 10px 5px;
+}
+
+main > nav#personagem > div{
+    width: 600px;
+}
+
+main > nav#personagem > div > a{
+    font-size: 0.9em;
+    padding: 10px 15px;
+}
+
+main > nav#personagem > div > a:hover{
+    background-color: darkred;
+    padding: 14px 15px 10px 15px;
+}
+
+main > iframe{
+    margin: auto;
+    width: 98vw;
+    height: 100vh;
+}
+
+main > iframe::-webkit-scrollbar { 
+    display: none;
+  }
+
+/*-------------------------------------------GOLPES-----------------------------------*/
+
+main > section > img.golpes{
+    width: 80%;
+}
+
+main > section > p#rodape-video{
+    font-size: 1em;
+}
+
+/*-------------------------------------------HISTORIA-----------------------------------*/
+main > section > p{
+    margin: auto;
+    width: 700px;
+}
+
+/*-------------------------------------------CURIOSIDADES-----------------------------------*/
+main > section > table#mobile{
+    width: 600px;
+}
+
+main > section > table#mobile > tbody > tr > td{
+  font-size: 1.5em;
+}
+
+main > section > table#selecao{
+    width: 600px;
+}
+
+main > section > table#selecao > tbody > tr > td.texto{
+    font-size: 1.075em;
+    padding: 25px;
+  }
+
+/*-------------------------------------------ENQUETE-----------------------------------*/
+
+main > section > form{
     width: 650px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.308);
+    background-color: oldlace;
+    padding: 15px;
+}
+
+/*-------------------------------------------FOOTER-----------------------------------*/
+footer > ul > li > a{
+    font-size: 0.7em;
+    padding: 5px;
+}
+
+footer > p{
+    font-size: 0.6em;
 }
