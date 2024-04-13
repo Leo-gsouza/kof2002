@@ -2,13 +2,17 @@
 
 html, body{
     background-color: white;
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 
 header{
-    width: 99vw;
+    width: 100vw;
 }
 
 header > h1{
@@ -59,9 +63,19 @@ main > div.team > div:hover{
     border: 2px solid red;
 }
 
-main > audio{
-    width: 400px;
-    background-color: white;
+main > div#audio{
+    width: 500px;
+    height: 20px;
+    padding: 15px 0px;
+    display: block;
+    margin: auto;
+}
+
+main > div#audio > audio{
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 20px;
 }
 
 footer{
@@ -124,13 +138,14 @@ main > section > div.box-video{
 
 /*-------------------------------------------PERSONAGEM PRINCIPAL-----------------------------------*/
 
+
 main > nav#personagem{
-    width: 840px;
+    width: 839px;
     padding: 10px 5px;
 }
 
 main > nav#personagem > div{
-    width: 600px;
+    width: 500px;
 }
 
 main > nav#personagem > div > a{
@@ -145,13 +160,9 @@ main > nav#personagem > div > a:hover{
 
 main > iframe{
     margin: auto;
-    width: 98vw;
+    width: 100vw;
     height: 100vh;
 }
-
-main > iframe::-webkit-scrollbar { 
-    display: none;
-  }
 
 /*-------------------------------------------GOLPES-----------------------------------*/
 

@@ -145,12 +145,19 @@ main  > h1{
     margin-bottom: -15px;
 }
 
-main > audio{
+main > div#audio{
     display: block;
     margin: auto;
-    margin-top: 10px;
-    width: 100vw;
-    background-color: rgb(241,243,244);
+    width: 150px;
+    padding: 10px;
+}
+
+main > div#audio > audio{
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 20px;
+    padding: 2px;
 }
 
 main > section#paralax{
