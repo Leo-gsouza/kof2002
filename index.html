@@ -17,8 +17,8 @@
 <body>
 
     <header>
-        <h1>KOF 2002</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <h1>KOF 2002</h1>
         <menu id="itens">
             <ul>
                 <a href="paginas/fightcade.html"><li>Jogue Online</li></a>
@@ -36,12 +36,12 @@
     </header>
 
     <main>
-        <h1>Select</h1>
+        <h1>Selecione o <br>personagem</h1>
         <div id="audio">
             <audio  src="audio/kof-select.mp3" controls autoplay loop ></audio>
         </div>
         <div class="team">
-            <div><a href="paginas/k-dash/k-principal.html" ><img src="jpeg/k-60.jpg" alt=""></a></div>
+            <div><a href="paginas/k-dash/k-principal.html" ><img src="jpeg/k-60.jpg" alt="Kdash"></a></div>
             <div><a href="#"><img src="jpeg/maxima-60.jpg" alt=""></a></div>
             <div><a href="#"><img src="jpeg/whip-60.jpg" alt=""></a></div>
 
@@ -113,14 +113,6 @@
         </ul>
         <p>site criado por <a href="https://github.com/Leo-gsouza?tab=repositories" target="_blank">Leonardo Souza</a></p>
     </footer>
-    <script>
-        function clickMenu(){
-            if (itens.style.display == 'block'){
-                itens.style.display = 'none'
-        }   else{
-                itens.style.display = 'block'
-        }
-    }
-    </script>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>               

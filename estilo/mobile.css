@@ -42,31 +42,51 @@ html, body {
 
 /*-----------------------------------------HEADER--------------------------------------------*/
 header {
-    background-image: linear-gradient(to top, var(--cor0), rgb(112, 8, 8));
+    background-image: linear-gradient(to top, var(--cor0), rgb(151, 16, 16));
     text-align: center;
     color: white;
 }
 
 header > h1 {
+    display: inline-block;
+    padding: 25px 10px;
+
     font-family: var(--fonte_destaque);
     font-variant: small-caps;
-    font-size: 2.5em;
-    padding: 25px 5px;
+    font-size: 2.3em;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.404);
+}
+
+header > span#burguer{
+    position: absolute;
+    left: 5px;
+    top: 18px;
+    display: inline-block;
+    padding: 10px;
+
+    font-size: 2.5em;
+    text-align: left;
+    text-shadow: 0px 0px 10px darkred;
+
+    color: white;
 }
 
 header > menu {
     display: none;
-    background-color: white;
+    background-image: linear-gradient(to top, var(--cor0), rgb(151, 16, 16));
     padding: 0px;
     margin: auto;
 }
 
 header > menu > ul > a > li{
-    background-image:linear-gradient(to right, rgb(197, 197, 197), rgb(255, 255, 255));
-    margin: 0px;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 4px;
+    width: 160px;
+    background-color: white;
     padding: 10px 5px;
-    box-shadow: 0px 0px 2px black;
+    box-shadow: inset 0px 0px 2px darkred;
+    border-radius: 8px;
 }
 
 header > menu > ul > a{
@@ -80,7 +100,7 @@ header > menu > ul > a{
 }
 
 header > menu > ul > a > li:hover{
-    background-image: linear-gradient(to right, darkred, red);
+    background-image: linear-gradient(to right, red, red);
     transition-duration: 1s;
 }
 
@@ -89,15 +109,6 @@ header > menu > ul > a:hover{
     transition: 0.2s;
 }
 
-header > span#burguer{
-    display: block;
-    background-color: rgb(255, 247, 247);
-    font-size: 1.8em;
-    padding: 10px 10px;
-    color: black;
-    cursor: pointer;
-    box-shadow: inset 0px 0px 2px rgb(117, 1, 1);
-}
 
 /* =============================================================================================================================== Configurações gerais para outros dispositivos ==================================
 ===================================================================================================== */
@@ -137,10 +148,11 @@ main {
 }
 
 main  > h1{
-    font-family: var(--fonte_destaque);
+    font-family: var(--fonte_titulo);
+    text-transform: uppercase;
     color: darkred;
     padding: 20px;
-    font-size: 1.75em;
+    font-size: 1.5em;
     text-align: center;
     margin-bottom: -15px;
 }
