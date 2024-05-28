@@ -19,85 +19,109 @@
     <header>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <h1>KOF 2002</h1>
-        <menu id="itens">
-            <ul>
-                <a href="paginas/fightcade.html"><li>Jogue Online</li></a>
-                <a href="paginas/galeria.html"><li>Galeria</li></a>
-                <a href="paginas/combates.html"><li>Combates</li></a>
-                <a href="paginas/enquete.html"><li>Enquetes</li></a>
-            </ul>
-        </menu>
-        <nav id="versoes">
+        <span id="music" class="material-symbols-outlined" onclick="playMusic()">play_arrow</span>
+    </header>
+
+    <menu id="itens">
+        <div id="menu">
             <a href="paginas/fightcade.html">Jogue Online</a>
             <a href="paginas/galeria.html">Galeria</a>
             <a href="paginas/combates.html">Combates</a>
             <a href="paginas/enquete.html">Enquetes</a>
-        </nav>
-    </header>
+        </div>
+    </menu>
 
     <main>
-        <h1>Selecione o <br>personagem</h1>
+        <h1>Selecione o personagem</h1>
         <div id="audio">
-            <audio  src="audio/kof-select.mp3" controls autoplay loop ></audio>
+            <audio  src="audio/kof-select.mp3" id="audio-select" autoplay loop ></audio>
         </div>
-        <div class="team">
-            <div><a href="paginas/k-dash/k-principal.html" ><img src="jpeg/k-60.jpg" alt="Kdash"></a></div>
-            <div><a href="#"><img src="jpeg/maxima-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/whip-60.jpg" alt=""></a></div>
+        <div id="caracterSelect">
+            <div id="timekdash" class="team">
+                <a href="#" onclick="efeitoKdash()" ><img src="jpeg/k-60.jpg" alt="Kdash" id="kdash"><audio src="efeitos/k/18.wav" id="audio-kdash"></audio></a>
+                <a href="#"><img src="jpeg/maxima-60.jpg" alt="" ></a>
+                <a href="#"><img src="jpeg/whip-60.jpg" alt=""></a>
+            </div>
 
-            <div><a href="#"><img src="jpeg/kyo-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/daimon-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/benimaru-60.jpg" alt=""></a></div>
+            <div id="timekyo" class="team">
+                <a href="#"><img src="jpeg/kyo-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/daimon-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/benimaru-60.jpg" alt=""></a>
+            </div>
       
-            <div><a href="paginas/iori_golpes.html"><img src="jpeg/iori-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/vice-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/mature-60.jpg" alt=""></a></div>
+            <div id="timeiori" class="team">
+                <a href="paginas/iori_golpes.html"><img src="jpeg/iori-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/vice-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/mature-60.jpg" alt=""></a>
+            </div>
 
-            <div><a href="paginas/terry-bogard/terry-principal.html"><img src="jpeg/terry-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/andy-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/joe-60.jpg" alt=""></a></div>
+            <div id="'timeterry" class="team">
+                <a href="paginas/terry-bogard/terry-principal.html"><img src="jpeg/terry-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/andy-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/joe-60.jpg" alt=""></a>
+            </div>
       
-            <div><a href="#"><img src="jpeg/ryo-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/robert-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/takuma-60.jpg" alt=""></a></div>
+            <div id="timeryo" class="team">
+                <a href="#"><img src="jpeg/ryo-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/robert-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/takuma-60.jpg" alt=""></a>
+            </div>
    
-            <div><a href="#"><img src="jpeg/kim-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/chang-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/choi-60.jpg" alt=""></a></div>
+            <div id="timekim" class="team">
+                <a href="#"><img src="jpeg/kim-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/chang-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/choi-60.jpg" alt=""></a>
+            </div>
   
-            <div><a href="#"><img src="jpeg/ralf-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/leona-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/clark-60.jpg" alt=""></a></div>
+            <div id="timeleona" class="team">
+                <a href="#"><img src="jpeg/ralf-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/leona-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/clark-60.jpg" alt=""></a>
+            </div>
       
-            <div><a href="#"><img src="jpeg/mai-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/yuri-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/maylee-60.jpg" alt=""></a></div>
+            <div id="timemai" class="team">
+                <a href="#"><img src="jpeg/mai-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/yuri-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/maylee-60.jpg" alt=""></a>
+            </div>
 
-            <div><a href="#"><img src="jpeg/seth-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/vanessa-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/ramon-60.jpg" alt=""></a></div>
+            <div id="timeseth" class="team">
+                <a href="#"><img src="jpeg/seth-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/vanessa-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/ramon-60.jpg" alt=""></a>
+            </div>
 
-            <div><a href="#"><img src="jpeg/atena-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/kensou-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/chin-60.jpg" alt=""></a></div>
+            <div id="timeatena" class="team">
+                <a href="#"><img src="jpeg/atena-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/kensou-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/chin-60.jpg" alt=""></a>
+            </div>
 
-            <div><a href="#"><img src="jpeg/yamazaki-60.jpg" alt=""></a></div>
-            <div><a href="paginas/mary_golpes.html"><img src="jpeg/mary-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/billy-60.jpg" alt=""></a></div>
+            <div id="timebluemary" class="team">
+                <a href="#"><img src="jpeg/yamazaki-60.jpg" alt=""></a>
+                <a href="paginas/mary_golpes.html"><img src="jpeg/mary-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/billy-60.jpg" alt=""></a>
+            </div>
 
-            <div><a href="paginas/yashiro-nanakase/yashiro-principal.html"><img src="jpeg/yashiro-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/shermie-60.jpg" alt=""></a></div>
-            <div><a href="paginas/chris_golpes.html"><img src="jpeg/cris-60.jpg" alt=""></a></div>
+            <div id="timeyashiro" class="team">
+                <a href="paginas/yashiro-nanakase/yashiro-principal.html"><img src="jpeg/yashiro-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/shermie-60.jpg" alt=""></a>
+                <a href="paginas/chris_golpes.html"><img src="jpeg/cris-60.jpg" alt=""></a>
+            </div>
 
-            <div><a href="#"><img src="jpeg/k9-60.jpg" alt=""></a></div>
-            <div><a href="paginas/kula_golpes.html"><img src="jpeg/kula-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/angel-60.jpg" alt=""></a></div>
+            <div id="timekula" class="team">
+                <a href="#"><img src="jpeg/k9-60.jpg" alt=""></a>
+                <a href="paginas/kula_golpes.html"><img src="jpeg/kula-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/angel-60.jpg" alt=""></a>
+            </div>
 
-            <div><a href="#"><img src="jpeg/yashiro-orochi-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/shermie-orochi-60.jpg" alt=""></a></div>
-            <div><a href="#"><img src="jpeg/cris-orochi-60.jpg" alt=""></a></div>
+            <div id="timeorochi" class="team">
+                <a href="#"><img src="jpeg/yashiro-orochi-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/shermie-orochi-60.jpg" alt=""></a>
+                <a href="#"><img src="jpeg/cris-orochi-60.jpg" alt=""></a>
+            </div>
  
-            <div><a href="paginas/kusanagi_golpes.html"><img src="jpeg/kusanagi-60.jpg" alt=""></a></div>
+            <div class="team"><a href="paginas/kusanagi_golpes.html"><img src="jpeg/kusanagi-60.jpg" alt=""></a></div>
         </div>
     </main>
     <footer>
@@ -114,5 +138,6 @@
         <p>site criado por <a href="https://github.com/Leo-gsouza?tab=repositories" target="_blank">Leonardo Souza</a></p>
     </footer>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/personagens.js"></script>
 </body>
 </html>               
