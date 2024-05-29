@@ -19,7 +19,7 @@
     <header>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <h1>KOF 2002</h1>
-        <span id="music" class="material-symbols-outlined" onclick="playMusic()">play_arrow</span>
+        <span id="music" class="material-symbols-outlined" onclick="playMusic(musicaSelect)">play_arrow</span>
     </header>
 
     <menu id="itens">
@@ -38,9 +38,9 @@
         </div>
         <div id="caracterSelect">
             <div id="timekdash" class="team">
-                <a href="#" onclick="efeitoKdash()" ><img src="jpeg/k-60.jpg" alt="Kdash" id="kdash"><audio src="efeitos/k/18.wav" id="audio-kdash"></audio></a>
-                <a href="#"><img src="jpeg/maxima-60.jpg" alt="" ></a>
-                <a href="#"><img src="jpeg/whip-60.jpg" alt=""></a>
+                <a href="#"onclick="efeitoSonoro(kdash, audioKdash)" ><img src="jpeg/k-60.jpg" alt="Kdash" id="kdash"></a>
+                <a href="#"onclick="efeitoSonoro(maxima, audioMaxima)"><img src="jpeg/maxima-60.jpg" alt="Maxima" id="maxima" ></a>
+                <a href="google.com"><img src="jpeg/whip-60.jpg" alt=""></a>
             </div>
 
             <div id="timekyo" class="team">
@@ -122,6 +122,13 @@
             </div>
  
             <div class="team"><a href="paginas/kusanagi_golpes.html"><img src="jpeg/kusanagi-60.jpg" alt=""></a></div>
+
+
+<!--======================================= AUDIO DOS PERSONAGENS ================================== -->
+            <audio src="efeitos/k/18.wav" id="audio-kdash" onended="terminar(kdash)"></audio>
+            <audio src="efeitos/k/13.wav" id="audio-maxima" onended="terminar(maxima)"></audio>
+<!--================================================================================================ -->
+
         </div>
     </main>
     <footer>

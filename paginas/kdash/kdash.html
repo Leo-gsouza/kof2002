@@ -15,26 +15,19 @@
 
 <body>
     <header>
-        <!--MENU HAMBURGUER PARA DISPOSITIVO CELULAR-->
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-        <menu id="itens">
-            <ul>
-                <a href="../../index.html"><li>Personagens</li></a>
-                <a href="../../paginas/fightcade.html"><li>Jogue Online</li></a>
-                <a href="../../paginas/galeria.html"><li>Galeria</li></a>
-                <a href="../../paginas/combates.html"><li>Combates</li></a>
-                <a href="../../paginas/enquete.html"><li>Enquetes</li></a>
-            </ul>
-        </menu>
-        <!--MENU DE NAVEGAÇÃO PARA TODOS OS OUTROS DISPOSITIVOS-->
-        <nav id="versoes">
-            <a href="../../index.html">Personagens</a>
-            <a href="../../paginas/fightcade.html">Jogue Online</a>
-            <a href="../../paginas/galeria.html">Galeria</a>
-            <a href="../../paginas/combates.html">Combates</a>
-            <a href="../../paginas/enquete.html">Enquetes</a>
-        </nav>
-     </header>
+        <h1>Kdash</h1>
+        <span id="music" class="material-symbols-outlined" onclick="playMusic(teamKdash)">play_arrow</span>
+    </header>
+
+    <menu id="itens">
+        <div id="menu">
+            <a href="../../index.html">Menu</a>
+            <a href="paginas/fightcade.html">Jogue Online</a>
+            <a href="paginas/galeria.html">Galeria</a>
+            <a href="paginas/combates.html">Combates</a>
+        </div>
+    </menu>
 
     <main>
         <picture>
@@ -52,20 +45,12 @@
             </div>
         </nav>
         <div id="audio">
-            <audio  src="../../audio/team-k.mp3" controls autoplay loop ></audio>
+            <audio  src="../../audio/team-k.mp3" autoplay loop id="music-team-kdash" ></audio>
         </div>
         <iframe src="k_historia.html" frameborder="0" name="tela" >
             Seu navegador não é compátivel com isso
         </iframe>
     </main>
-    <script>
-        function clickMenu(){
-            if (itens.style.display == 'block'){
-                itens.style.display = 'none'
-        }   else{
-                itens.style.display = 'block'
-        }
-    }
-    </script>
+    <script src="../../scripts/menu.js"></script>
 </body>
 </html>

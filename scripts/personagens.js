@@ -1,28 +1,26 @@
 
 var kdash = document.getElementById('kdash')
+var maxima = document.getElementById('maxima')
 var audioKdash = document.getElementById('audio-kdash')
+var audioMaxima = document.getElementById('audio-maxima')
 
 
-kdash.addEventListener('mouseenter' , entrou)
-kdash.addEventListener('mouseout' , saiu)
-audioKdash.addEventListener('ended', terminar)
-
-function entrou(){
-    kdash.style.border = '5px solid orange'
-}
-
-function saiu(){
-    kdash.style.border = '5px solid white'
-}
-
-function efeitoKdash(){
-    kdash.style.border = '5px solid red'
-    kdash.style.scale = '1.1'
-    audioKdash.play()
+function efeitoSonoro(personagem, audioPersonagem){
+    personagem.style.border = '5px solid red'
+    personagem.style.scale = '1.1'
+    audioPersonagem.play()
     
 }
 
-function terminar(){
-    window.location.href = 'paginas/k-dash/k-principal.html'
-}
+audioKdash.addEventListener('ended', function(){
+    window.location.href = 'paginas/kdash/kdash.html'
+})
+
+audioMaxima.addEventListener('ended', function(){
+    window.location.href = 'paginas/maxima/maxima.html'
+})
+    
+
+
+
 
