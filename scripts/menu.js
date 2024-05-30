@@ -1,4 +1,5 @@
-var buttonMusic = document.getElementById('music')
+var buttonPlay = document.getElementById('play')
+var buttonPause = document.getElementById('pause')
 var musicaSelect = document.getElementById('audio-select')
 var teamKdash = document.getElementById('music-team-kdash')
 
@@ -14,11 +15,15 @@ function clickMenu(){
 function playMusic(musica){
         if(musica.paused){
                 musica.play()
-                buttonMusic.style.background = 'red'
-                buttonMusic.style.boxShadow = '0px 0px 15px black'
+                buttonPause.style.display = 'block'
+                buttonPlay.style.display = 'none'
+                buttonPause.style.background = 'red'
+                buttonPause.style.boxShadow = '0px 0px 25px white'
         }else{
                 musica.pause()
-                buttonMusic.style.background = 'darkslategray'
-                buttonMusic.style.boxShadow = '0px 0px 15px white'
+                buttonPlay.style.display = 'block'
+                buttonPause.style.display = 'none'
+                buttonPlay.style.background = 'darkslategray'
+                buttonPlay.style.boxShadow = '0px 0px 7px white'
         }
 }

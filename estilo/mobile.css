@@ -81,26 +81,44 @@ header > span#burguer{
     color: white;
 }
 
-header > span#music{
+header > span#play{
     position: absolute;
     left: 300px;
     top: 18px;
     display: block;
     margin: auto;
+    padding: 3px;
 
-    font-size: 2.5em;
-    text-shadow: 0px 0px 5px white;
+    font-size: 2.2em;
+    text-shadow: 0px 0px 2px white;
 
     background-image: linear-gradient(to right, darkslategray, gray);
     color: white;
+    border: 3px solid white;
     border-radius: 50%;
-    box-shadow: 0px 0px 5px white;
+}
+
+header > span#pause{
+    position: absolute;
+    left: 300px;
+    top: 18px;
+    display: none;
+    margin: auto;
+    padding: 3px;
+
+    font-size: 2.2em;
+    text-shadow: 0px 0px 2px white;
+
+    background-image: linear-gradient(to right, darkslategray, gray);
+    color: white;
+    border: 3px solid white;
+    border-radius: 50%;
 }
 
 menu {
     display: none;
     margin: auto;
-    background-image: linear-gradient(to top, var(--cor0), rgb(151, 16, 16));
+    background-image: linear-gradient(to top, darkslategray, gray);
     padding: 0px;
 }
 
@@ -114,11 +132,12 @@ menu > div#menu{
 menu > div#menu >  a {
     display: inline-block;
     margin-bottom: 4px;
+    margin-top: 4px;
     width: 130px;
     padding: 10px 5px;
     
     background-color: white;
-    box-shadow: inset 0px 0px 6px darkred;
+    box-shadow: inset 0px 0px 6px black;
     color: black;
 
     font-size: 1em;
@@ -163,7 +182,7 @@ header > nav#versoes{
 
 /*----------------------------------------------PAGINA PRICIPAL--------------------------------------*/
 main {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     padding-top: 0px;
     margin: auto;
     margin-bottom: 30px;
@@ -184,22 +203,6 @@ main  > h1{
     color: darkslategray;
     text-shadow: 0pc 0px 3.5px rgb(255, 255, 255);
 }
-
-main > div#audio{
-    display: block;
-    margin: auto;
-    width: 150px;
-    padding: 10px;
-}
-
-main > div#audio > audio{
-    display: block;
-    margin: auto;
-    width: 100px;
-    height: 20px;
-    padding: 2px;
-}
-
 main > section#paralax{/* bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb */
     background: white center center no-repeat fixed;
     background-size: cover;
@@ -231,11 +234,6 @@ div#caracterSelect > div.team > a > img{
     border-radius: 3px;
 }
 
-/* div#caracterSelect > div.team > a > img:hover{
-    border: 5px solid red;
-    transition: 1s;
-} */
-
 footer{
     display: none;
 }
@@ -249,39 +247,36 @@ main > picture > img.capa{
 }
 
 
-main > nav#personagem{
+main > div#abas{
     margin: auto;
+    margin-top: -5px;
     background-image: linear-gradient(to bottom, lightgray, gray);
     box-shadow: 0px 0px 5px rgb(71, 71, 71);
-    padding: 10px 0px;
+    border: 5px solid darkslategray;
 }
 
-main > nav#personagem > div{
-    padding-left: 5px;
-    display: block;
-    width: 350px;
-    margin: auto;
-    
-}
+main > div#abas > p{
+    display: inline-block;
+    padding: 10px 5px;
 
-main > nav#personagem > div > a{
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    text-shadow: 0px 0px 2px black;
-    padding: 10px 5px;
-    font-size: 0.7em;
-    font-family: var(--fonte_titulo);
+    text-shadow: 1px 1px 5px black;
+    font-size: 0.95em;
+    font-family: var(--fonte_poetsen);
+    letter-spacing: -0.5px;
+
     background-color: rgba(255, 255, 255, 0);
     color: white;
 }
 
-main > nav#personagem > div > a:hover{
+/* main > nav#personagem > div > a:hover{
     background-color: darkred;
     padding: 17px 6px 10px 6px;
     color: white;
     border-radius: 5px;
-}
+} */
 
 main > iframe{
     display: block;

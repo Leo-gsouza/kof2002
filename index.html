@@ -19,7 +19,9 @@
     <header>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <h1>KOF 2002</h1>
-        <span id="music" class="material-symbols-outlined" onclick="playMusic(musicaSelect)">play_arrow</span>
+        <span id="play" class="material-symbols-outlined" onclick="playMusic(musicaSelect)">play_arrow</span>
+        <span id="pause" class="material-symbols-outlined" onclick="playMusic(musicaSelect)">pause</span>
+        <audio  src="audio/kof-select.mp3" id="audio-select"  loop ></audio>
     </header>
 
     <menu id="itens">
@@ -33,9 +35,9 @@
 
     <main>
         <h1>Selecione o personagem</h1>
-        <div id="audio">
-            <audio  src="audio/kof-select.mp3" id="audio-select" autoplay loop ></audio>
-        </div>
+        
+            
+        
         <div id="caracterSelect">
             <div id="timekdash" class="team">
                 <a href="#"onclick="efeitoSonoro(kdash, audioKdash)" ><img src="jpeg/k-60.jpg" alt="Kdash" id="kdash"></a>

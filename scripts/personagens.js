@@ -6,8 +6,9 @@ var audioMaxima = document.getElementById('audio-maxima')
 
 
 function efeitoSonoro(personagem, audioPersonagem){
-    personagem.style.border = '5px solid red'
-    personagem.style.scale = '1.1'
+    personagem.style.border = '4px solid #FADF3C'
+    personagem.style.scale = '1.15'
+    personagem.style.boxShadow = '3px 3px 5px rgba(0, 0, 0, 0.329)'
     audioPersonagem.play()
     
 }

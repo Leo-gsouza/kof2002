@@ -1,0 +1,7 @@
+
+
+
+    abaCombates.style.background = 'none'
+    abaCombates.style.boxShadow ='none'
+    abaCombates.style.scale = 'none'
+    conteudoCombates.style.display ='none'
