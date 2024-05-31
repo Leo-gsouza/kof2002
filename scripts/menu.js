@@ -3,6 +3,7 @@ var buttonPause = document.getElementById('pause')
 var musicaSelect = document.getElementById('audio-select')
 var teamKdash = document.getElementById('music-team-kdash')
 
+window.location.reload()
 
 function clickMenu(){
         if (itens.style.display == 'block'){
