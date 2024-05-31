@@ -3,7 +3,11 @@ var buttonPause = document.getElementById('pause')
 var musicaSelect = document.getElementById('audio-select')
 var teamKdash = document.getElementById('music-team-kdash')
 
-window.location.reload()
+window.addEventListener('pageshow', function(event){
+        if (event.persisted){
+                window.location.reload()/* se a pagina foi restaurada do cache de historico, recarregue-a */
+         }
+})
 
 function clickMenu(){
         if (itens.style.display == 'block'){
