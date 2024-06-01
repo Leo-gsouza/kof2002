@@ -7,13 +7,13 @@ var audioMaxima = document.getElementById('audio-maxima')
 
 function efeitoSonoro(personagem, audioPersonagem){
     personagem.style.border = '4px solid #FADF3C'
-    personagem.style.scale = '1.15'
-    personagem.style.boxShadow = '3px 3px 5px rgba(0, 0, 0, 0.329)'
+    personagem.style.scale = '1.1'
+    personagem.style.boxShadow = '3px 3px 7px rgba(0, 0, 0, 0.329)'
     audioPersonagem.play()
     
 }
 
-audioKdash.addEventListener('ended', function(){
+audioKdash.addEventListener('ended', function(){/* Esperar o audio encerrar para abrir a pagina */
     window.location.href = 'paginas/kdash/kdash.html'
 })
 

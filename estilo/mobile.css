@@ -69,7 +69,7 @@ header > h1 {
 
 header > span#burguer{
     position: absolute;
-    left: 5px;
+    left: 3%;
     top: 10px;
 
     display: inline-block;
@@ -83,7 +83,7 @@ header > span#burguer{
 
 header > span#play{
     position: absolute;
-    left: 300px;
+    left: 82%;
     top: 18px;
     display: block;
     margin: auto;
@@ -100,7 +100,7 @@ header > span#play{
 
 header > span#pause{
     position: absolute;
-    left: 300px;
+    left: 82%;
     top: 18px;
     display: none;
     margin: auto;
@@ -247,6 +247,8 @@ main > picture > img.capa{
 }
 
 
+
+
 main > div#abas{
     margin: auto;
     margin-top: -5px;
@@ -315,7 +317,9 @@ main > section.conteudo > p{
 }
 
 main > section > p > a{
-    color: darkred;
+    color: red;
+    font-size: 1.15em;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -329,12 +333,14 @@ main > section > img#golpes{
     display: block;
     margin: auto;
     width: 100vw;
+    transition: transform 0.5s ease;
 }
 
 main > section > div.video-full{
     position: relative;
     padding: 20px;
     padding-bottom: 50%;
+    margin-top: -5px;
 }
 
 main > section > div.video-full > iframe{
@@ -353,6 +359,7 @@ main > section > p#rodape-video{
     font-size: 0.65em;
     margin: auto;
     margin-top: -5px;
+
 }
 
 main > section > p#rodape-video > a{
@@ -362,10 +369,11 @@ main > section > p#rodape-video > a{
 }
 
 main > section > p#rodape-video > a:hover{
-    color: red;
     font-weight: bolder;
-    text-shadow: 0px 0px 10px white;
+    text-shadow: 0px 0px 20px white;
     text-decoration: none;
+
+    color: red;
     
 }
 
