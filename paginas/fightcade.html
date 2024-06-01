@@ -15,23 +15,17 @@
 </head>
 <body>
     <header>
-        <h1>Online</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-        <menu id="itens">
-            <ul>
-                <a href="../index.html"><li>Personagens</li></a>
-                <a href="../paginas/galeria.html"><li>Galeria</li></a>
-                <a href="../paginas/combates.html"><li>Combates</li></a>
-                <a href="../paginas/enquete.html"><li>Enquetes</li></a>
-            </ul>
-        </menu>
-        <nav id="versoes">
-            <a href="../index.html">Personagens</a>
-            <a href="../paginas/galeria.html">Galeria</a>
-            <a href="../paginas/combates.html">Combates</a>
-            <a href="../paginas/enquete.html">Enquetes</a>
-        </nav>
+        <h1>Online</h1>
     </header>
+
+    <menu id="itens">
+        <div id="menu">
+            <a href="../index.html">Menu</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="combates.html">Combates</a>
+        </div>
+    </menu>
     <main>
         <picture>
             <source media="(max-width: 768px)" srcset="../jpeg/fightcade-capa-mobile.jpg">
@@ -39,7 +33,7 @@
             <source media="(max-width: 1200px)" srcset="../jpeg/fightcade-capa-desktop.jpg">
             <img class="capa" src="../jpeg/fightcade_capa_grande.jpg" alt="">
         </picture>
-        <section >
+        <section class="conteudo" style="display: block;" >
             <h2>Como jogar online?</h2>
             <p>A melhor maneira de jogar jogos retro online é com o <a href="https://www.fightcade.com/" target="_blank">FIGHTCADE</a>, um aplicativo de matchmaking para jogar jogos retrô online, que vem com diferentes emuladores para um jogo online perfeito.<strong>Gratuito e sem anúncios!</strong></p>
             <p>Fightcade vem com uma implementação personalizada de GGPO e outras melhorias de emulador, tornando-o a melhor plataforma para netplay P2P baseado em rollback. Isto significa que jogos exigentes em termos de atraso de entrada e capacidade de resposta podem ser jogados na Internet com muito pouco atraso perceptível.</p>

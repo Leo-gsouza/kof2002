@@ -15,23 +15,17 @@
 </head>
 <body>
     <header>
-        <h1>Galeria</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-        <menu id="itens">
-            <ul>
-                <a href="../index.html"><li>Personagens</li></a>
-                <a href="../paginas/fightcade.html"><li>Jogue Online</li></a>
-                <a href="../paginas/combates.html"><li>Combates</li></a>
-                <a href="../paginas/enquete.html"><li>Enquetes</li></a>
-            </ul>
-        </menu>
-        <nav id="versoes">
-            <a href="../index.html">Personagens</a>
-            <a href="../paginas/fightcade.html">Jogue Online</a>
-            <a href="../paginas/combates.html">Combates</a>
-            <a href="../paginas/enquete.html">Enquetes</a>
-        </nav>
+        <h1>Galeria</h1>
     </header>
+
+    <menu id="itens">
+        <div id="menu">
+            <a href="../index.html">Menu</a>
+            <a href="galeria.html">Jogue Online</a>
+            <a href="combates.html">Combates</a>
+        </div>
+    </menu>
     <main>
         <picture>
             <source media="(max-width: 768px)" srcset="../jpeg/galeria-capa-mobile.jpg">
@@ -39,33 +33,30 @@
             <source media="(max-width: 1200px)" srcset="../jpeg/galeria-capa-desktop.jpg">
             <img class="capa" src="../jpeg/galeria_capa_grande.jpg" alt="">
         </picture> 
-        <section>
+        <section class="conteudo" style="display: block;">
             <h2>Times do KOF 2002</h2>
             <div class="galeria">
-                <img src="../jpeg/team-iori.jpg" alt="">
-                <img src="../jpeg/team-k.jpg" alt="">
-                <img src="../jpeg/team-terry.jpg" alt="">
-                <img src="../jpeg/team-kyo.jpg" alt="">
-                <img src="../jpeg/team-yashiro.jpg" alt="">
-                <img src="../jpeg/team-kula.jpg" alt="">
-                <img src="../jpeg/team-seth.jpg" alt="">
-                <img src="../jpeg/team-takuma.jpg" alt="">
-                <img src="../jpeg/team-yamazaki.jpg" alt="">
-                <img src="../jpeg/team-leona.jpg" alt="">
-                <img src="../jpeg/team-athena.jpg" alt="">
-                <img src="../jpeg/team-kim.jpg" alt="">
-                <img src="../jpeg/team-mai.jpg" alt="">
+                <img src="../jpeg/team-iori.jpg" alt="imagem 1" onclick="ampliarImagem(this)">
+                <img src="../jpeg/team-k.jpg" alt="" onclick="ampliarImagem(this)">
+                <img src="../jpeg/team-terry.jpg" alt="" onclick="ampliarImagem()">
+                <img src="../jpeg/team-kyo.jpg" alt="" onclick="ampliarImagem()">
+                <img src="../jpeg/team-yashiro.jpg" alt="" onclick="ampliarImagem()">
+                <img src="../jpeg/team-kula.jpg" alt="" onclick="ampliarImagem()">
+                <img src="../jpeg/team-seth.jpg" alt="" onclick="ampliarImagem()">
+                <img src="../jpeg/team-takuma.jpg" alt="" onclick="ampliarImagem()">
+                <img src="../jpeg/team-yamazaki.jpg" alt="" onclick="ampliarImagem()">
+                <img src="../jpeg/team-leona.jpg" alt="" onclick="ampliarImagem()">
+                <img src="../jpeg/team-athena.jpg" alt="" onclick="ampliarImagem()">
+                <img src="../jpeg/team-kim.jpg" alt="" onclick="ampliarImagem()">
+                <img src="../jpeg/team-mai.jpg" alt="" onclick="ampliarImagem()">
+            </div>
+
+            <div class="sobreposicao" onclick="fechar()">
+                <img src="" alt="Imagem Ampliada">
             </div>
         </section>  
     </main>
-    <script>
-        function clickMenu(){
-            if (itens.style.display == 'block'){
-                itens.style.display = 'none'
-        }   else{
-                itens.style.display = 'block'
-        }
-    }
-    </script>
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/galeria.js"></script>
 </body>
 </html>
