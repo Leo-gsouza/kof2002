@@ -246,9 +246,6 @@ main > picture > img.capa{
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.39);
 }
 
-
-
-
 main > div#abas{
     margin: auto;
     margin-top: -5px;
@@ -257,7 +254,13 @@ main > div#abas{
     border: 5px solid darkslategray;
 }
 
-main > div#abas > p{
+main > div#abas > div{
+    width: 302px;
+    display: block;
+    margin: auto;
+}
+
+main > div#abas > div > p{
     display: inline-block;
     padding: 10px 5px;
 
@@ -265,7 +268,7 @@ main > div#abas > p{
     text-decoration: none;
     text-transform: uppercase;
     text-shadow: 1px 1px 5px black;
-    font-size: 0.95em;
+    font-size: 0.8em;
     font-family: var(--fonte_poetsen);
     letter-spacing: -0.5px;
 

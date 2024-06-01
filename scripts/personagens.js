@@ -1,8 +1,10 @@
 
 var kdash = document.getElementById('kdash')
 var maxima = document.getElementById('maxima')
+var whip = document.getElementById('whip')
 var audioKdash = document.getElementById('audio-kdash')
 var audioMaxima = document.getElementById('audio-maxima')
+var audioWhip = document.getElementById('audio-whip')
 
 
 function efeitoSonoro(personagem, audioPersonagem){
@@ -19,6 +21,10 @@ audioKdash.addEventListener('ended', function(){/* Esperar o audio encerrar para
 
 audioMaxima.addEventListener('ended', function(){
     window.location.href = 'paginas/maxima/maxima.html'
+})
+
+audioWhip.addEventListener('ended', function(){
+    window.location.href = 'paginas/whip/whip.html'
 })
     
 
