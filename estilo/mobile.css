@@ -3,6 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
 
 @font-face {
     font-family: 'kof';
@@ -26,6 +27,7 @@
     --fonte_destaque: 'kof', 'cursive';
     --fonte_titulo: 'grand', 'cursive';
     --fonte_poetsen: 'Poetsen One';
+    --fonte_russo: "Russo One";
 }
 
 *{
@@ -44,75 +46,62 @@ html, body {
 
 /*-----------------------------------------HEADER--------------------------------------------*/
 header {
-    position: relative;
-    width: 100vw;
-    height: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
     background-image: linear-gradient(to top, var(--cor0), rgb(151, 16, 16));
     text-align: center;
     color: white;
 }
 
 header > h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-    display: inline-block;
-    width: 200px;
-
     font-family: var(--fonte_destaque);
     font-variant: small-caps;
     font-size: 1.6em;
+
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.404);
 }
 
 header > span#burguer{
-    position: absolute;
-    left: 3%;
-    top: 10px;
-
-    display: inline-block;
-    padding: 8px;
-
     font-size: 2.8em;
-    text-shadow: 0px 0px 10px darkred;
 
+    text-shadow: 0px 0px 10px darkred;
     color: white;
 }
 
 header > span#play{
-    position: absolute;
-    left: 82%;
-    top: 18px;
-    display: block;
-    margin: auto;
-    padding: 3px;
-
+    width: 35px;
+   
     font-size: 2.2em;
     text-shadow: 0px 0px 2px white;
 
-    background-image: linear-gradient(to right, darkslategray, gray);
     color: white;
-    border: 3px solid white;
-    border-radius: 50%;
+   
 }
 
 header > span#pause{
-    position: absolute;
-    left: 82%;
-    top: 18px;
+    width: 35px;
     display: none;
-    margin: auto;
-    padding: 3px;
-
+   
     font-size: 2.2em;
-    text-shadow: 0px 0px 2px white;
 
-    background-image: linear-gradient(to right, darkslategray, gray);
     color: white;
-    border: 3px solid white;
-    border-radius: 50%;
+
+    animation: pause 1s alternate infinite;
+}
+
+@keyframes pause{
+    0%{
+        scale: 1;
+    }
+
+    100%{
+        scale: 1.1;
+        text-shadow: 0px 0px 15px white;
+    }
 }
 
 menu {
@@ -123,115 +112,77 @@ menu {
 }
 
 menu > div#menu{
-    display: block;
-    margin: auto;
-    width: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
 }
 
 
 menu > div#menu >  a {
-    display: inline-block;
-    margin-bottom: 4px;
-    margin-top: 4px;
-    width: 130px;
-    padding: 10px 5px;
+    padding: 8px;
+    flex: auto;
     
     background-color: white;
-    box-shadow: inset 0px 0px 6px black;
+    box-shadow:  0px 0px 6px black;
     color: black;
 
     font-size: 1em;
     text-decoration: none;
     text-align: center;
-    text-shadow: 0px 0px 20px white;
+
     font-family: var(--fonte_padrao);
     text-transform: uppercase;
 }
 
 menu > div#menu > a:hover{
-    background-image: linear-gradient(to right, red, red);
+    background-color: red;
     color: white;
     transition-duration: 1s;
 }
-/* =============================================================================================================================== Configurações gerais para outros dispositivos ==================================
-===================================================================================================== */
-header > nav#versoes{
-    width: 98vw;
-    background-image:linear-gradient(to right, rgb(228, 228, 228), rgb(255, 255, 255));
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.438);
-    margin: auto;
-}
-
-header > nav#versoes > a{
-    color: black;
-    font-family: var(--fonte_titulo);
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-header >nav#versoes >a:hover{
-    color: white;
-    background-color: rgb(165, 28, 28);
-    box-shadow: 0px 0px 8px darkred;
-    transition: 0.5s;
-}
-
-header > nav#versoes{
-    display: none;
-}
 
 /*----------------------------------------------PAGINA PRICIPAL--------------------------------------*/
-main {
-    background-color: white;
-    padding-top: 0px;
+
+section {
+    max-width: 500px;
+    min-width: 300px;
     margin: auto;
     margin-bottom: 30px;
+    padding-top: 0px;
+
     box-shadow: 0px 0px 30px rgb(165, 165, 165);
     border-radius: 0px 0px 10px 10px;
 }
 
-main  > h1{
+
+section  > h1{
     padding: 10px;
     padding-top: 45px;
 
-    font-family: var(--fonte_poetsen);
-    font-size: 1.3em;
+    font-family: var(--fonte_russo);
+    font-size: 1.1em;
+    font-weight: normal;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: -0.5px;
 
-    color: darkslategray;
-    text-shadow: 0pc 0px 3.5px rgb(255, 255, 255);
-}
-main > section#paralax{/* bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb */
-    background: white center center no-repeat fixed;
-    background-size: cover;
-}
+    color: black;
 
-main >  div#caracterSelect{
-    display: block;
-    background: white fixed;
-    background-size: cover;
-    width: 270px;
-    margin: auto;
-    padding: 20px 25px;
-    background-color: white;
-}
 
-main >  div#caracterSelect > div.team{
-    display: block;
-    width: 283px;
-    margin: auto;
-    margin-bottom: 4px;
 }
+section >  div#caracterSelect{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
 
-div#caracterSelect > div.team > a > img{
-    display: inline-block;
-    width: 75px;
-    margin: 0px 2.5px;
+
+}
+div#caracterSelect > div.team > img{
+    width: 90px;
 
     border: 5px solid white;
-    border-radius: 3px;
+    border-radius: 8px;
+    box-sizing: border-box;
 }
 
 footer{
@@ -240,13 +191,13 @@ footer{
 
 /*-------------------------------------------PAGINA PERSONAGEM--------------------------------------*/
 
-main > picture > img.capa{
+section > picture > img.capa{
     width: 100vw;
     margin: auto;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.39);
 }
 
-main > div#abas{
+section > div#abas{
     margin: auto;
     margin-top: -5px;
     background-image: linear-gradient(to bottom, lightgray, gray);
@@ -254,13 +205,13 @@ main > div#abas{
     border: 5px solid darkslategray;
 }
 
-main > div#abas > div{
+section > div#abas > div{
     width: 302px;
     display: block;
     margin: auto;
 }
 
-main > div#abas > div > p{
+section > div#abas > div > p{
     display: inline-block;
     padding: 10px 5px;
 
@@ -289,14 +240,14 @@ p#aba-um{
     display: block;
 }
 
-main > section.conteudo{
+section > section.conteudo{
     display: none;
 }
 
 /*---------------------------------------------HISTORIA-----------------------------------------*/
 
 
-main > section.conteudo > h2{
+section > section.conteudo > h2{
     padding: 10px;
     
     text-align: center;
@@ -307,7 +258,7 @@ main > section.conteudo > h2{
     color: darkred;
 }
 
-main > section.conteudo > p{
+section > section.conteudo > p{
     padding: 10px 30px;
     padding-bottom: 20px;
 
@@ -319,34 +270,34 @@ main > section.conteudo > p{
     color: black;
 }
 
-main > section > p > a{
+section > section > p > a{
     color: red;
     font-size: 1.15em;
     font-weight: bold;
     text-decoration: none;
 }
 
-main > section > p > a:hover{
+section > section > p > a:hover{
     color: red;
     font-weight: bolder;
 }
 
 /*---------------------------------------------GOLPES-----------------------------------------*/
-main > section > img#golpes{
+section > section > img#golpes{
     display: block;
     margin: auto;
     width: 100vw;
     transition: transform 0.5s ease;
 }
 
-main > section > div.video-full{
+section > section > div.video-full{
     position: relative;
     padding: 20px;
     padding-bottom: 50%;
     margin-top: -5px;
 }
 
-main > section > div.video-full > iframe{
+section > section > div.video-full > iframe{
     position: absolute;
     top: 5%;
     left: 5%;
@@ -354,7 +305,7 @@ main > section > div.video-full > iframe{
     height: 90%;
 }
 
-main > section > p#rodape-video{
+section > section > p#rodape-video{
     text-shadow: 0px 2px 10px white;
     text-align: center;
     color: black;
@@ -365,13 +316,13 @@ main > section > p#rodape-video{
 
 }
 
-main > section > p#rodape-video > a{
+section > section > p#rodape-video > a{
     color: darkred;
     text-decoration: none;
     
 }
 
-main > section > p#rodape-video > a:hover{
+section > section > p#rodape-video > a:hover{
     font-weight: bolder;
     text-shadow: 0px 0px 20px white;
     text-decoration: none;
@@ -382,7 +333,7 @@ main > section > p#rodape-video > a:hover{
 
 /*-------------------------------------------COMBATES----------------------------------------------*/
 
-main > section > p.titulo-video{
+section > section > p.titulo-video{
     text-align: center;
     color: black;
     text-shadow: 0px 2px 2px white;
@@ -392,12 +343,12 @@ main > section > p.titulo-video{
     margin-bottom: -10px;
 }
 
-main > section > p.titulo-video > a{
+section > section > p.titulo-video > a{
     color: darkred;
     text-decoration: none;
 }
 
-main > section > p.titulo-video > a:hover{
+section > section > p.titulo-video > a:hover{
     color: red;
     text-shadow: 0px 0px 10px white;
     text-decoration: none;
@@ -405,7 +356,7 @@ main > section > p.titulo-video > a:hover{
 
 /*-----------------------------------------CURIOSIDADE---------------------------------------------*/
 
-main > section > table#pessoal{
+section > section > table#pessoal{
     width: 300px;
     margin: auto;
     border-collapse: collapse;
@@ -414,7 +365,7 @@ main > section > table#pessoal{
 
 }
 
-main > section > table#pessoal > thead >tr >th{
+section > section > table#pessoal > thead >tr >th{
     background-color: darkslategray;
     color: white;
     padding: 5px;
@@ -423,12 +374,12 @@ main > section > table#pessoal > thead >tr >th{
     font-size: 1.2em;
 }
 
-main > section > table#pessoal > tbody > tr {
+section > section > table#pessoal > tbody > tr {
     padding: 8px 5px;
     font-size: 0.7em;
 }
 
-main > section > table#pessoal > tbody > tr > td{
+section > section > table#pessoal > tbody > tr > td{
     padding: 8px 4px;
 }
 
@@ -513,18 +464,18 @@ div.relacao > div.texto> p{
 
 
 /*-------------------------------------------FIGHTCADE---------------------------------------*/
-main > section >  img{
+section > section >  img{
     width: 100vw;
 }
 /*-------------------------------------------GALERIA---------------------------------------*/
-main > section.conteudo > div.galeria{
+section > section.conteudo > div.galeria{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
 }
 
-main > section > div.galeria > img{
+section > section > div.galeria > img{
     width: 100px;
     padding-bottom: 5px;
     object-fit: cover;
@@ -554,12 +505,12 @@ div.sobreposicao.active{
 }
 
 /*-------------------------------------------ENQUETES---------------------------------------*/
-main > section > form{
+section > section > form{
     margin: auto;
     width: 300px;
 }
 
-main > section > form > h2{
+section > section > form > h2{
     font-size: 0.9em;
     color: darkred;
     padding: 20px;
@@ -568,11 +519,11 @@ main > section > form > h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-main > section > form > label{
+section > section > form > label{
     padding-left: 10px;
 }
 
-main > section > form > input{
+section > section > form > input{
     width: 140px;
     padding: 5px;
     margin-bottom: 5px;
@@ -580,25 +531,25 @@ main > section > form > input{
     text-align: center;
 }
 
-main > section > form > div#radio label{
+section > section > form > div#radio label{
     font-weight: bolder;
     font-size: 0.9em;
 }
 
-main > section > form > div#radio input{
+section > section > form > div#radio input{
     margin-bottom: 8px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.37);
     text-align: center;
     margin-left: 10px;
 }
 
-main > section > form > div#submit{
+section > section > form > div#submit{
     width: 130px;
     margin: auto;
     margin-top: 15px;
 }
 
-main > section > form > div#submit > input{
+section > section > form > div#submit > input{
     width: 60px;
     padding: 5px;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.26);

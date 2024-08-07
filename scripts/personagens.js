@@ -1,10 +1,6 @@
-
-var kdash = document.getElementById('kdash')
-var maxima = document.getElementById('maxima')
-var whip = document.getElementById('whip')
-var audioKdash = document.getElementById('audio-kdash')
-var audioMaxima = document.getElementById('audio-maxima')
-var audioWhip = document.getElementById('audio-whip')
+var kdashAud = document.getElementById('audiokdash') 
+var maximaAud = document.getElementById('audiomaxima')
+var whipAud = document.getElementById('audiowhip')
 
 
 function efeitoSonoro(personagem, audioPersonagem){
@@ -14,18 +10,19 @@ function efeitoSonoro(personagem, audioPersonagem){
     audioPersonagem.play()
     
 }
-
-audioKdash.addEventListener('ended', function(){/* Esperar o audio encerrar para abrir a pagina */
+/* Esperar o audio encerrar para abrir a pagina */
+kdashAud.addEventListener('ended', function(){
     window.location.href = 'paginas/kdash/kdash.html'
 })
 
-audioMaxima.addEventListener('ended', function(){
+maximaAud.addEventListener('ended', function(){
     window.location.href = 'paginas/maxima/maxima.html'
 })
 
-audioWhip.addEventListener('ended', function(){
+whipAud.addEventListener('ended', function(){
     window.location.href = 'paginas/whip/whip.html'
-})
+}) 
+
     
 
 
