@@ -2,6 +2,9 @@
 function aba( botao, conteudo, desativados, fechadas){
     if (conteudo.style.display == 'block'){
         conteudo.style.display = 'none'
+        botao.style.background = '#B2BEBF'
+        botao.style.scale = '1'
+
     }else{
         conteudo.style.display = 'block'
         botao.style.background = 'darkred'

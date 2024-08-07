@@ -143,16 +143,7 @@ menu > div#menu > a:hover{
 
 /*----------------------------------------------PAGINA PRICIPAL--------------------------------------*/
 
-section {
-    max-width: 500px;
-    min-width: 300px;
-    margin: auto;
-    margin-bottom: 30px;
-    padding-top: 0px;
 
-    box-shadow: 0px 0px 30px rgb(165, 165, 165);
-    border-radius: 0px 0px 10px 10px;
-}
 
 
 section  > h1{
@@ -189,12 +180,7 @@ section >  div#caracterSelect{
 }
 
 div#caracterSelect > div.team{
-    padding: 10px;
-    margin-bottom: 7px;
-
-    background-color: #ebeaea;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
-    border: 2px solid white;
+    padding: 3px;
 }
 
 div#caracterSelect > div.team > img{
@@ -251,25 +237,38 @@ section.conteudo{
     display: none;
 }
 
+#c1{
+    display: block;
+}
+
+#b1{
+    background-color: darkred;
+    scale: 1.1;
+}
+
 /*---------------------------------------------HISTORIA-----------------------------------------*/
 
-
+section.conteudo{
+    background-color: white;
+    box-shadow:  0px 0px 10px darkslategray;
+}
 section.conteudo > h2{
     padding: 10px;
     
     text-align: center;
-    font-style: italic;
-    font-family: var(--fonte_padrao);
+    font-weight: normal;
+    font-family: var(--fonte_russo);
     font-size: 1.3em;  
 
     color: darkred;
+    text-shadow: 8px 8px 3px rgba(0, 0, 0, 0.137);
 }
 
 section.conteudo > p{
     padding: 10px 30px;
-    padding-bottom: 20px;
 
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fonte_padrao);
+    font-weight: normal;
     text-align: justify;
     font-size: 1.1em;
     text-indent: 20px;
@@ -277,16 +276,9 @@ section.conteudo > p{
     color: black;
 }
 
-section > p > a{
-    color: red;
-    font-size: 1.15em;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-section > p > a:hover{
-    color: red;
-    font-weight: bolder;
+strong{
+    color: darkred;
+    font-weight: normal;
 }
 
 /*---------------------------------------------GOLPES-----------------------------------------*/
@@ -317,7 +309,7 @@ section > p#rodape-video{
     text-align: center;
     color: black;
     text-transform: uppercase;
-    font-size: 0.65em;
+    font-size: 0.8em;
     margin: auto;
     margin-top: -5px;
 
@@ -364,19 +356,17 @@ section > p.titulo-video > a:hover{
 /*-----------------------------------------CURIOSIDADE---------------------------------------------*/
 
 section > table#pessoal{
-    width: 300px;
+    width: 310px;
     margin: auto;
     border-collapse: collapse;
-    border: 2px solid darkslategray;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
 
 }
 
 section > table#pessoal > thead >tr >th{
-    background-color: darkslategray;
+    background-color: darkred;
     color: white;
     padding: 5px;
-    border: 1px solid black;
     font-family: var(--fonte_padrao);
     font-size: 1.2em;
 }
@@ -387,67 +377,60 @@ section > table#pessoal > tbody > tr {
 }
 
 section > table#pessoal > tbody > tr > td{
-    padding: 8px 4px;
+    padding: 10px;
 }
 
 section.conteudo > div.relacao{
-    position: relative;
-    display: block;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: end;
     margin: auto;
     width: 300px;
-    height: 250px;
 
-    margin-bottom: 20px;
-    margin-left: 40px;
-
-
+    margin-bottom: 10px;
     background-color: white;
 }
 
 div.relacao > div.imagem{
-    position: absolute;
-    top: 2px;
-    left: -25px;
-    width: 120px;
-    height: 120px;
-    background-color: darkslategray;
+    width: 110px;
+
+    animation: imgup 1s alternate infinite;
     overflow: hidden;
 
-    border-radius: 50%;
-    border: 7px double darkslategray;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+}
 
+@keyframes imgup{
+    0%{
+        scale: 1.05;
+    }
+    100%{
+        scale: 1.07;
+    }
 }
 
 div.relacao > div.imagem > img{
-    width: 120px;
+    width: 110px;
 }
 
-div.relacao > h1{
-    position: absolute;
-    left: 115px;
-    top: 20px;
-    padding: 10px;
+div.relacao > div.nome{
+    width: 140px;
 
     text-align: center;
     font-family: var(--fonte_poetsen);
-    font-size: 2.3em;
+    font-size: 2.5em;
 
     color: darkslategray;
     text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.11);
 }
 
 div.relacao > div.texto{
-    position: absolute;
-    top: 100px;
-    left: 30px;
-    width: 250px;
-    height: 140px;
+    width: 300px;
     padding-bottom: 10px;
     
     border-radius: 10px ;
-    background-color: darkslategray;
-    overflow: scroll;
+    background-color: white;
+    border: 2px solid darkred;
 
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.37);
 }
@@ -458,7 +441,7 @@ div.relacao > div.texto> p{
     text-align: justify;
     font-family: var(--fonte_padrao);
 
-    color: white;   
+    color: black;   
 }
 
 ::-webkit-scrollbar{
