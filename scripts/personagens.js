@@ -4,8 +4,9 @@ var whipAud = document.getElementById('audiowhip')
 
 
 function efeitoSonoro(personagem, audioPersonagem){
-    personagem.style.border = '4px solid #FADF3C'
+    personagem.style.border = '5px solid #FADF3C'
     personagem.style.scale = '1.1'
+    personagem.style.filter = 'brightness(1.05)';
     personagem.style.boxShadow = '3px 3px 7px rgba(0, 0, 0, 0.329)'
     audioPersonagem.play()
     

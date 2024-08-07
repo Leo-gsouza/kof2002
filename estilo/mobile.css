@@ -167,8 +167,18 @@ section  > h1{
 
     color: black;
 
-
+    animation: select 1.2s infinite alternate;
 }
+
+@keyframes select{
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.05;
+    }
+}
+
 section >  div#caracterSelect{
     display: flex;
     flex-flow: row wrap;
@@ -177,6 +187,16 @@ section >  div#caracterSelect{
 
 
 }
+
+div#caracterSelect > div.team{
+    padding: 10px;
+    margin-bottom: 7px;
+
+    background-color: #ebeaea;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+    border: 2px solid white;
+}
+
 div#caracterSelect > div.team > img{
     width: 90px;
 
@@ -191,63 +211,50 @@ footer{
 
 /*-------------------------------------------PAGINA PERSONAGEM--------------------------------------*/
 
-section > picture > img.capa{
-    width: 100vw;
-    margin: auto;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.39);
+div.capa{
+    width: 300px;
+    display: flex;
+    flex-flow: row nowrap ;
+    justify-content: space-between;
+}
+
+div.capa >  img{
+    width: 180px;
+}
+
+div.capa > img.gif{
+    filter: brightness(1.2);
 }
 
 section > div#abas{
-    margin: auto;
-    margin-top: -5px;
-    background-image: linear-gradient(to bottom, lightgray, gray);
-    box-shadow: 0px 0px 5px rgb(71, 71, 71);
-    border: 5px solid darkslategray;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: #B2BEBF;
 }
 
-section > div#abas > div{
-    width: 302px;
-    display: block;
-    margin: auto;
-}
-
-section > div#abas > div > p{
+section > div#abas >  p{
     display: inline-block;
-    padding: 10px 5px;
+    padding: 7px 10px;
 
     text-align: center;
-    text-decoration: none;
     text-transform: uppercase;
     text-shadow: 1px 1px 5px black;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-family: var(--fonte_poetsen);
     letter-spacing: -0.5px;
 
-   
     color: white;
 }
 
-p#aba-um{
-    background-color: darkred;
-    scale: 1.1;
-    box-shadow: 0px 0px 10px white;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: 1px solid white;
-}
-
-#conteudo-um{
-    display: block;
-}
-
-section > section.conteudo{
+section.conteudo{
     display: none;
 }
 
 /*---------------------------------------------HISTORIA-----------------------------------------*/
 
 
-section > section.conteudo > h2{
+section.conteudo > h2{
     padding: 10px;
     
     text-align: center;
@@ -258,7 +265,7 @@ section > section.conteudo > h2{
     color: darkred;
 }
 
-section > section.conteudo > p{
+section.conteudo > p{
     padding: 10px 30px;
     padding-bottom: 20px;
 
@@ -270,34 +277,34 @@ section > section.conteudo > p{
     color: black;
 }
 
-section > section > p > a{
+section > p > a{
     color: red;
     font-size: 1.15em;
     font-weight: bold;
     text-decoration: none;
 }
 
-section > section > p > a:hover{
+section > p > a:hover{
     color: red;
     font-weight: bolder;
 }
 
 /*---------------------------------------------GOLPES-----------------------------------------*/
-section > section > img#golpes{
+section > img#golpes{
     display: block;
     margin: auto;
     width: 100vw;
     transition: transform 0.5s ease;
 }
 
-section > section > div.video-full{
+section > div.video-full{
     position: relative;
     padding: 20px;
     padding-bottom: 50%;
     margin-top: -5px;
 }
 
-section > section > div.video-full > iframe{
+section > div.video-full > iframe{
     position: absolute;
     top: 5%;
     left: 5%;
@@ -305,7 +312,7 @@ section > section > div.video-full > iframe{
     height: 90%;
 }
 
-section > section > p#rodape-video{
+section > p#rodape-video{
     text-shadow: 0px 2px 10px white;
     text-align: center;
     color: black;
@@ -316,13 +323,13 @@ section > section > p#rodape-video{
 
 }
 
-section > section > p#rodape-video > a{
+section > p#rodape-video > a{
     color: darkred;
     text-decoration: none;
     
 }
 
-section > section > p#rodape-video > a:hover{
+section > p#rodape-video > a:hover{
     font-weight: bolder;
     text-shadow: 0px 0px 20px white;
     text-decoration: none;
@@ -333,7 +340,7 @@ section > section > p#rodape-video > a:hover{
 
 /*-------------------------------------------COMBATES----------------------------------------------*/
 
-section > section > p.titulo-video{
+section > p.titulo-video{
     text-align: center;
     color: black;
     text-shadow: 0px 2px 2px white;
@@ -343,12 +350,12 @@ section > section > p.titulo-video{
     margin-bottom: -10px;
 }
 
-section > section > p.titulo-video > a{
+section > p.titulo-video > a{
     color: darkred;
     text-decoration: none;
 }
 
-section > section > p.titulo-video > a:hover{
+section > p.titulo-video > a:hover{
     color: red;
     text-shadow: 0px 0px 10px white;
     text-decoration: none;
@@ -356,7 +363,7 @@ section > section > p.titulo-video > a:hover{
 
 /*-----------------------------------------CURIOSIDADE---------------------------------------------*/
 
-section > section > table#pessoal{
+section > table#pessoal{
     width: 300px;
     margin: auto;
     border-collapse: collapse;
@@ -365,7 +372,7 @@ section > section > table#pessoal{
 
 }
 
-section > section > table#pessoal > thead >tr >th{
+section > table#pessoal > thead >tr >th{
     background-color: darkslategray;
     color: white;
     padding: 5px;
@@ -374,12 +381,12 @@ section > section > table#pessoal > thead >tr >th{
     font-size: 1.2em;
 }
 
-section > section > table#pessoal > tbody > tr {
+section > table#pessoal > tbody > tr {
     padding: 8px 5px;
     font-size: 0.7em;
 }
 
-section > section > table#pessoal > tbody > tr > td{
+section > table#pessoal > tbody > tr > td{
     padding: 8px 4px;
 }
 

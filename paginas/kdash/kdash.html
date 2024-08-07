@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../icon/icone.svg" type="image/x-icon">
     <link rel="stylesheet" href="../../estilo/mobile.css">
-    <link rel="stylesheet" href="../../estilo/tablet.css" media="screen and (min-width: 768px) and (max-width: 992px)">
-    <link rel="stylesheet" href="../../estilo/desktop.css" media="screen and (min-width: 992px) and (max-width: 1200px)">
     <link rel="stylesheet" href="../../estilo/grandes-telas.css"  media="screen and (min-width: 1200px )">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Golpes K'Dash</title>
@@ -32,30 +30,20 @@
     </menu>
 
     <main>
-        <picture>
-            <source media="(max-width:768px )" srcset="../../jpeg/k_capa_mobile.jpg">
-            <source media="(max-width:992px)" srcset="../../jpeg/k_capa_tablet.jpg">
-            <source media="(max-width:1200px )" srcset="../../jpeg/k_capa_desktop.jpg">
-            <img class="capa" src="../../jpeg/k_capa_grande.jpg" alt=""> 
-        </picture>
-        
-        <!-- <div id="abas"> 
-            <p id="aba-um" onclick="historia()">Historia</p>
-            <p id="aba-dois" onclick="golpes()">Golpes</p>
-            <p id="aba-tres" onclick="combates()">Combates</p>
-            <p id="aba-quatro" onclick="curiosidades()">Curiosidades</p>
-        </div> --> <!-- SCRIPT MAIOR / TOTAL = 102 LINHAS / SEM PARAENTROS -->
-
-        <div id="abas"> 
-            <div>
-                <p id="aba-um" onclick="aba(h, ch, g, cg, d, cd, c, cc)" >Historia</p>
-                <p id="aba-dois" onclick="aba(g, cg, h, ch, d, cd, c, cc )">Golpes</p>
-                <p id="aba-tres" onclick="aba(d, cd, h, ch, g, cg, c, cc)">Combates</p>
-                <p id="aba-quatro" onclick="aba(c, cc, h, ch, d, cd, g, cg)">Curiosidades</p>
+        <section>
+            <div class="capa">
+                <img src="../../jpeg/k3.jpg" alt="kdash">
+                <img src="../../gif/k3.gif" alt="" class="gif">
             </div>
-        </div>  <!-- SCRIPT MENOR / TOTAL 33 LINHAS / COM 8 PARAMETROS-->
+            <div id="abas">
+                <p id="b1" onclick="aba(this,c1,[b2,b3,b4],[c2,c3,c4])" >Historia</p>
+                <p id="b2" onclick="aba(this,c2,[b1,b3,b4],[c1,c3,c4])">Golpes</p>
+                <p id="b3" onclick="aba(this,c3,[b2,b1,b4],[c2,c1,c4])">Combates</p>
+                <p id="b4" onclick="aba(this,c4,[b2,b3,b1],[c2,c3,c1])">Curiosidades</p>
+            </div>  
+        </section>
 
-        <section id="conteudo-um" class="conteudo"> <!-- Historia -->
+        <section id="c1" class="conteudo"> <!-- Historia -->
             <h2>Origem</h2>
             <p>K' (nome verdadeiro desconhecido) era uma criança normal que vivia feliz com sua irmã, Seirah. Em 1998, o menino foi obrigado a participar do programa de clonagem Kusanagi. Ele foi infundido com o DNA de Kyo Kusanagi , que lhe deu o poder da pirocinese, bem como um clone baseado em sua aparência chamado Krizalid . Durante o programa, sua memória foi alterada e ele foi levado a acreditar que era o clone de Krizalid . Quaisquer memórias reais de seu passado foram apagadas pela NESTS , esquecidas ou reprimidas. Com suas memórias suprimidas, e agora trabalhando para a NESTS, o menino sem nome passou a ser conhecido como K'; e quem eventualmente se tornaria a queda final da NESTS .</p>
         
@@ -81,20 +69,20 @@
             <p>Antes do décimo quinto torneio , Kula fugiu de K' e Maxima após uma discussão. Poucos dias depois, Whip apareceu para os dois e descobriu que ela havia sido capturada pelos ex-agentes da NESTS Ángel e pelo misterioso Krohnen McDougall , um homem que tinha um rosto novo, porém familiar . A missão de Whip é resgatar Kula e capturar Krohnen, e a melhor maneira de fazer isso é durante The King of Fighters. Embora Maxima tenha concordado imediatamente, K' não quis aderir, acreditando que isso era claramente uma armadilha. No entanto, ele ressalta que o pior pode acontecer com Kula se eles não comparecerem. Maxima e Whip convencem K' a se juntar a eles e pedir desculpas a Kula por ser muito descuidado com ela. </p>
         </section>
      
-        <section id="conteudo-dois" class="conteudo"> <!-- Golpes -->
+        <section id="c2" class="conteudo"> <!-- Golpes -->
             <img id="golpes" src="../../jpeg/k-golpes.jpg" alt="Golpes Kdash">
             <div class="video-full"><iframe width="560" height="315" src="https://www.youtube.com/embed/eA5CGTgHqgU?si=hZLeHzd1ECAlqh8k&amp;start=32" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
             <p id="rodape-video">Este vídeo pertence ao canal <a href="https://www.youtube.com/@KOFdaDepressao" target="_blank"><br>KOF da Depressão</a></p>
         </section> 
 
-        <section id="conteudo-tres" class="conteudo"><!--  Combates -->
+        <section id="c3" class="conteudo"><!--  Combates -->
             <h2>Duelos online</h2>
             <p>Uma maneira muito eficiente de <strong>evoluir</strong> é assistindo combates entre outros jogadores. assistir esses duelos faz com que você use estratégias parecidas e saiba o tempo exato para executar um determinado golpe sem que fique vunerável.</p>
             <p class="titulo-video"><a href="https://www.youtube.com/@KOFdaDepressao">Kof da Depressão</a> jogando com o K'Dash</p>
             <div class="video-full"><iframe width="560" height="315" src="https://www.youtube.com/embed/jKVrTu5Y9JU?si=FgpJ5Fi7Hocppb_K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
         </section>
 
-        <section id="conteudo-quatro" class="conteudo"> <!--  Curiosidades -->
+        <section id="c4" class="conteudo"> <!--  Curiosidades -->
             <h2>K Dash🔥</h2>
             <p>A inspiração para o aparecimento de K' e Maxima pode ser encontrada no jogo de arcade <strong>Psikyo The Fallen Angels</strong>. A ideia de K' usar óculos escuros foi tirada por outro personagem de Fallen Angel. Seu homônimo foi tirado de um personagem clone da light novel Blue Knight Berserga Monogatari, que se passa no mesmo universo da série de anime <strong>Armored Trooper Votoms</strong> . Durante as fases iniciais de desenvolvimento de The King of Fighters '99 , a introdução de K na série pretendia remover os personagens populares Kyo Kusanagi e Iori Yagami do elenco, embora essa ideia tenha sido posteriormente descartada.CAC Yamasaki previu que K' seria popular em seu lançamento, porém essa previsão nunca se tornou realidade. Em uma entrevista ele comenta que K' era "um pouco simples demais"</p>
 
