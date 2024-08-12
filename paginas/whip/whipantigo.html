@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon/icone.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../estilo/mobile.css">
+    <link rel="stylesheet" href="../../estilo/tablet.css" media="screen and (min-width: 768px) and (max-width: 992px)">
+    <link rel="stylesheet" href="../../estilo/desktop.css" media="screen and (min-width: 992px) and (max-width: 1200px)">
+    <link rel="stylesheet" href="../../estilo/grandes-telas.css"  media="screen and (min-width: 1200px )">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Whip</title>
+</head> 
+
+
+<body>
+    <header>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <h1>Whip</h1>
+        <span id="play" class="material-symbols-outlined" onclick="playMusic(teamKdash)">play_arrow</span>
+        <span id="pause" class="material-symbols-outlined" onclick="playMusic(teamKdash)">pause</span>
+        <audio  src="../../audio/team-k.mp3" loop id="music-team-kdash"></audio>
+    </header>
+
+    <menu id="itens">
+        <div id="menu">
+            <a href="../../index.html">Menu</a>
+            <a href="paginas/fightcade.html">Jogue Online</a>
+            <a href="paginas/galeria.html">Galeria</a>
+            <a href="paginas/combates.html">Combates</a>
+        </div>
+    </menu>
+
+    <main>
+        <picture>
+            <source media="(max-width:768px )" srcset="../../jpeg/whip_capa_mobile.jpg">
+            <source media="(max-width:992px)" srcset="../../jpeg/k_capa_tablet.jpg">
+            <source media="(max-width:1200px )" srcset="../../jpeg/k_capa_desktop.jpg">
+            <img class="capa" src="../../jpeg/whip_capa_grande.jpg" alt=""> 
+        </picture>
+        
+        <!-- <div id="abas"> 
+            <p id="aba-um" onclick="historia()">Historia</p>
+            <p id="aba-dois" onclick="golpes()">Golpes</p>
+            <p id="aba-tres" onclick="combates()">Combates</p>
+            <p id="aba-quatro" onclick="curiosidades()">Curiosidades</p>
+        </div> --> <!-- SCRIPT MAIOR / TOTAL = 102 LINHAS / SEM PARAENTROS -->
+
+        <div id="abas"> 
+            <div>
+                <p id="aba-um" onclick="aba(h, ch, g, cg, d, cd, c, cc)" >Historia</p>
+                <p id="aba-dois" onclick="aba(g, cg, h, ch, d, cd, c, cc )">Golpes</p>
+                <p id="aba-tres" onclick="aba(d, cd, h, ch, g, cg, c, cc)">Combates</p>
+                <p id="aba-quatro" onclick="aba(c, cc, h, ch, d, cd, g, cg)">Curiosidades</p>
+            </div>
+        </div>  <!-- SCRIPT MENOR / TOTAL 33 LINHAS / COM 8 PARAMETROS-->
+
+        <section id="conteudo-um" class="conteudo"> <!-- Historia -->
+            <h2>Origem</h2>
+            <p>Whip, cujo nome verdadeiro é Seirah, nasceu em um ambiente tumultuado. Ela foi separada de seu irmão biológico, K', em uma idade jovem. Ambos foram capturados pela organização NESTS, um sindicato do crime que realizava experimentos genéticos e cibernéticos em seres humanos para criar super-soldados. Na NESTS, Seirah foi submetida a uma série de experimentos e treinamento rigoroso que a transformaram em uma assassina altamente eficiente. Ela recebeu o codinome "Whip" e foi equipada com um chicote especial chamado "Voodoo". Durante seu tempo na NESTS, ela acreditava que seu irmão estava morto, o que a deixou profundamente marcada. Eventualmente, Whip conseguiu fugir da NESTS e foi resgatada pelos Ikari Warriors, uma equipe de elite liderada por Heidern, dedicada a combater ameaças globais. Whip se juntou ao grupo com a missão de desmantelar a NESTS e vingar a morte presumida de seu irmão. Como membro dos Ikari Warriors, ela formou fortes laços com outros membros da equipe, incluindo Leona, Ralf, e Clark.</p>
+
+            <h2>KOF 99</h2>
+            <p>Whip faz sua estreia em "The King of Fighters '99" como parte do Ikari Warriors Team. Sua missão principal é investigar a NESTS e ajudar a destruir a organização. Durante este torneio, ela começa a confrontar as operações da NESTS, lideradas por Krizalid.</p>
+
+            <h2>KOF 2000</h2>
+            <p>Whip continua sua luta contra a NESTS, agora investigando novas ameaças e estratégias da organização. A equipe Ikari Warriors enfrenta Zero, um agente rebelde da NESTS, neste torneio.</p>
+
+            <h2>KOF 2001</h2>
+            <p>Em "The King of Fighters 2001", Whip e sua equipe continuam a batalha contra a NESTS. Durante este torneio, Whip descobre que seu irmão K' está vivo e também está lutando contra a NESTS, o que eventualmente leva a uma reunião entre os irmãos.</p>
+
+            <h2>KOF 2002</h2>
+            <p>Neste jogo de sonho (dream match), Whip retorna como personagem jogável, embora o jogo não avance a história oficial. Os jogadores podem explorar suas habilidades em combate.</p>
+
+            <h2>Características e Personalidade</h2>
+            <p>Whip é conhecida por sua seriedade, determinação e lealdade. Sua história de perda e busca por justiça a moldou em uma guerreira disciplinada e focada. Ela utiliza seu chicote "Voodoo" com habilidade e precisão, fazendo dela uma combatente formidável tanto à distância quanto em combate corpo a corpo.</p>
+
+            <h2>Conclusão</h2>
+            <p>A trajetória de Whip em "The King of Fighters" é marcada por sua transformação de uma vítima dos experimentos da NESTS para uma guerreira poderosa e determinada. Sua busca por vingança e justiça, bem como sua reunião com seu irmão K', são temas centrais em sua história. Como membro dos Ikari Warriors, Whip continua a ser uma personagem vital na luta contra o mal, mostrando resiliência e força inabaláveis ao longo da série.</p>
+        </section>
+     
+        <section id="conteudo-dois" class="conteudo"> <!-- Golpes -->
+            <img id="golpes" src="../../jpeg/whip-golpes.jpg" alt="Golpes Kdash">
+            <div class="video-full"><iframe width="560" height="315" src="https://www.youtube.com/embed/Yo-hWtA9DPA?si=ri4ISVhzYlpcIAdd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <p id="rodape-video">Este vídeo pertence ao canal <a href="https://www.youtube.com/channel/UCon5Kc18wi53fdl5W0zjIqQ" target="_blank"><br>Kof da Depressão</a></p>
+        </section> 
+
+        <section id="conteudo-tres" class="conteudo"><!--  Combates -->
+            <h2>Duelos online</h2>
+            <p>Uma maneira muito eficiente de <strong>evoluir</strong> é assistindo combates entre outros jogadores. assistir esses duelos faz com que você use estratégias parecidas e saiba o tempo exato para executar um determinado golpe sem que fique vunerável.</p>
+            <!-- <p class="titulo-video"><a href="https://www.youtube.com/@KOFdaDepressao">Kof da Depressão</a> jogando com o K'Dash</p>
+            <div class="video-full"><iframe width="560" height="315" src="https://www.youtube.com/embed/jKVrTu5Y9JU?si=FgpJ5Fi7Hocppb_K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div> -->
+        </section>
+
+        <section id="conteudo-quatro" class="conteudo"> <!--  Curiosidades -->
+            <h2>Whip </h2>
+            <p>Embora seja difícil determinar uma única inspiração principal para a criação de Whip em "The King of Fighters", é possível destacar certas influências que podem ter contribuído significativamente para o seu design e conceito. Entre essas influências, uma das mais proeminentes é Ivy Valentine da série "Soul Calibur".</p>
+
+            <h2>Informações pessoais:</h2>
+            <table id="pessoal">
+                <thead>
+                    <tr>
+                        <th colspan="2">Whip</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nome Completo</td>
+                        <td>Seirah (também conhecida como Muchiko em algumas versões)</td>
+                    </tr>
+                    <tr>
+                        <td>Data de nascimento</td>
+                        <td>Aproximadamente 20-22 anos (a idade pode variar dependendo da versão do jogo)</td>
+                    </tr>
+                    <tr>
+                        <td>Local de nascimento</td>
+                        <td>Desconhecida</td>
+                    </tr>
+                    <tr>
+                        <td>Altura</td>
+                        <td>1,73</td>
+                    </tr>
+                    <tr>
+                        <td>Peso</td>
+                        <td>59kg</td>
+                    </tr>
+                    <tr>
+                        <td>Comida favorita</td>
+                        <td>Macarraão tailandes</td>
+                    </tr>
+                    <tr>
+                        <td>Arma</td>
+                        <td>Chicote</td>
+                    </tr>
+                    <tr>
+                        <td>Estilo de Luta</td>
+                        <td>técnicas de combate militar e manejo especializado de chicote</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Personagens relacionados:</h2>
+            <p>Os personagens abaixo possuem algum tipo de ligação positiva ou negativa com Maxima e estão presentes no Kof 2002</p>
+
+            <section class="conteudo">
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../../jpeg/k-int.jpg" alt="kdash">
+                    </div>
+                    <h1>Kdash</h1>
+                    <div class="texto">
+                        <p>Apesar de terem sido separados por muitos anos, Whip tem um laço profundo com seu irmão, K'. Quando eles se reencontram, é um momento emocionalmente carregado para ambos. Embora inicialmente tenha acreditado que K' estava morto, Whip está aliviada por vê-lo vivo e determinada a protegê-lo. Eles compartilham uma conexão única como irmãos que enfrentaram desafios semelhantes nas mãos da NESTS.</p>
+                    </div>
+                </div>
+
+                    
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../../jpeg/clark-int.jpg" alt="">
+                    </div>
+                    <h1>Clark</h1>
+                    <div class="texto">
+                        <p> Clark, assim como Ralf, desempenha um papel de figura paternal na vida de Whip. Sua presença tranquila e sua experiência como soldado veterano proporcionam conforto e segurança para Whip, especialmente em momentos de perigo. Ele é um mentor para Whip, oferecendo orientação e conselhos em suas missões. Ele a ajuda a aprimorar suas habilidades de combate e a se adaptar às complexidades do campo de batalha. Além disso, ele se dedica a protegê-la a todo custo, agindo como seu protetor dedicado.</p>
+                    </div>
+                </div>
+
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../../jpeg/ralf-int.jpg" alt="">
+                    </div>
+                    <h1>Ralf</h1>
+                    <div class="texto">
+                        <p>Como membros dos Ikari Warriors, Whip e Ralf compartilham uma profunda camaradagem como colegas de equipe. Eles enfrentam desafios juntos, confiando um no outro em batalha e trabalhando em conjunto para alcançar seus objetivos. Ralf respeita as habilidades de Whip como combatente e confia nela para cumprir sua missão. Da mesma forma, Whip admira a força e a habilidade de Ralf em combate, vendo-o como um aliado valioso e um modelo a seguir.</p>
+                    </div>
+                </div>
+
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../../jpeg/leona-int.jpg" alt="">
+                    </div>
+                    <h1>Leona</h1>
+                    <div class="texto">
+                        <p>Whip compartilha uma forte conexão com Leona, que também teve sua vida afetada pela NESTS. Elas compartilham experiências semelhantes de trauma e perda, e encontram conforto e apoio uma na outra.</p>
+                    </div>
+                </div>
+
+            </section>
+            
+            <p></p>  
+        </section>
+        
+    </main>
+    <script src="../../scripts/menu.js"></script>
+    <script src="../../scripts/paginas2.js"></script> 
+</body>
+</html>

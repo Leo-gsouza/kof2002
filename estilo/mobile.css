@@ -114,17 +114,18 @@ menu {
 menu > div#menu{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 
 
 menu > div#menu >  a {
     padding: 8px;
+    margin: 1px;
     flex: auto;
     
     background-color: white;
-    box-shadow:  0px 0px 6px black;
+   
     color: black;
 
     font-size: 1em;
@@ -197,20 +198,21 @@ footer{
 
 /*-------------------------------------------PAGINA PERSONAGEM--------------------------------------*/
 
-div.capa{
-    width: 300px;
+div.capa{   
     display: flex;
     flex-flow: row nowrap ;
     justify-content: space-between;
+    align-items: center;
 }
 
-div.capa >  img{
-    width: 180px;
+div.capa >  img.imagem{
+   width: 50vw;
+ 
 }
 
 div.capa > img.gif{
-    filter: brightness(1.2);
-}
+   width: 50%;
+} 
 
 section > div#abas{
     display: flex;
@@ -274,6 +276,34 @@ section.conteudo > p{
     text-indent: 20px;
 
     color: black;
+}
+
+section.conteudo > a{
+    display: block;
+    width: 120px;
+    padding: 8px;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    font-family: var(--fonte_russo);
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    background-color: darkred;
+    color: white;
+    border-radius: 5px;
+
+    animation: youtube 1s infinite alternate;
+}
+
+@keyframes youtube{
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.06;
+    }
 }
 
 strong{
@@ -358,6 +388,7 @@ section > p.titulo-video > a:hover{
 section > table#pessoal{
     width: 310px;
     margin: auto;
+    margin-bottom: 40px;
     border-collapse: collapse;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
 
