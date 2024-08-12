@@ -1,6 +1,7 @@
 var kdashAud = document.getElementById('audiokdash') 
 var maximaAud = document.getElementById('audiomaxima')
 var whipAud = document.getElementById('audiowhip')
+var kyoAud =  document.getElementById('audiokyo')
 
 
 function efeitoSonoro(personagem, audioPersonagem){
@@ -23,6 +24,10 @@ maximaAud.addEventListener('ended', function(){
 whipAud.addEventListener('ended', function(){
     window.location.href = 'paginas/whip/whip.html'
 }) 
+
+kyoAud.addEventListener('ended', function(){
+    window.location.href = 'paginas/kyo/kyo.html'
+} )
 
     
 

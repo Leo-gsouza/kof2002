@@ -1,6 +1,5 @@
 var buttonPlay = document.getElementById('play')
 var buttonPause = document.getElementById('pause')
-var teamKdash = document.getElementById('music-team-kdash')
 
 window.addEventListener('pageshow', function(event){
         if (event.persisted){
