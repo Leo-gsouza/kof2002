@@ -201,17 +201,17 @@ footer{
 div.capa{   
     display: flex;
     flex-flow: row nowrap ;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 div.capa >  img.imagem{
-   width: 50vw;
+   width: 45vw;
  
 }
 
 div.capa > img.gif{
-   width: 50%;
+   width: 22%;
 } 
 
 section > div#abas{
