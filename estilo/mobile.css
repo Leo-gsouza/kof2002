@@ -252,7 +252,6 @@ section.conteudo{
 
 section.conteudo{
     background-color: white;
-    box-shadow: inset 0px 0px 5px darkslategray;
 }
 section.conteudo > h2{
     padding: 10px;
@@ -280,26 +279,27 @@ section.conteudo > p{
 
 section.conteudo > a{
     display: block;
-    width: 120px;
-    padding: 8px;
+    
     margin: auto;
     margin-top: 8px;
-    margin-bottom: 8px;
+    padding: 12px 0px;
 
     font-family: var(--fonte_russo);
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-align: center;
     text-decoration: none;
     background-color: darkred;
     color: white;
     border-radius: 5px;
+    box-shadow: 2px 0px 10px darkred;
 
     animation: youtube 1s infinite alternate;
 }
 
 @keyframes youtube{
     0%{
-        scale: 1;
+        scale: 1.03;
+
     }
     100%{
         scale: 1.06;
@@ -380,6 +380,45 @@ section > p.titulo-video > a{
    color: darkred;
     text-decoration: none;
     border-radius: 5px;
+}
+
+section.conteudo > p.descricao{
+    width: 260px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+    font-family: var(--fonte_padrao);
+    font-size: 1em;
+
+    background-color: rgb(240, 239, 239);
+    border: 2px solid gray;
+}
+
+div.botoes{
+    display: flex;
+    flex: row nowrap;
+    justify-content: center;
+}
+
+div.botoes > p.opcao{
+    padding: 8px;
+
+    font-family: var(--fonte_russo);
+    
+    background-color: gray;
+    color: white;
+    border: 1px solid lightgoldenrodyellow;
+    border-radius: 5px;
+    text-shadow: 2px 2px 5px black;
+}
+
+#tex1{
+    display: block;
+}
+
+#op1{
+    background-color: darkred;
 }
 
 /*-----------------------------------------CURIOSIDADE---------------------------------------------*/
