@@ -33,7 +33,7 @@
         <section>
             <div class="capa">
                 <img src="../../jpeg/whip2.jpg" alt="whip" class="imagem">
-                <img src="../../gif/whip0.gif" alt="" class="gif" style="width: 35%;">
+                <img src="../../gif/whip3.gif" alt="" class="gif" >
             </div>
             <div id="abas">
                 <p id="b1" onclick="aba(this,c1,[b2,b3,b4],[c2,c3,c4])" >Historia</p>
@@ -64,29 +64,54 @@
         </section> 
 
         <section id="c3" class="conteudo"><!--  Combates -->
-            <h2>Duelos e dicas</h2>
-            <p>Uma maneira muito eficiente de <strong>evoluir</strong> é assistindo combates entre outros jogadores. assistir esses duelos faz com que você use estratégias parecidas e saiba o tempo exato para executar um determinado golpe sem que fique vunerável.</p>
-            <div class="video-full"><iframe width="560" height="315" src="https://www.youtube.com/embed/0scFSz-vako?si=eeV5scw1AxI3w7ck&amp;start=744" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-            <p id="rodape-video">Este vídeo pertence ao canal <a href="https://www.youtube.com/channel/UCon5Kc18wi53fdl5W0zjIqQ" target="_blank"><br>Kof da Depressão</a></p>
-            <p>O link abaixo direcionará você ao nosso canal, onde encontrará inúmeros combates entre jogadores que utilizam a Whip.</p>
-            <a href="https://www.youtube.com/channel/UChGvAzfQ5QywdY-WRMP1QIw" target="_blank">Youtube</a>
+            <p class="descricao">Nesta pagina temos varias dicas relacionadas ao personagem escolhido, como vídeos de combates entre jogadores, explições detalhadas sobre os pontos positivos e negativos. Clique nos botões para ter acesso as informações desejadas</p>
+            <div class="botoes">
+                <p class="opcao" id="op1" onclick="aba(this, tex1, [op2, op3],  [tex2, tex3])">Vídeos</p>
+                <p class="opcao" id="op2" onclick="aba(this, tex2, [op1, op3],  [tex1, tex3])">Desvantagens</p>
+                <p class="opcao" id="op3" onclick="aba(this, tex3, [op1, op2],  [tex2, tex1])">Vantagens</p>
+            </div>
+            <section class="conteudo" id="tex1">
+                <div class="video-full"><iframe width="560" height="315" src="https://www.youtube.com/embed/0scFSz-vako?si=eeV5scw1AxI3w7ck&amp;start=744" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <p id="rodape-video">Este vídeo pertence ao canal <a href="https://www.youtube.com/channel/UCon5Kc18wi53fdl5W0zjIqQ" target="_blank"><br>Kof da Depressão</a></p>
+                <p>O link abaixo direcionará você ao nosso canal, onde encontrará inúmeros combates entre jogadores que utilizam a Whip.</p>
+                <a href="https://www.youtube.com/channel/UChGvAzfQ5QywdY-WRMP1QIw" target="_blank">Youtube</a>
+            </section>
 
-            <h2>Vunerabilidades de Whip</h2>
-            <p>Em The King of Fighters 2002, Whip tem várias vulnerabilidades que podem ser exploradas por seus oponentes:</p>
+            <section class="conteudo" id="tex2">
+                <h2>Desvantagens</h2>
+                <h3>Mobilidade Limitada</h3>
+                <p>Apesar de sua habilidade com o chicote, Whip pode ter dificuldade em se movimentar rapidamente devido à sua animação de ataque mais lenta. Isso pode torná-la vulnerável a ataques rápidos de oponentes ágeis.</p>
+                <h3>Ataques de Longo Alcance</h3>
+                <p>Embora Whip use um chicote para ataques de longo alcance, alguns dos seus movimentos podem ser facilmente esquivados ou bloqueados se o oponente conseguir manter uma distância segura. Isso pode ser problemático contra adversários com bons ataques de proximidade.</p>
+                <h3>Exposição ao Ataque</h3>
+                <p> Alguns dos ataques de Whip, como o <strong>"Whip’s Chain"</strong> e o <strong>"Whip's Grab"</strong>, podem deixá-la exposta se não forem executados corretamente ou se forem bloqueados pelo oponente. Isso pode levar a contra-ataques, especialmente se ela errar um movimento importante.</p>
+                <h3>Dependência de Comandos Específicos</h3>
+                <p>Whip possui vários movimentos que requerem comandos específicos para executar efetivamente. Se o jogador errar esses comandos ou for interrompido durante a execução, Whip pode se tornar vulnerável a ataques.</p>
+                <h3>Ataques Previsíveis</h3>
+                <p>Alguns dos ataques de Whip podem se tornar previsíveis se o oponente aprender a lidar com suas rotinas de ataque. Isso pode facilitar a defesa e a contra-ofensiva contra ela.</p>
+                <h3>Falta de Defesas Robusta</h3>
+                <p>Whip não tem muitos movimentos defensivos ou maneiras eficazes de se proteger contra ataques pesados. Jogadores que conseguem pressionar e manter a ofensiva podem sobrecarregar Whip, aproveitando sua falta de opções defensivas.</p>
 
-            <p>Mobilidade Limitada: Apesar de sua habilidade com o chicote, Whip pode ter dificuldade em se movimentar rapidamente devido à sua animação de ataque mais lenta. Isso pode torná-la vulnerável a ataques rápidos de oponentes ágeis.</p>
+                <p>Essas vulnerabilidades fazem de Whip uma personagem que exige uma boa leitura do jogo e timing preciso para ser jogada de forma eficaz em KOF 2002. Jogadores que conhecem essas fraquezas podem usar estratégias específicas para explorá-las e ganhar vantagem na partida.</p>
+            </section>
 
-            <p>Ataques de Longo Alcance: Embora Whip use um chicote para ataques de longo alcance, alguns dos seus movimentos podem ser facilmente esquivados ou bloqueados se o oponente conseguir manter uma distância segura. Isso pode ser problemático contra adversários com bons ataques de proximidade.</p>
-
-            <p>Exposição ao Ataque: Alguns dos ataques de Whip, como o "Whip’s Chain" e o "Whip's Grab", podem deixá-la exposta se não forem executados corretamente ou se forem bloqueados pelo oponente. Isso pode levar a contra-ataques, especialmente se ela errar um movimento importante.</p>
-
-            <p>Dependência de Comandos Específicos: Whip possui vários movimentos que requerem comandos específicos para executar efetivamente. Se o jogador errar esses comandos ou for interrompido durante a execução, Whip pode se tornar vulnerável a ataques.</p>
-
-            <p>Ataques Previsíveis: Alguns dos ataques de Whip podem se tornar previsíveis se o oponente aprender a lidar com suas rotinas de ataque. Isso pode facilitar a defesa e a contra-ofensiva contra ela.</p>
-
-            <p>Falta de Defesas Robusta: Whip não tem muitos movimentos defensivos ou maneiras eficazes de se proteger contra ataques pesados. Jogadores que conseguem pressionar e manter a ofensiva podem sobrecarregar Whip, aproveitando sua falta de opções defensivas.</p>
-
-            <p>Essas vulnerabilidades fazem de Whip uma personagem que exige uma boa leitura do jogo e timing preciso para ser jogada de forma eficaz em KOF 2002. Jogadores que conhecem essas fraquezas podem usar estratégias específicas para explorá-las e ganhar vantagem na partida.</p>
+            <section class="conteudo" id="tex3">
+                <h3>1. Alcance Extenso</h3>
+                <p>Whip possui um alcance excepcional graças ao seu chicote, o que permite manter os oponentes à distância. Isso é vantajoso contra personagens que dependem de ataques corpo a corpo.</p>
+                <h3>2. Zoning</h3>
+                <p>Com o seu arsenal de ataques de longa distância, Whip é excelente para zoning (controle de espaço). Ela pode impedir que oponentes se aproximem, controlando o ritmo da partida.</p>
+                <h3>3. Variedade de Ataques</h3>
+                <p>Whip tem uma boa variedade de ataques com seu chicote, incluindo golpes de média e longa distância, ataques anti-aéreos, e movimentos rápidos que surpreendem o oponente.</p>
+                <h3>4. Combo Versátil</h3>
+                <p>Ela possui combos que são relativamente fáceis de executar, mas que causam dano significativo. Além disso, é possível encadear ataques de longa distância em combos para manter a pressão.</p>
+                <h3>5. Boa Defesa</h3>
+                <p>O alcance e a velocidade dos ataques de Whip tornam difícil para os oponentes romperem sua defesa, especialmente aqueles que não têm ataques de longa distância.</p>
+                <h3>6. Movimentos Especiais</h3>
+                <p>Whip tem alguns movimentos especiais únicos, como o "Boomerang Shot", que permite controlar ainda mais o espaço na tela, e o "Sonic Slaughter", que pode ser usado para finalizações poderosas.</p>
+                <h3>7. Versatilidade no Jogo de Pé</h3>
+                <p>Ela se sai bem tanto em ataques aéreos quanto em golpes no chão, o que a torna uma personagem equilibrada para jogadores que gostam de uma abordagem mais estratégica.</p>
+                <p>Essas vantagens tornam Whip uma personagem forte para jogadores que preferem um estilo de jogo baseado em controle de espaço e ataques de longa distância.</p>
+            </section>
     
             
     

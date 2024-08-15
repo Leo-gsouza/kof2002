@@ -201,7 +201,7 @@ footer{
 div.capa{   
     display: flex;
     flex-flow: row nowrap ;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -211,7 +211,7 @@ div.capa >  img.imagem{
 }
 
 div.capa > img.gif{
-   width: 22%;
+   width: 40%;
 } 
 
 section > div#abas{
@@ -264,6 +264,22 @@ section.conteudo > h2{
     color: darkred;
     text-shadow: 8px 8px 3px rgba(0, 0, 0, 0.137);
 }
+
+section.conteudo > h3{
+    padding: 7px;
+    margin-bottom: -10px;
+    margin-top: 10px;
+    
+    text-align: center;
+    font-weight: normal;
+    font-family: var(--fonte_russo);
+    font-size: 1.15em;  
+
+    color: darkred;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.055);
+}
+
+
 
 section.conteudo > p{
     padding: 10px 30px;
