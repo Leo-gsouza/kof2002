@@ -124,9 +124,11 @@ menu > div#menu >  a {
     margin: 1px;
     flex: auto;
     
-    background-color: white;
+    background-image: linear-gradient(to top, rgb(168, 168, 168), lightgray);
    
-    color: black;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    box-shadow: inset 0px 0px 1px white;
 
     font-size: 1em;
     text-decoration: none;
@@ -217,12 +219,12 @@ div.capa > img.gif{
 section > div#abas{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #B2BEBF;
 }
 
 section > div#abas >  p{
-    display: inline-block;
+
     padding: 7px 10px;
 
     text-align: center;

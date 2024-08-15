@@ -24,7 +24,6 @@
         <div id="menu">
             <a href="../../index.html">Menu</a>
             <a href="paginas/fightcade.html">Jogue Online</a>
-            <a href="paginas/galeria.html">Galeria</a>
             <a href="paginas/combates.html">Combates</a>
         </div>
     </menu>
@@ -38,7 +37,7 @@
             <div id="abas">
                 <p id="b1" onclick="aba(this,c1,[b2,b3,b4],[c2,c3,c4])" >Historia</p>
                 <p id="b2" onclick="aba(this,c2,[b1,b3,b4],[c1,c3,c4])">Golpes</p>
-                <p id="b3" onclick="aba(this,c3,[b2,b1,b4],[c2,c1,c4])">Combates</p>
+                <p id="b3" onclick="aba(this,c3,[b2,b1,b4],[c2,c1,c4])">Dicas</p>
                 <p id="b4" onclick="aba(this,c4,[b2,b3,b1],[c2,c3,c1])">Curiosidades</p>
             </div>  
         </section>
@@ -64,32 +63,53 @@
         </section> 
 
         <section id="c3" class="conteudo"><!--  Combates -->
-            <h2>Duelos e dicas</h2>
-            <p>Uma maneira muito eficiente de <strong>evoluir</strong> é assistindo combates entre outros jogadores. assistir esses duelos faz com que você use estratégias parecidas e saiba o tempo exato para executar um determinado golpe sem que fique vunerável.</p>
-            <p>O link abaixo direcionará você ao nosso canal, onde encontrará inúmeros combates entre jogadores que utilizam o Maxima.</p>
-            <a href="https://www.youtube.com/channel/UChGvAzfQ5QywdY-WRMP1QIw">Youtube</a>
+            <p class="descricao">Nesta pagina temos varias dicas relacionadas ao personagem escolhido, como vídeos de combates entre jogadores, explições detalhadas sobre os pontos positivos e negativos. Clique nos botões para ter acesso as informações desejadas</p>
+            <div class="botoes">
+                <p class="opcao" id="op1" onclick="aba(this, tex1, [op2, op3],  [tex2, tex3])">Vídeos</p>
+                <p class="opcao" id="op2" onclick="aba(this, tex2, [op1, op3],  [tex1, tex3])">Desvantagens</p>
+                <p class="opcao" id="op3" onclick="aba(this, tex3, [op1, op2],  [tex2, tex1])">Vantagens</p>
+            </div>
+            <section class="conteudo" id="tex1">
+                <p>O vídeo abaixo é um combate realizado no FIGHTCADE.</p>
+                
 
-            <h2>Vunerabilidades de Maxima</h2>
-            <p>Em The King of Fighters 2002, Maxima possui algumas vulnerabilidades que jogadores podem explorar durante as partidas:</p>
+                <p>Este é apenas um dos muitos vídeos disponíveis em nosso canal no YouTube! Se você gosta de lutas emocionantes, siga-nos e compartilhe nosso conteúdo. No canal, você encontrará diversos combates entre lutadores talentosos e, quem sabe, até um duelo seu. Confira o link para o nosso canal logo abaixo e não perca nenhuma batalha!</p>
+                <a href="https://www.youtube.com/channel/UChGvAzfQ5QywdY-WRMP1QIw" target="_blank">Youtube</a>
+            </section>
 
-            <p>Tamanho e Mobilidade: Maxima é um personagem grande e pesado, o que o torna mais lento em comparação com outros personagens. Sua mobilidade limitada pode ser explorada por oponentes rápidos, que podem atacar e recuar antes que ele tenha tempo de reagir.</p>
+            <section class="conteudo" id="tex2">
+                <h3>Movimentação Lenta</h3>
+                <p>Maxima é um dos personagens mais lentos do jogo. Sua velocidade reduzida tanto no chão quanto no ar o torna vulnerável a personagens mais rápidos que podem facilmente contorná-lo e puni-lo.</p>
+                <h3>Previsibilidade</h3>
+                <p>Muitos dos ataques de Maxima são lentos e previsíveis, o que facilita para os oponentes esquivar ou bloquear e contra-atacar. Isso o coloca em desvantagem contra personagens com bons reflexos ou opções defensivas rápidas.</p>
+                <h3>Dependência de Proximidade</h3>
+                <p>Embora Maxima cause grande dano em combates próximos, ele tem dificuldades para se aproximar de oponentes que conseguem manter a distância, especialmente aqueles com bons ataques de zoning ou projéteis.</p>
+                <h3>Vulnerabilidade a Pressão</h3>
+                <p>Devido à sua movimentação lenta e falta de reversais rápidos, Maxima pode ser facilmente pressionado por oponentes que utilizam ataques rápidos e constantes. Ele tem dificuldade em sair de situações de pressão intensa.</p>
+                <h3>Limitado no Jogo Aéreo</h3>
+                <p>Maxima tem poucas opções aéreas eficazes, o que o torna vulnerável a personagens que dominam o combate aéreo. Sua falta de agilidade no ar também o torna suscetível a cross-ups.</p>
 
-            <p>Ataques Lentos: Muitos dos golpes de Maxima, embora poderosos, têm uma velocidade de execução mais lenta. Isso pode deixá-lo vulnerável a ataques rápidos ou a ser punido se o jogador errar um golpe.</p>
+                <p>Essas desvantagens fazem de Maxima um personagem que depende de uma boa leitura do oponente e uma execução precisa para ser eficaz em combate, especialmente contra personagens mais rápidos e ágeis.</p>
+            </section>
 
-            <p>Falta de Projeções: Maxima não tem muitas opções de ataques à distância. Isso o força a se aproximar dos oponentes para causar dano, o que pode ser perigoso contra personagens com bons ataques de zoning ou projéteis.</p>
-
-            <p>Dependência de Comandos Específicos: Alguns dos movimentos mais poderosos de Maxima requerem uma boa leitura do oponente ou a execução de comandos específicos, como seu "Maxima Press" (um ataque agarrão). Se o oponente conseguir evitar ou prever esses movimentos, Maxima pode ficar vulnerável a contra-ataques.</p>
-
-            <p>Pressão e Mix-ups: Como Maxima não é muito ágil, ele pode ter dificuldade para lidar com personagens que pressionam muito ou que têm um bom mix-up game (variações rápidas entre altos e baixos, ou entre ataques e agarrões). Isso pode forçá-lo a uma posição defensiva, onde ele tem menos opções de resposta.</p>
-
-            <p>Essas vulnerabilidades fazem com que Maxima seja um personagem que exige paciência e uma boa leitura do oponente para ser jogado de forma eficaz. Jogadores que sabem explorar esses pontos fracos podem ganhar vantagem sobre Maxima em KOF 2002.</p>
-    
-            
-    
+            <section class="conteudo" id="tex3">
+                <h3>Dano Alto</h3>
+                <p>Maxima é conhecido por seu grande poder de ataque. Seus golpes causam muito dano, especialmente quando ele consegue conectar seus combos ou ataques especiais como o "Maxima Press" e "M-11."</p>
+                <h3>Resistência Elevada</h3>
+                <p>Maxima possui uma das maiores barras de vida do jogo, o que permite que ele suporte mais golpes antes de ser derrotado. Isso lhe dá uma margem de erro maior e permite absorver mais dano enquanto planeja contra-ataques.</p>
+                <h3>Super Armadura</h3>
+                <p>Alguns dos ataques de Maxima, como o "Vapor Cannon," têm super armadura, o que significa que ele pode absorver um golpe enquanto ainda executa o seu próprio ataque. Isso o torna muito perigoso em trocas diretas de golpes.</p>
+                <h3>Facilidade em Punir</h3>
+                <p>Devido ao alcance e ao poder de seus golpes, Maxima é excelente para punir erros dos oponentes. Sua capacidade de infligir grande dano com poucos golpes o torna ideal para jogadores que sabem esperar a oportunidade certa.</p>
+                <h3>Boa Defesa contra Projéteis</h3>
+                <p>Maxima pode neutralizar projéteis com seu movimento "M-4 Vapor Cannon," o que o torna eficaz contra personagens que dependem de ataques à distância. Isso força oponentes a se aproximarem, onde ele é mais perigoso.</p>
+                
+                <p>Essas vantagens fazem de Maxima um personagem que recompensa uma abordagem estratégica e paciente, punindo severamente os erros dos oponentes e dominando em combate corpo a corpo.</p>
+            </section>
         </section>
 
         <section id="c4" class="conteudo"> <!--  Curiosidades -->
-            
+            <h2>Inspiração</h2>
             <p>O personagem Maxima, da série The King of Fighters (KOF), foi introduzido pela primeira vez em The King of Fighters '99 como parte do novo time de heróis liderado por <strong>K'</strong> (K-Dash). Maxima é um ciborgue, e seu design e conceito foram inspirados por uma combinação de estereótipos de personagens poderosos e a estética cyberpunk.</p>
 
             <p>Aqui estão alguns pontos de inspiração e características de Maxima:</p>
