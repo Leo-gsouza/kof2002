@@ -5,13 +5,11 @@ function aba( botao, conteudo, desativados, fechadas){
         botao.style.background = '#B2BEBF'
         botao.style.borderRadius = '0px'
 
-        
-       
 
     }else{
         conteudo.style.display = 'block'
         botao.style.background = 'darkred'
-        botao.style.borderRadius = '5px'
+        botao.style.borderRadius = '7px 1px'
 
        
 
