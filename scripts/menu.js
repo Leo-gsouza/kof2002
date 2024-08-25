@@ -7,6 +7,11 @@ window.addEventListener('pageshow', function(event){
          }
 })
 
+window.addEventListener('load', function(){
+        const audio = document.getElementById('audioSelect')
+        audio.play()
+})
+
 function clickMenu(){
         if (itens.style.display == 'block'){
                 itens.style.display = 'none'
