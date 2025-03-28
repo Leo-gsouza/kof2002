@@ -147,6 +147,11 @@ menu > div#menu > a:hover{
 
 /*----------------------------------------------PAGINA PRICIPAL--------------------------------------*/
 
+main{
+    background: url(../jpeg/fundo-abstrato.jpg) center  center  no-repeat fixed ;
+    background-size: cover;
+    ;
+}
 
 
 
@@ -164,7 +169,7 @@ section  > h1{
 
 h1#t1{
     animation: titulo1 2s linear infinite;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 h1#t2{
