@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../estilo/mobile.css">
     <link rel="stylesheet" href="../../estilo/grandes-telas.css"  media="screen and (min-width: 1200px )">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Kyo</title>
+    <title>Golpes K'Dash</title>
 </head> 
 
 
@@ -15,124 +15,80 @@
     <header>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <h1>Kyo</h1>
-        <span id="play" class="material-symbols-outlined" onclick="playMusic(musicKyo)">play_arrow</span>
-        <span id="pause" class="material-symbols-outlined" onclick="playMusic(musicKyo)">pause</span>
-        <audio  src="../../audio/team-kyo.mp3" loop id="musicKyo"></audio>
+        <span id="play" class="material-symbols-outlined" onclick="playMusic(musicKdash)">play_arrow</span>
+        <span id="pause" class="material-symbols-outlined" onclick="playMusic(musicKdash)">pause</span>
+        <audio  src="../../audio/team-k.mp3" loop id="musicKdash"></audio>
     </header>
 
     <menu id="itens">
         <div id="menu">
             <a href="../../index.html">Menu</a>
-            <a href="paginas/fightcade.html">Jogue Online</a>
-            <a href="paginas/combates.html">Combates</a>
+            <a href="../benimaru/benimaru.html">Benimaru</a>
+            <a href="../daimon/daimon.html">Daimon</a>
         </div>
     </menu>
 
     <main>
         <section>
             <div class="capa">
-                <img src="../../jpeg/kyo1.jpg" alt="whip" class="imagem">
-                <img src="../../gif/kyo6.gif" alt="kyo" class="gif">
+                <img src="../../jpeg/kyo1.png" alt="whip" class="imagem">
+                <img src="../../gif/kyo.gif" alt="kyo" class="gif" style="width: 35vw;">
             </div>
             <div id="abas">
-                <p id="b1" onclick="aba(this,c1,[b2,b3,b4],[c2,c3,c4])" >Historia</p>
-                <p id="b2" onclick="aba(this,c2,[b1,b3,b4],[c1,c3,c4])">Golpes</p>
-                <p id="b3" onclick="aba(this,c3,[b2,b1,b4],[c2,c1,c4])">Dicas</p>
-                <p id="b4" onclick="aba(this,c4,[b2,b3,b1],[c2,c3,c1])">Curiosidades</p>
+                <p id="b1" onclick="aba(this,c1,[b2,b3],[c2,c3])" >Historia</p>
+                <p id="b2" onclick="aba(this,c2,[b1,b3],[c1,c3])">Golpes</p>
+                <p id="b3" onclick="aba(this,c3,[b2,b1],[c2,c1])">Curiosidades</p>
             </div>  
         </section>
 
+        
         <section id="c1" class="conteudo"> <!-- Historia -->
-            <p>Kyo Kusanagi é o protagonista de The King of Fighters (KOF), e sua história é central para a série. Ele é o herdeiro do clã Kusanagi, que possui a habilidade de manipular o fogo, um poder transmitido por gerações. Kyo é inicialmente introduzido em KOF '94 como parte do time do Japão, ao lado de <strong>Benimaru Nikaido</strong> e <strong>Goro Daimon</strong>, para enfrentar o vilão <strong>Rugal Bernstein</strong>.</p>
+            <p>Kyo Kusanagi é o protagonista de The King of Fighters (KOF), e sua história é central 
+                para a série. Ele é o herdeiro do clã Kusanagi, que possui a habilidade de manipular 
+                o fogo, um poder transmitido por gerações. Kyo é inicialmente introduzido em KOF '94 
+                como parte do time do Japão, ao lado de <strong>Benimaru Nikaido</strong> e 
+                <strong>Goro Daimon</strong>, para enfrentar o vilão <strong>Rugal Bernstein</strong>.</p>
 
-            <p>Em KOF '95, Kyo descobre sua rivalidade ancestral com <strong>Iori Yagami</strong>, do clã Yagami, que tem uma história de inimizade com os Kusanagi devido ao pacto feito pelos Yagami com o poder sombrio de <strong>Orochi</strong>. Essa rivalidade se torna um dos elementos mais emblemáticos da série.</p>
+            <p>Em KOF '95, Kyo descobre sua rivalidade ancestral com <strong>Iori 
+                Yagami</strong>, do clã Yagami, que tem uma história de inimizade 
+                com os Kusanagi devido ao pacto feito pelos Yagami com o poder 
+                sombrio de <strong>Orochi</strong>. Essa rivalidade se torna um 
+                dos elementos mais emblemáticos da série.</p>
 
-            <p>A partir de KOF '96, a trama se concentra no despertar de Orochi, uma entidade maligna selada pelos ancestrais dos clãs Kusanagi, Yagami e Yata. Kyo, junto com Iori e <strong>Chizuru Kagura</strong>, herdeira do clã Yata, forma um trio lendário para selar Orochi novamente. Eles têm sucesso em KOF '97, quando derrotam Orochi, mas o equilíbrio do mundo é abalado.</p>
+            <p>A partir de KOF '96, a trama se concentra no despertar de Orochi, uma entidade 
+                maligna selada pelos ancestrais dos clãs Kusanagi, Yagami e Yata. Kyo, junto 
+                com Iori e <strong>Chizuru Kagura</strong>, herdeira do clã Yata, forma um 
+                trio lendário para selar Orochi novamente. Eles têm sucesso em KOF '97, 
+                quando derrotam Orochi, mas o equilíbrio do mundo é abalado.</p>
 
-            <p>Em KOF '99, a série entra na saga <strong>NESTS</strong>, onde Kyo é sequestrado pela organização NESTS, que cria vários clones dele em um experimento para dominar o mundo. Kyo eventualmente escapa e se junta à luta contra NESTS, que culmina na destruição da organização em KOF 2001.</p>
+            <p>Em KOF '99, a série entra na saga <strong>NESTS</strong>, onde Kyo é sequestrado 
+                pela organização NESTS, que cria vários clones dele em um experimento para 
+                dominar o mundo. Kyo eventualmente escapa e se junta à luta contra NESTS, que 
+                culmina na destruição da organização em KOF 2001.</p>
 
-            <p>Depois da saga NESTS, Kyo continua a participar dos torneios, enfrentando novos inimigos, como a entidade <strong>Ash Crimson</strong>, que tenta apagar sua existência para reescrever a história. Essa saga chega ao clímax em KOF XIII, onde Ash desaparece, deixando o futuro incerto.</p>
+            <p>Depois da saga NESTS, Kyo continua a participar dos torneios, enfrentando novos 
+                inimigos, como a entidade <strong>Ash Crimson</strong>, que tenta apagar sua 
+                existência para reescrever a história. Essa saga chega ao clímax em KOF XIII, 
+                onde Ash desaparece, deixando o futuro incerto.</p>
 
-            <p>Mais recentemente, em KOF XIV e KOF XV, Kyo enfrenta <strong>Verse</strong>, uma entidade misteriosa cujas ações abalam o equilíbrio do universo. A história de Kyo é marcada por suas batalhas constantes para proteger o mundo, enfrentar sua rivalidade com Iori e preservar o legado de seu clã, enquanto novos desafios e ameaças surgem.</p>
+            <p>Mais recentemente, em KOF XIV e KOF XV, Kyo enfrenta <strong>Verse</strong>, uma 
+                entidade misteriosa cujas ações abalam o equilíbrio do universo. A história de 
+                Kyo é marcada por suas batalhas constantes para proteger o mundo, enfrentar sua 
+                rivalidade com Iori e preservar o legado de seu clã, enquanto novos desafios e ameaças surgem.</p>
+            <div class="rodape"></div>
         </section>
      
         <section id="c2" class="conteudo"> <!-- Golpes -->
             <img src="../../jpeg/golpes-kyo.jpg" alt="Golpes Kyo" id="golpes">
             <div class="video-full"><iframe width="560" height="315" src="https://www.youtube.com/embed/zV_9wJebYzo?si=VNUyozriydErbUZ4&amp;start=33" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
             <p id="rodape-video">Este vídeo pertence ao canal <a href="https://www.youtube.com/channel/UCon5Kc18wi53fdl5W0zjIqQ" target="_blank"><br>Kof da Depressão</a></p>
+            <div class="rodape"></div>
         </section> 
 
-        <section id="c3" class="conteudo"><!--  Combates -->
-            <p class="descricao">Nesta pagina temos varias dicas relacionadas ao personagem escolhido, como vídeos de combates entre jogadores, explições detalhadas sobre os pontos positivos e negativos. Clique nos botões para ter acesso as informações desejadas</p>
-            <div class="botoes">
-                <p class="opcao" id="op1" onclick="aba(this, tex1, [op2, op3],  [tex2, tex3])">Vídeos</p>
-                <p class="opcao" id="op2" onclick="aba(this, tex2, [op1, op3],  [tex1, tex3])">Desvantagens</p>
-                <p class="opcao" id="op3" onclick="aba(this, tex3, [op1, op2],  [tex2, tex1])">Vantagens</p>
-            </div>
-
-            <section class="conteudo" id="tex1">
-                <h2>Vídeos</h2>
-                <p>O vídeo abaixo é um combate realizado no FIGHTCADE.</p>
-                <p class="titulo-video"><a href="https://www.fightcade.com/id/Black_D" target="_blank">jogador1</a> vs <a href="https://www.fightcade.com/id/jonatascaldasrn" target="_blank">jogador2</a></p>
-                
-
-                <p>Este é apenas um dos muitos vídeos disponíveis em nosso canal no YouTube! Se você gosta de lutas emocionantes, siga-nos e compartilhe nosso conteúdo. No canal, você encontrará diversos combates entre lutadores talentosos e, quem sabe, até um duelo seu. Confira o link para o nosso canal logo abaixo e não perca nenhuma batalha!</p>
-                <a href="https://www.youtube.com/channel/UChGvAzfQ5QywdY-WRMP1QIw" target="_blank">Youtube</a>
-            </section>
-
-            <section class="conteudo" id="tex2">
-                <h3>Dependência de Combos Curtos</h3>
-                <p>Embora Kyo tenha bons combos, muitos deles são curtos e dependem de uma execução precisa. Isso significa que, se o jogador não conseguir conectar os golpes iniciais, ele pode perder oportunidades de causar grande dano.</p>
-                <h3>Jogo de Zoning Limitado</h3>
-                <p>Kyo não possui ataques à distância realmente eficazes, o que o deixa em desvantagem contra personagens que conseguem manter a luta à distância usando projéteis ou outras ferramentas de zoning.</p>
-                <h3>Defesa Aérea Moderada</h3>
-                <p>Embora Kyo tenha alguns golpes aéreos úteis, ele não é tão forte em combate aéreo quanto outros personagens. Isso pode deixá-lo vulnerável a oponentes que dominam o espaço aéreo ou que utilizam cross-ups frequentes.</p>
-                <h3>Dependência de Pressão Constante</h3>
-                <p>Kyo brilha quando consegue manter a pressão sobre o oponente, mas se ele for forçado a jogar de forma mais defensiva ou recuar, seu desempenho pode diminuir, especialmente contra personagens que são bons em zoning ou táticas defensivas.</p>
-                <h3>Curva de Aprendizado para Avançados</h3>
-                <p>Apesar de ser acessível para iniciantes, dominar Kyo a um nível avançado pode ser difícil. Seus combos avançados e sua mistura ofensiva requerem prática e precisão para serem eficazes contra jogadores mais experientes.</p>
-    
-                <p class="resumo">Essas desvantagens fazem de Kyo um personagem que, embora muito forte, requer um equilíbrio entre agressividade e cautela. Jogadores que conseguem explorar suas fraquezas podem tirar vantagem dessas limitações.</p>
-            </section>
-
-            <section class="conteudo" id="tex3">
-                <h3>Versatilidade em Combos</h3>                
-                <p>Kyo é conhecido por sua vasta gama de combos, que variam de simples a avançados. Ele pode iniciar combos a partir de diversos golpes e tem muitas opções para finalizar com grande dano, o que o torna imprevisível.</p>
-                <h3>Golpes de Prioridade Alta</h3>
-                <p>Muitos dos ataques de Kyo, como o "88 Shiki" e o "114 Shiki Aragami," têm alta prioridade, o que significa que eles frequentemente superam os golpes dos oponentes em trocas diretas. Isso lhe dá uma vantagem em confrontos de curto alcance.</p>
-                <h3>Mistura Ofensiva</h3>                
-                <p>Kyo é excelente em misturar seus ataques, alternando entre altos e baixos, além de golpes que quebram a guarda do oponente. Isso o torna difícil de defender, permitindo que ele pressione constantemente seus adversários.</p>
-                <h3>Facilidade de Uso</h3>                
-                <p>Embora Kyo tenha profundidade suficiente para jogadores experientes, ele também é relativamente fácil de usar, o que o torna acessível para iniciantes. Seus movimentos são intuitivos e suas combinações de comandos são diretas.</p>
-                <h3>Ataques Especiais Poderosos</h3>               
-                <p>Kyo possui ataques especiais que causam grande dano, como o "Orochinagi," que pode ser usado tanto ofensivamente quanto defensivamente. Seu "R.E.D. Kick" também é uma ferramenta eficaz para surpreender oponentes e iniciar combos.</p>
-                <h3>Controle de Espaço</h3>               
-                <p>Kyo é eficaz tanto em combate de médio quanto de curto alcance. Seus golpes cobrem uma boa área, permitindo que ele controle o ritmo do combate e mantenha a pressão sobre o adversário.</p>
-                <p>Essas vantagens fazem de Kyo um personagem extremamente equilibrado e perigoso, capaz de se adaptar a diversas situações e estilos de combate em The King of Fighters 2002.</p>
-            </section>
-            
-        </section>
-
-        <section id="c4" class="conteudo"> <!--  Curiosidades -->
-            <h2>Inspiração</h2>
-            <p>Kyo Kusanagi, um dos personagens principais de The King of Fighters (KOF), foi criado pela SNK com várias influências culturais, mitológicas e estilísticas. Aqui estão algumas das inspirações por trás da criação de Kyo:</p>
-
-            <p><strong>Mitologia Japonesa</strong> - O Clã Kusanagi: O nome "Kusanagi" vem da lenda da espada Kusanagi no Tsurugi, uma das três insígnias sagradas do Japão. Na mitologia, essa espada é associada ao deus Susanoo, que a encontra dentro de uma serpente derrotada. Essa ligação com uma arma lendária e a mitologia japonesa reflete a conexão de Kyo com fogo e sua herança como parte do clã Kusanagi.</p>
-
-            <p><strong>Elementos de Fogo:</strong> Kyo é associado ao fogo, o que é um tema recorrente em muitos heróis japoneses que têm poderes elementares. O uso de fogo como seu principal poder simboliza força, destruição e renascimento, alinhando-se com seu papel como líder e herdeiro do clã Kusanagi.</p>
-
-            <p><strong>Estilo de Luta</strong> - Karatê e Artes Marciais Japonesas: Kyo foi inspirado por praticantes de karatê e outras artes marciais japonesas. Seu estilo de luta combina movimentos tradicionais com golpes poderosos e técnicas especiais, dando-lhe uma presença imponente no ringue.</p>
-
-            <p><strong>Design e Moda Juvenil:</strong> Kyo foi desenhado para atrair um público jovem nos anos 90, com seu visual estiloso, incluindo uma jaqueta colegial, calças largas e uma bandana. Seu design reflete as tendências da moda juvenil da época, que era influenciada por uma mistura de estilos ocidentais e japoneses.</p>
-
-            <p><strong>Influências de Animes e Mangás:</strong> A estética e a personalidade de Kyo também foram influenciadas por protagonistas de animes e mangás populares da época. Ele é retratado como um herói confiante, mas um pouco rebelde, com um forte senso de dever, características comuns em protagonistas shonen.</p>
-
-            <p><strong>O Rival Arquetípico:</strong> Kyo foi criado para ser o rival de Iori Yagami, com quem compartilha uma história complexa e uma rivalidade histórica. A dinâmica entre os dois é um tema clássico de rivalidade em muitas narrativas japonesas, semelhante à relação entre o fogo (Kyo) e o ódio/maldição (Iori).</p>
-
-            <p>Essas inspirações combinadas criaram um personagem que não só é central na narrativa de The King of Fighters, mas também ressoa com temas culturais e mitológicos profundamente enraizados no Japão.</p>
-
+        <section id="c3" class="conteudo"> <!--  Curiosidades -->
+           
             <h2>Informações pessoais:</h2>
-            <table id="pessoal">
+            <table id="pessoal"><!-- Criação da tabela -->
                 <thead>
                     <tr>
                         <th colspan="2">Kyo</th>
@@ -175,7 +131,8 @@
             </table>
 
             <h2>Personagens relacionados:</h2>
-            <p>Os personagens abaixo possuem algum tipo de ligação positiva ou negativa com Whip e estão presentes no Kof 2002</p>
+            <p>Os personagens abaixo possuem algum tipo de ligação positiva ou negativa 
+                com K' Dash e estão presentes no Kof 2002</p>
 
             <div class="relacao">
                 <div class="imagem">
@@ -230,6 +187,7 @@
                     <p> Kyo tem um histórico de confronto com a organização NESTS, que tentou usar suas habilidades para seus próprios fins. Krizalid é um dos principais antagonistas associados a essa organização e foi responsável por causar grandes problemas para Kyo e sua equipe. K9999, outro membro da NESTS, também é um inimigo direto, e sua relação com Kyo é marcada por hostilidade. A NESTS representa uma ameaça constante, e Kyo, como herói e defensor, está sempre em conflito com seus membros, que tentam roubar suas habilidades e manipular sua vida.</p>
                 </div>
             </div>
+            <div class="rodape"></div>
         </section>
             
         

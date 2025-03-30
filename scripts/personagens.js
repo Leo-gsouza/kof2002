@@ -28,8 +28,25 @@ kyoAud.addEventListener('ended', function(){
     window.location.href = 'paginas/kyo/kyo.html'
 } )
 
+
     
 
+document.addEventListener("DOMContentLoaded", function(){
+    const personagens = document.querySelectorAll("#caracterSelect img");
+    const imagemExibida = document.getElementById("imagemExibida");
 
+
+    personagens.forEach((personagem) => {
+        personagem.addEventListener("mouseover", function(){
+            const novaImagem = personagem.getAttribute("data-imagem")
+            imagemExibida.src = novaImagem
+            imagemExibida.style.display = 'block'
+        })
+        personagem.addEventListener("mouseout", function (){
+            imagemExibida.style.display = 'none'
+        })
+    })
+
+})
 
 

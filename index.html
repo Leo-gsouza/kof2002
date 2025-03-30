@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KOF 2002</title>
     <link rel="shortcut icon" href="icon/icone.svg" type="image/x-icon">
-    <link rel="stylesheet" href="estilo/mobile.css" media="screen and (max-width: 400px )">
-    <link rel="stylesheet" href="estilo/normal.css" media="screen and (min-width: 401px )">
-    <link rel="stylesheet" href="estilo/grandes-telas.css"  media="screen and (min-width: 1200px )">
+    <link rel="stylesheet" href="estilo/mobile.css" media="screen and (max-width: 570px )">
+    <link rel="stylesheet" href="estilo/normal.css" media="screen and (min-width: 401px) and (max-width: 1280px )">
+    <link rel="stylesheet" href="estilo/grandes-telas.css"  media="screen and (min-width: 571px) and (max-width: 1280px )">
 
 <!-----------------Link referente ao icone do site google icons - ICONE MENU----------------------->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -35,7 +35,7 @@
             <h1 id="t2">Caracter</h1>
             <div id="caracterSelect">
                 <div id="timekdash" class="team">
-                    <img src="jpeg/k2.png" alt="Kdash" onclick="efeitoSonoro(this, audiokdash)">
+                    <img src="jpeg/k2.png" alt="Kdash" onclick="efeitoSonoro(this, audiokdash)" onmouseover="showImage('')">
                     <img src="jpeg/maxima2.png" alt="Maxima" onclick="efeitoSonoro(this, audiomaxima)" >
                     <img src="jpeg/whip2.png" alt="Whip" onclick="efeitoSonoro(this, audiowhip)">
                 </div>
@@ -45,9 +45,9 @@
                     <img src="jpeg/benimaru2.png" alt="">
                 </div>
                 <div id="timeiori" class="team">
-                    <img src="jpeg/iori2.png" alt="">
-                    <img src="jpeg/vice2.png" alt="">
-                    <img src="jpeg/mature2.png" alt="">
+                    <img src="jpeg/iori2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/vice2.png" alt="" data-imagem="data-imagem/vice.png">
+                    <img src="jpeg/mature2.png" alt="" data-imagem="data-imagem/mature.png">
                 </div>
                 <div id="'timeterry" class="team">
                     <img src="jpeg/terry2.png" alt="">
@@ -107,6 +107,7 @@
                 <div class="team" id="timekusanagui">
                     <img src="jpeg/kusanagui2.png" alt="">
                 </div>
+               
                 <div class="rodape"></div>
             
             
@@ -118,6 +119,10 @@
             <!--================================================================================================ -->
             </div>
         </section>
+        <section id="imagemPersonagem">
+           <img src="" alt="Personagem Selecionado" id="imagemExibida" style="display: none;">
+        </section>
+      
     </main>
     <footer>
        

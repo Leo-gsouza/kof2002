@@ -80,9 +80,6 @@ header > span#play{
     text-shadow: 0px 0px 2px white;
 
     color: white;
-
-    
-   
 }
 
 header > span#pause{
@@ -153,7 +150,10 @@ main{
     ;
 }
 
-
+section#imagemPersonagem{
+    display: none;
+    
+}
 
 section  > h1{
     font-family: var(--fonte_destaque);
@@ -269,12 +269,13 @@ div.capa{
 }
 
 div.capa >  img.imagem{
-   width: 45vw;
+   height: 150px;
  
 }
 
 div.capa > img.gif{
-   width: 40%;
+   height: 120px;
+   margin-right: 20px;
 } 
 
 section > div#abas{
@@ -400,8 +401,8 @@ section.conteudo > a{
 }
 
 strong{
-    color: red;
-    font-weight: bolder;
+    color: rgb(175, 1, 1);
+    font-weight: normal;
 }
 
 /*---------------------------------------------GOLPES-----------------------------------------*/
