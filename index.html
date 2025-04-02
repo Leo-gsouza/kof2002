@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="icon/icone.svg" type="image/x-icon">
     <link rel="stylesheet" href="estilo/mobile.css" media="screen and (max-width: 570px )">
     <link rel="stylesheet" href="estilo/normal.css" media="screen and (min-width: 401px) and (max-width: 1280px )">
-    <link rel="stylesheet" href="estilo/grandes-telas.css"  media="screen and (min-width: 571px) and (max-width: 1280px )">
+    <link rel="stylesheet" href="estilo/grandes-telas.css"  media="screen and (min-width: 800px) and (max-width: 1280px )">
 
 <!-----------------Link referente ao icone do site google icons - ICONE MENU----------------------->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -16,6 +16,7 @@
 <body>
 
     <header>
+        <span id="voltar" class="material-symbols-outlined">arrow_back_ios</span>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <h1>KOF 2002</h1>
         <span id="play" class="material-symbols-outlined" onclick="playMusic(audioSelect)">sound_sampler</span>
@@ -30,19 +31,19 @@
     </menu>
 
     <main>
+        <h1 id="t1">Select</h1>
+        <h1 id="t2">Caracter</h1>
         <section>
-            <h1 id="t1">Select</h1>
-            <h1 id="t2">Caracter</h1>
-            <div id="caracterSelect">
+            <div id="caracterSelect1">
                 <div id="timekdash" class="team">
-                    <img src="jpeg/k2.png" alt="Kdash" onclick="efeitoSonoro(this, audiokdash)" onmouseover="showImage('')">
-                    <img src="jpeg/maxima2.png" alt="Maxima" onclick="efeitoSonoro(this, audiomaxima)" >
-                    <img src="jpeg/whip2.png" alt="Whip" onclick="efeitoSonoro(this, audiowhip)">
+                    <img src="jpeg/k2.png" alt="Kdash" data-imagem="data-imagem/kdash.jpg" data-som="efeitos/k/29.wav" data-src="paginas/kdash/kdash.html">
+                    <img src="jpeg/maxima2.png" alt="Maxima" data-imagem="data-imagem/maxima.jpg" data-som="efeitos/maxima/12.wav" data-src="paginas/maxima/maxima.html" >
+                    <img src="jpeg/whip2.png" alt="Whip" data-imagem="data-imagem/whip.jpg" data-som="efeitos/whip/31.wav" data-src="paginas/whip/whip.html">
                 </div>
                 <div id="timekyo" class="team">
-                    <img src="jpeg/kyo2.png" alt="Kyo" onclick="efeitoSonoro(this, audiokyo)">
-                    <img src="jpeg/daimon2.png" alt="">
-                    <img src="jpeg/benimaru2.png" alt="">
+                    <img src="jpeg/kyo2.png" alt="Kyo" data-imagem="data-imagem/iori.png" data-som="efeitos/kyo/17.wav" data-src="paginas/kyo/kyo.html">
+                    <img src="jpeg/daimon2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/benimaru2.png" alt="" data-imagem="data-imagem/iori.png">
                 </div>
                 <div id="timeiori" class="team">
                     <img src="jpeg/iori2.png" alt="" data-imagem="data-imagem/iori.png">
@@ -50,79 +51,80 @@
                     <img src="jpeg/mature2.png" alt="" data-imagem="data-imagem/mature.png">
                 </div>
                 <div id="'timeterry" class="team">
-                    <img src="jpeg/terry2.png" alt="">
-                    <img src="jpeg/andy2.png" alt="">
-                    <img src="jpeg/joe2.png" alt="">
+                    <img src="jpeg/terry2.png" alt=""  data-imagem="data-imagem/terry.jpg" >
+                    <img src="jpeg/andy2.png" alt="" data-imagem="data-imagem/andy.jpg">
+                    <img src="jpeg/joe2.png" alt="" data-imagem="data-imagem/joe.jpg">
                 </div>
                 <div id="timeryo" class="team">
-                    <img src="jpeg/ryo2.png" alt="">
-                    <img src="jpeg/robert2.png" alt="">
-                    <img src="jpeg/takuma2.png" alt="">
+                    <img src="jpeg/ryo2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/robert2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/takuma2.png" alt="" data-imagem="data-imagem/iori.png">
                 </div>
                 <div id="timekim" class="team">
-                    <img src="jpeg/kim2.png" alt="">
-                    <img src="jpeg/chang2.png" alt="">
-                    <img src="jpeg/choi2.png" alt="">
+                    <img src="jpeg/kim2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/chang2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/choi2.png" alt="" data-imagem="data-imagem/iori.png">
                 </div>
                 <div id="timeleona" class="team">
-                    <img src="jpeg/ralf2.png" alt="">
-                    <img src="jpeg/leona2.png" alt="">
-                    <img src="jpeg/clark2.png" alt="">
+                    <img src="jpeg/ralf2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/leona2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/clark2.png" alt="" data-imagem="data-imagem/iori.png">
                 </div>
+            </div>
+
+            <div id="caracterSelect2">
+               
                 <div id="timemai" class="team">
-                    <img src="jpeg/mai2.png" alt="">
-                    <img src="jpeg/yuri2.png" alt="">
-                    <img src="jpeg/maylee2.png" alt="">
+                    <img src="jpeg/mai2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/yuri2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/maylee2.png" alt="" data-imagem="data-imagem/iori.png">
                 </div>
                 <div id="timeseth" class="team">
-                    <img src="jpeg/seth2.png" alt="">
-                    <img src="jpeg/vanessa2.png" alt="">
-                    <img src="jpeg/ramon2.png" alt="">
+                    <img src="jpeg/seth2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/vanessa2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/ramon2.png" alt="" data-imagem="data-imagem/iori.png">
                 </div>
                 <div id="timeatena" class="team">
-                    <img src="jpeg/athena2.png" alt="">
-                    <img src="jpeg/kensou2.png" alt="">
-                    <img src="jpeg/chin2.png" alt="">
+                    <img src="jpeg/athena2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/kensou2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/chin2.png" alt="" data-imagem="data-imagem/iori.png">
                 </div>
                 <div id="timebluemary" class="team">
-                    <img src="jpeg/yamazaki2.png" alt="">
-                    <img src="jpeg/mary2.png" alt="">
-                    <img src="jpeg/billy2.png" alt="">
+                    <img src="jpeg/yamazaki2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/mary2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/billy2.png" alt="" data-imagem="data-imagem/iori.png">
                 </div>
                 <div id="timeyashiro" class="team">
-                    <img src="jpeg/yashiro2.png" alt="">
-                    <img src="jpeg/shermie2.png" alt="">
-                    <img src="jpeg/chris2.png" alt="">
+                    <img src="jpeg/yashiro2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/shermie2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/chris2.png" alt="" data-imagem="data-imagem/iori.png">
                 </div>
                 <div id="timeorochi" class="team">
-                    <img src="jpeg/yashiro3.png" alt="">
-                    <img src="jpeg/shermie3.png" alt="">
-                    <img src="jpeg/chris3.png" alt="">
+                    <img src="jpeg/yashiro3.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/shermie3.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/chris3.png" alt="" data-imagem="data-imagem/iori.png">
                 </div>
                 <div id="timekula" class="team">
-                    <img src="jpeg/k92.png" alt="">
-                    <img src="jpeg/kula2.png" alt="">
-                    <img src="jpeg/angel2.png" alt="">
+                    <img src="jpeg/k92.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/kula2.png" alt="" data-imagem="data-imagem/iori.png">
+                    <img src="jpeg/angel2.png" alt="" data-imagem="data-imagem/iori.png">
                 </div>
                 <div class="team" id="timekusanagui">
-                    <img src="jpeg/kusanagui2.png" alt="">
+                    <img src="jpeg/kusanagui2.png" alt="" data-imagem="data-imagem/iori.png">
                 </div>
-               
-                <div class="rodape"></div>
-            
-            
-            <!--======================================= AUDIO DOS PERSONAGENS ================================== -->
-                <audio src="efeitos/k/29.wav" id="audiokdash"></audio>
-                <audio src="efeitos/maxima/12.wav" id="audiomaxima" ></audio>
-                <audio src="efeitos/whip/31.wav" id="audiowhip"></audio>
-                <audio src="efeitos/kyo/17.wav" id="audiokyo"></audio>
-            <!--================================================================================================ -->
             </div>
+               
+            <div id="imagemPersonagem">
+               <img src="data-imagem/vazio.png" alt="Personagem Selecionado" id="imagemVazia" style="display: block;">
+               <img src="" alt="Personagem Selecionado" id="imagemExibida" style="display: none;">
+            </div>
+
         </section>
-        <section id="imagemPersonagem">
-           <img src="" alt="Personagem Selecionado" id="imagemExibida" style="display: none;">
-        </section>
-      
+
+    <div class="rodape"></div>
+
+    <audio src="efeitos/arcade.mp3" id="arcade"></audio>
+   
     </main>
     <footer>
        
@@ -139,5 +141,6 @@
     </footer>
     <script src="scripts/menu.js"></script>
     <script src="scripts/personagens.js"></script>
+    <script src="scripts/paginas2.js"></script>
 </body>
 </html>               

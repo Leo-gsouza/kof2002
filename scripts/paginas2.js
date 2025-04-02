@@ -1,4 +1,9 @@
 
+document.getElementById("voltar").addEventListener("click", ()=> {
+    history.back();
+})
+
+
 function aba( botao, conteudo, desativados, fechadas){
     if (conteudo.style.display == 'block'){
         conteudo.style.display = 'none'
@@ -7,9 +12,14 @@ function aba( botao, conteudo, desativados, fechadas){
 
 
     }else{
-        conteudo.style.display = 'block'
-        botao.style.scale = '1.1'
-        botao.classList.add('glow')
+        if (conteudo.id === 'c1'){
+            conteudo.style.display = 'flex'
+        }else{
+            conteudo.style.display = 'block'
+            botao.style.scale = '1.1'
+            botao.classList.add('glow')
+
+        }
 
        
 

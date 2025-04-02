@@ -73,6 +73,10 @@ header > span#burguer{
     color: white;
 }
 
+header > span#voltar{
+    display: none;
+}
+
 header > span#play{
     width: 35px;
    
@@ -150,12 +154,12 @@ main{
     ;
 }
 
-section#imagemPersonagem{
+div#imagemPersonagem{
     display: none;
     
 }
 
-section  > h1{
+main  > h1{
     font-family: var(--fonte_destaque);
     font-size: 1.5em;
     font-weight: normal;
@@ -208,7 +212,7 @@ h1#t2{
     }
 }
 
-section >  div#caracterSelect{
+section >  div#caracterSelect1, div#caracterSelect2{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -216,12 +220,12 @@ section >  div#caracterSelect{
 
 }
 
-div#caracterSelect > div.team{
+ div.team{
     padding: 3.5px;
 }
 
 
-div#caracterSelect > div.team > img{
+div.team > img{
     width: 70px;
 
     padding: 3px;
@@ -230,7 +234,7 @@ div#caracterSelect > div.team > img{
     animation: escala 2s linear infinite;
 }
 
-div#caracterSelect > div#timekusanagui{
+div#timekusanagui{
 
     padding: 0px 76px;
     
@@ -328,50 +332,57 @@ section.conteudo{
 /*---------------------------------------------HISTORIA-----------------------------------------*/
 
 section.conteudo{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
 }
-section.conteudo > h2{
-    padding: 10px;
+section#c1{
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
     
+}
+
+section#c1 > div{
+    width: 85%;
+    
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.274);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.699);
+
+    margin: 15px 5px;
+    padding: 25px 5px;
+}
+
+section#c1 > div > h1{
+    font-family: var(--fonte_destaque);
     text-align: center;
+    font-size: 1.7em;
     font-weight: normal;
-    font-family: var(--fonte_russo);
-    font-size: 1em;  
-    text-transform: uppercase;
+    color: white;
+    margin: 5px 5px;
+    border-radius: 15px 15px 0px 0px;
+    padding: none;
+    text-shadow: 00px 0px 3px rgba(0, 0, 0, 0.993);
 
-    color: darkred;
-    
+    background-color: rgba(255, 255, 255, 0.678);
 }
 
-section.conteudo > h3{
-    padding: 7px;
-    margin-bottom: -10px;
-    margin-top: 10px;
-    
-    text-align: center;
-    font-weight: normal;
-    font-family: var(--fonte_russo);
-    font-size: 1.15em;  
-
-    color: darkred;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.055);
-}
-
-
-
-section.conteudo > p{
-    padding: 10px 30px;
+section#c1 > div > p{
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.623);
+    border-radius: 0px 0px 15px 15px;
+    margin: 0px 5px 10px 5px;
+    padding: 2px 12px;
 
     font-family: var(--fonte_padrao);
     font-weight: normal;
-    text-align: justify;
-    font-size: 0.9em;
     text-indent: 10px;
 
-    color: black;
+      
 }
-
-section.conteudo > a{
+section#c1 > div > a{
     display: block;
     
     margin: auto;
@@ -407,11 +418,15 @@ strong{
 
 /*---------------------------------------------GOLPES-----------------------------------------*/
 
-section > img#golpes{
+section > img#golpes1{
     display: block;
     margin: auto;
     width: 100vw;
     transition: transform 0.5s ease;
+}
+section > img#golpes2{
+    display: none;
+    
 }
 
 section > div.video-full{
@@ -526,6 +541,7 @@ section > table#pessoal{
     margin-bottom: 40px;
     border-collapse: collapse;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
+    background-color: rgba(255, 255, 255, 0.719);
 
 }
 
@@ -535,6 +551,7 @@ section > table#pessoal > thead >tr >th{
     padding: 5px;
     font-family: var(--fonte_destaque);
     font-size: 1em;
+    background-color: white;
 }
 
 section > table#pessoal > tbody > tr {
@@ -546,27 +563,33 @@ section > table#pessoal > tbody > tr > td{
     padding: 10px;
 }
 
-section.conteudo > div.relacao{
+section.conteudo > div#relacaoGeral{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: end;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     width: 300px;
 
     margin-bottom: 18px;
-    background-color: white;
+}
+
+div#relacaoGeral > div.relacao{
+    margin: auto;
+    margin-bottom: 25px;
 }
 
 div.relacao > div.imagem{
-    width: 100px;
+    width: 80%;
+    margin: auto;
 
 }
 
-
 div.relacao > div.imagem > img{
-    width: 100px;
-    margin-bottom: -2.5px;
+    margin: 0px 0px -50px -30px;
+    width: 40%;
+    border-radius: 50%;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.356);
 
     animation: imagem 2s infinite alternate;
 }
@@ -590,19 +613,23 @@ div.relacao > div.texto > h1{
 }
 
 div.relacao > div.texto{
-    width: 300px;
+    width: 100%;
+    margin: auto;
   
     padding-bottom: 10px;
     
     box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.37);
+    border: none;
+    border-radius: none;
+   
     
 }
 
 div.relacao > div.texto> p{
-    height: 120px;
+    height: 140px;
     overflow: scroll;
 
-    padding: 15px;
+    padding: 30px 10px;
     margin: 5px;
     
     text-align: justify;

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../icon/icone.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../../estilo/mobile.css">
-    <link rel="stylesheet" href="../../estilo/grandes-telas.css"  media="screen and (min-width: 1200px )">
+    <link rel="stylesheet" href="../../estilo/normal.css">
+    <link rel="stylesheet" href="../../estilo/mobile.css" media="screen and (max-width: 570px )">
+    <link rel="stylesheet" href="../../estilo/grandes-telas.css"  media="screen and (min-width: 800px) and (max-width: 1280px )">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Golpes K'Dash</title>
 </head> 
@@ -14,6 +15,7 @@
 <body>
     <header>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <span id="voltar" class="material-symbols-outlined">arrow_back_ios</span>
         <h1>Kdash</h1>
         <span id="play" class="material-symbols-outlined" onclick="playMusic(musicKdash)">play_arrow</span>
         <span id="pause" class="material-symbols-outlined" onclick="playMusic(musicKdash)">pause</span>
@@ -28,8 +30,10 @@
         </div>
     </menu>
 
+
+
     <main>
-        <section>
+        <section id="capa">
             <div class="capa">
                 <img src="../../jpeg/k3.png" alt="kdash" class="imagem">
                 <img src="../../gif/k5.gif" alt="" class="gif">
@@ -38,52 +42,102 @@
                 <p id="b1" class="glow" onclick="aba(this,c1,[b2,b3],[c2,c3])" >Historia</p>
                 <p id="b2" onclick="aba(this,c2,[b1,b3],[c1,c3])">Golpes</p>
                 <p id="b3" onclick="aba(this,c3,[b2,b1],[c2,c1])">Curiosidades</p>
-            </div>  
+            </div> 
+            <div id="vazio"></div> 
         </section>
 
         
         <section id="c1" class="conteudo"> <!-- Historia -->
-            <p>K' (K-Dash) fez sua estreia em The King of Fighters '99 como o protagonista da nova saga. 
-                Originalmente, K' era um garoto normal que foi sequestrado pela organização NESTS e teve suas 
-                memórias apagadas. Ele foi submetido a experimentos que implantaram o poder do fogo 
-                de <strong>Kyo Kusanagi</strong> em seu corpo, tornando-o um guerreiro com habilidades de 
-                manipulação de chamas.</p>
+            <div>
+                <h1>KOF 99</h1>
+                <p>K' (K-Dash) é introduzido como o protagonista da saga NESTS. Ele é um
+                    jovem que teve suas memórias apagadas e foi modificado geneticamente
+                    pela organização NESTS, ganhando os poderes flamejantes de Kyo
+                    Kusanagi. Junto de Maxima, ele se rebela contra seus criadores e
+                    participa do torneio para encontrar respostas sobre seu passado.</p>
+            </div>
 
-            <p>Em KOF '99, K' se junta a <strong>Maxima</strong>, <strong>Whip</strong> e 
-                <strong>Benimaru</strong> como parte de um plano da <strong>NESTS</strong> para monitorar 
-                suas criações. No entanto, K' rapidamente se rebela contra a organização, decidido a 
-                descobrir sua verdadeira identidade e a se vingar por ter sido transformado em uma arma.</p>
+            <div>
+                <h1>KOF 2000</h1>
+                <p>K' continua sua luta contra a NESTS, agora com Whip e Vanessa
+                    ao seu lado. Descobre que sua irmã, Whip, também foi uma
+                    cobaia da organização. Durante o torneio, enfrenta Zero,
+                    um agente da NESTS, e sua clone Kula Diamond, criada para
+                    eliminá-lo. Apesar dos desafios, K' segue em frente,
+                    determinado a derrubar a organização.</p>
+            </div>
 
-            <p>Nos eventos de KOF 2000 e KOF 2001, K' continua sua luta contra NESTS, enfrentando 
-                diversos clones e agentes da organização, incluindo <strong>Zero</strong> e <strong>Igniz</strong>. 
-                Durante essa jornada, ele descobre mais sobre seu passado e suas origens, além de estabelecer 
-                fortes laços de amizade com seus companheiros de equipe, especialmente Maxima.</p>
+            <div>
+                <h1>KOF 2001</h1>
+                <p>A batalha final contra a NESTS se intensifica. K' e sua
+                    equipe enfrentam os líderes da organização: Krizalid,
+                    Original Zero e Igniz. Após uma luta árdua, eles derrotam
+                    Igniz, que tenta destruir a Terra em seu último ato de
+                    desespero. Com o fim da NESTS, K' se torna um fugitivo,
+                    mas agora livre do controle da organização.</p>
+            </div>
 
-            <p>Com a queda de NESTS em KOF 2001, K' finalmente se liberta da organização, mas continua 
-                participando dos torneios KOF para manter suas habilidades afiadas e enfrentar novos 
-                desafios. Em KOF 2003 e KOF XI, ele é atraído para a batalha contra <strong>Ash Crimson</strong>, 
-                que está roubando os poderes dos guerreiros KOF, incluindo o de Kyo Kusanagi.</p>
+            <div>
+                <h1>KOF 2002</h1>
+                <p>Como um jogo sem história, KOF 2002 UM serve apenas para
+                    reunir lutadores de várias edições. K' mantém seu visual
+                    clássico e seu estilo de luta baseado em chamas roubadas
+                    de Kyo, reforçando sua popularidade entre os fãs da série.</p>
+            </div>
 
-            <p>Em KOF XIII, K' se une novamente a seus aliados para enfrentar as forças de Ash e resolver o 
-                caos causado pela manipulação dos poderes de <strong>Orochi</strong>. Ele luta não só para 
-                proteger seus amigos, mas também para finalmente se libertar de seu passado e viver como uma 
-                pessoa livre.</p>
+            <div>
+                <h1>KOF 2003</h1>
+                <p>Agora independente, K' relutantemente entra no torneio junto
+                    com Maxima e Whip. Durante o evento, são arrastados para
+                    a luta contra Mukai, um misterioso guerreiro que faz parte
+                    dos Those from the Past. K' percebe que uma nova ameaça
+                    surge, mas se recusa a ser um herói.</p>
+            </div>
 
-            <p>Nos jogos mais recentes, KOF XIV e KOF XV, K' continua a participar dos torneios, agora mais 
-                seguro de si e de sua identidade. Ele e sua equipe enfrentam novos vilões como 
-                <strong>Antonov</strong> e <strong>Verse</strong>, mas K' permanece focado em seu objetivo de 
-                manter sua liberdade e proteger aqueles que lhe são importantes.</p>
+            <div>
+                <h1>KOF XI</h1>
+                <p>K' e sua equipe participam do torneio para investigar os
+                    planos de Magaki, outro membro dos Those from the Past.
+                    Durante a jornada, enfrentam poderosos oponentes e
+                    descobrem que o grupo quer reviver um antigo ser.
+                    Após a batalha, K' segue seu caminho, sem se envolver
+                    mais do que o necessário.</p>
+            </div>
 
-            <p>Ao longo da série, K' evolui de um jovem rebelde e desconfiado para um guerreiro 
-                determinado e leal, que luta tanto contra seus próprios demônios internos quanto 
-                contra as ameaças que surgem ao seu redor. Sua busca por identidade e propósito é 
-                uma das narrativas centrais da saga, e sua relação com Maxima e os outros membros 
-                da equipe é um dos pilares de seu desenvolvimento.</p>
-            <div class="rodape"></div>
+            <div>
+                <h1>KOF XIII</h1>
+                <p>Ainda tentando viver sem conflitos, K' é forçado a lutar
+                    novamente quando Elisabeth e Ash Crimson iniciam uma
+                    nova guerra. Ele descobre que Saiki, um ancestral de
+                    Ash, deseja reescrever a história. Junto com Maxima e
+                    Kula, K' participa do torneio e ajuda a impedir o
+                    colapso do tempo, mesmo sem querer se envolver diretamente.</p>
+            </div>
+
+            <div>
+                <h1>KOF XIV</h1>
+                <p>K' entra no torneio com Maxima e Kula para impedir
+                    que a misteriosa criatura Verse destrua tudo.
+                    Durante o evento, descobre que a entidade causa
+                    distorções no tempo e espaço, trazendo de volta
+                    lutadores que estavam mortos. Após a batalha, K'
+                    segue sua vida sem se importar muito com o que aconteceu.</p>
+            </div>
+
+            <div>
+                <h1>KOF XIV</h1>
+                <p>Mais uma vez, K' luta ao lado de Maxima e Whip. O torneio
+                    revela uma nova ameaça cósmica chamada Otoma=Raga.
+                    Mesmo sem interesse em salvar o mundo, K' se vê envolvido
+                    nos eventos e enfrenta o perigo ao lado de outros lutadores.
+                    No fim, continua sua vida como um forasteiro, evitando
+                    alianças desnecessárias.</p>
+            </div>
         </section>
      
         <section id="c2" class="conteudo"> <!-- Golpes -->
-            <img id="golpes" src="../../jpeg/k-golpes1.jpg" alt="Golpes Kdash">
+            <img id="golpes1" src="../../jpeg/kgolpes11.png" alt="Golpes Kdash">
+            <img id="golpes2" src="../../jpeg/kgolpes.png" alt="Golpes Kdash">
             <div class="video-full"><iframe width="560" height="315" src="https://www.youtube.com/embed/eA5CGTgHqgU?si=hZLeHzd1ECAlqh8k&amp;start=32" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
             <p id="rodape-video">Este vídeo pertence ao canal <a href="https://www.youtube.com/@KOFdaDepressao" target="_blank"><br>KOF da Depressão</a></p>
             <div class="rodape"></div>
@@ -149,61 +203,74 @@
             <p>Os personagens abaixo possuem algum tipo de ligação positiva ou negativa 
                 com K' Dash e estão presentes no Kof 2002</p>
 
-            <div class="relacao">
-                <div class="imagem">
-                    <img src="../../jpeg/whip-int.jpg" alt="">
+            <div id="relacaoGeral">
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../../jpeg/whip-int.jpg" alt="">
+                    </div>
+                    <div class="texto">
+                        <h1>Whip</h1>
+                        <p>Whip cujo nome verdadeiro é Seirah, apareceu pela primeira vez em The
+                            King of Fighters '99 como o novo membro do Ikari Warriors Team .
+                            Ela é um clone da falecida irmã de K , que compartilha seu nome verdadeiro.</p>
+                    </div>
                 </div>
-                <div class="texto">
-                    <h1>Whip</h1>
-                    <p>Whip cujo nome verdadeiro é Seirah, apareceu pela primeira vez em The 
-                        King of Fighters '99 como o novo membro do Ikari Warriors Team . 
-                        Ela é um clone da falecida irmã de K , que compartilha seu nome verdadeiro.</p>
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../../jpeg/kyo-int.jpg" alt="">
+                    </div>
+                    <div class="texto">
+                        <h1>Kyo</h1>
+                        <p>K'Dash foi infundido com o DNA de Kyo Kusanagi, que lhe
+                            deu o poder de pirocinese. Durante o programa, as memórias de K' foram
+                            manipuladas, e ele foi forçado a acreditar que ele era clone de Krizalid.</p>
+                    </div>
                 </div>
-            </div>
-      
-            <div class="relacao">
-                <div class="imagem">
-                    <img src="../../jpeg/kyo-int.jpg" alt="">
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../../jpeg/kula-int.jpg" alt="">
+                    </div>
+                    <div class="texto">
+                        <h1>Kula</h1>
+                        <p>Kula Diamond foi criada pelos NESTS com o objetivo de destruir K'Dash,
+                            mas durante sua jornada eles se tornaram aliados e passaram a buscar
+                            uma maneira de destruir o seus criadores, o grupo NESTS. Este laço entre
+                            os dois fez com que K' cuidasse de Kula como uma irmã mais nova.</p>
+                    </div>
                 </div>
-                <div class="texto">
-                    <h1>Kyo</h1>
-                    <p>K'Dash foi infundido com o DNA de Kyo Kusanagi, que lhe 
-                        deu o poder de pirocinese. Durante o programa, as memórias de K' foram 
-                        manipuladas, e ele foi forçado a acreditar que ele era clone de Krizalid.</p>
-                </div>
-            </div>
-
-            <div class="relacao">
-                <div class="imagem">
-                    <img src="../../jpeg/kula-int.jpg" alt="">
-                </div>
-                <div class="texto">
-                    <h1>Kula</h1>
-                    <p>Kula Diamond foi criada pelos NESTS com o objetivo de destruir K'Dash, 
-                        mas durante sua jornada eles se tornaram aliados e passaram a buscar 
-                        uma maneira de destruir o seus criadores, o grupo NESTS. Este laço entre 
-                        os dois fez com que K' cuidasse de Kula como uma irmã mais nova.</p>
-                </div>
-            </div>
-
-            <div class="relacao">
-                <div class="imagem">
-                    <img src="../../jpeg/maxima-int.jpg" alt="">
-                </div>
-                <div class="texto">
-                    <h1>Maxima</h1>
-                    <p>K'Dash e Máxima são parceiros de equipe e tem uma boa relação. K' 
-                        costuma xingar Maxima - como "estúpido", "idiota" etc. - mas na 
-                        verdade confia na confiabilidade de seu parceiro. Ele dificilmente 
-                        é educado e é sempre rude, mesmo com as pessoas próximas a ele. Como 
-                        K' geralmente expressa suas preocupações de uma maneira "durão", 
-                        Maxima, brincando, o chama de desonesto ou rígido. Por causa disso, 
-                        K' frequentemente deixava Maxima cuidar de quaisquer necessidades 
-                        sociais em seu lugar.</p>
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../../jpeg/maxima-int.jpg" alt="">
+                    </div>
+                    <div class="texto">
+                        <h1>Maxima</h1>
+                        <p>K'Dash e Máxima são parceiros de equipe e tem uma boa relação. K'
+                            costuma xingar Maxima - como "estúpido", "idiota" etc. - mas na
+                            verdade confia na confiabilidade de seu parceiro. Ele dificilmente
+                            é educado e é sempre rude, mesmo com as pessoas próximas a ele. Como
+                            K' geralmente expressa suas preocupações de uma maneira "durão",
+                            Maxima, brincando, o chama de desonesto ou rígido. Por causa disso,
+                            K' frequentemente deixava Maxima cuidar de quaisquer necessidades
+                            sociais em seu lugar.</p>
+                    </div>
                 </div>
             </div>
             <div class="rodape"></div>
         </section>
+
+        <footer>
+       
+            <ul type="none">
+                <li><a href="index.html">Personagens</li>
+                <li><a href="paginas/galeria.html">Galeria</li>
+                <li><a href="paginas/fightcade.html">Jogue Online</li>
+                <li><a href="paginas/combates.html">Combates</li>
+                <li><a href="paginas/enquete.html">Enquetes</li>
+                <li><a href="paginas/fatal-fury_curiosidades.html">Fatal Fury</li>
+                <li><a href="paginas/fatal-fury_curiosidades.html">Fatal Fury</li>
+            </ul>
+            <p>site criado por <a href="https://github.com/Leo-gsouza?tab=repositories" target="_blank">Leonardo Souza</p>
+        </footer>
             
         
     </main>

@@ -1,50 +1,51 @@
-var kdashAud = document.getElementById('audiokdash') 
-var maximaAud = document.getElementById('audiomaxima')
-var whipAud = document.getElementById('audiowhip')
-var kyoAud =  document.getElementById('audiokyo')
-
-
-function efeitoSonoro(personagem, audioPersonagem){
-    personagem.style.scale = '1.1'
-    personagem.style.filter = 'brightness(1.05)';
-    personagem.style.boxShadow = '3px 3px 7px rgba(0, 0, 0, 0.329)'
-    audioPersonagem.play()
-    
-}
-/* Esperar o audio encerrar para abrir a pagina */
-kdashAud.addEventListener('ended', function(){
-    window.location.href = 'paginas/kdash/kdash.html'
-})
-
-maximaAud.addEventListener('ended', function(){
-    window.location.href = 'paginas/maxima/maxima.html'
-})
-
-whipAud.addEventListener('ended', function(){
-    window.location.href = 'paginas/whip/whip.html'
-}) 
-
-kyoAud.addEventListener('ended', function(){
-    window.location.href = 'paginas/kyo/kyo.html'
-} )
-
-
-    
+   
 
 document.addEventListener("DOMContentLoaded", function(){
-    const personagens = document.querySelectorAll("#caracterSelect img");
+    const personagens = document.querySelectorAll("#caracterSelect1 img, #caracterSelect2 img");
     const imagemExibida = document.getElementById("imagemExibida");
-
+    const imagemVazia = document.getElementById("imagemVazia")
+    const som = document.getElementById('arcade')
 
     personagens.forEach((personagem) => {
         personagem.addEventListener("mouseover", function(){
-            const novaImagem = personagem.getAttribute("data-imagem")
+            const novaImagem = personagem.dataset.imagem;
             imagemExibida.src = novaImagem
             imagemExibida.style.display = 'block'
+            imagemVazia.style.display = 'none'
+            personagem.classList.add('escala')
+
+            som.currentTime = 0;
+            som.play();
         })
         personagem.addEventListener("mouseout", function (){
             imagemExibida.style.display = 'none'
+            imagemVazia.style.display = 'block'
+            personagem.style.boxShadow = 'none'
+            personagem.classList.remove("escala")
+
+            
         })
+
+        personagem.addEventListener("click", function(){
+            const vozes = personagem.dataset.som; /* Buscar o data-som */
+            const pagina = personagem.dataset.src;/* Buscar o data-src */
+            
+            if (vozes){
+                const elVozes = new Audio(vozes)
+                elVozes.play()
+
+                /* Esperar o audio encerrar para abrir a pagina */
+                elVozes.addEventListener("ended", function(){
+                    if (pagina) {
+                        window.location.href = pagina
+                    }
+                    else if (pagina){
+                        window.location.href = pagina
+                    }
+                })
+            }
+        })
+
     })
 
 })
