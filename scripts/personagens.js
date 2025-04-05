@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function(){
             const novaImagem = personagem.dataset.imagem;
             imagemExibida.src = novaImagem
             imagemExibida.style.display = 'block'
+            imagemExibida.classList.add('escala2')
             imagemVazia.style.display = 'none'
             personagem.classList.add('escala')
 

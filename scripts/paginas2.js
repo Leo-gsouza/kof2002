@@ -1,6 +1,6 @@
 
 document.getElementById("voltar").addEventListener("click", ()=> {
-    history.back();
+    window.location.href = '../../index.html';
 })
 
 

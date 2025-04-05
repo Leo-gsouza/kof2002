@@ -273,13 +273,12 @@ div.capa{
 }
 
 div.capa >  img.imagem{
-   height: 150px;
+    width: 50%;
  
 }
 
 div.capa > img.gif{
-   height: 120px;
-   margin-right: 20px;
+   width: 140px;
 } 
 
 section > div#abas{

@@ -184,6 +184,29 @@ div.team > img:hover{
     animation: escala 1s alternate infinite;
 }
 
+@keyframes escala2{
+    0%{
+        scale: 1;
+        filter: brightness(1);
+    }
+
+    50%{
+        scale: 1.07;
+        filter: brightness(1.2);
+    }
+   
+    100%{
+        scale: 1;
+        filter: brightness(1);
+    }
+}
+
+.escala2 {
+    animation: escala2 2s alternate infinite;
+}
+
+
+
 
 /*-------------------------------------------PAGINA PERSONAGEM--------------------------------------*/
 
