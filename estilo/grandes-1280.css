@@ -1,96 +1,60 @@
-/*-----------------------------------------GERAL---------------------------------------------*/
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
-
-@font-face {
-    font-family: 'kof';
-    src: url(../fontes/mechfire\ bold.otf) format(opentype);
-    font-weight: normal; font-style: normal;
-}
-
-@font-face {
-    font-family: 'grand';
-    src: url(../fontes/grandnational.ttf) format(truetype);
-}
-
-:root {
-    --cor0: #BD2A2E;
-    --cor1: #3B3936;
-    --cor2: #B2BEBF;
-    --cor3: #889C9B;
-    --cor4: #486966;
-
-    --fonte_padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte_destaque: 'kof', 'cursive';
-    --fonte_titulo: 'grand', 'cursive';
-    --fonte_poetsen: 'Poetsen One';
-    --fonte_russo: "Russo One";
+html, body{
+    background-color: white;
+    width: 100%;
+    overflow-x: hidden; 
 }
 
 *{
-    margin: 0px;
-    padding: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 100vw;
     box-sizing: border-box;
 }
 
-html, body {
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
+
+header{
+    width: 100%;
+    height: 55px;
 }
 
-
-
-/*-----------------------------------------HEADER--------------------------------------------*/
-header {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 15px;
-    background-image: linear-gradient(to top, var(--cor0), rgb(151, 16, 16));
-    text-align: center;
-    color: white;
-}
-
-header > h1 {
-    font-family: var(--fonte_destaque);
-    font-variant: small-caps;
-    font-size: 1.6em;
-
-    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.404);
+header > h1{
+    font-size: 3em;
 }
 
 header > span#burguer{
-    font-size: 2.8em;
-
-    text-shadow: 0px 0px 10px darkred;
-    color: white;
+    display: none;
+    color: rgba(240, 248, 255, 0);
 }
 
 header > span#voltar{
-    display: none;
+    color: white;
+    padding: 10px 10px 12px 25px;
+    margin: 0px;
 }
+header > span#voltar:hover{
+    background-color: #7c0d0f; 
+    font-size: 1.5;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.384);
+    scale: 1.15;
+}
+
 
 header > span#play{
     width: 35px;
+    padding-right: 100px;
    
-    font-size: 2.2em;
+    font-size: 3em;
     text-shadow: 0px 0px 2px white;
 
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 header > span#pause{
     width: 35px;
+    padding-right: 100px;
     display: none;
    
-    font-size: 2.2em;
+    font-size: 3em;
 
     color: white;
 
@@ -99,64 +63,23 @@ header > span#pause{
 
 @keyframes pause{
     0%{
-        scale: 1;
+        transform: scale(1);
     }
 
     100%{
-        scale: 1.2;
+        transform: scale(1.1);
         text-shadow: 0px 0px 15px white;
     }
 }
 
-menu {
-    display: none;
-    margin: auto;
-    background-color: #BD2A2E;
-    padding: 0px;
-}
-
-menu > div#menu{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    
-}
-
-
-menu > div#menu >  a {
-    padding: 8px;
-    margin: 2px;
-    flex: auto;
-    
-   
-    color: white;
-    text-shadow: 0px 0px 5px white;
-    box-shadow: inset 0px 0px 1px white;
-
-    font-size: 0.9em;
-    text-decoration: none;
-    text-align: center;
-
-    font-family: var(--fonte_padrao);
-    text-transform: uppercase;
-}
-
-menu > div#menu > a:hover{
-    transform: scale(1.05);
-    transition-duration: 1s;
-}
-
-/*----------------------------------------------PAGINA PRICIPAL--------------------------------------*/
+/* ---------------------------SELEÇÃO DE PERSONAGENS ----------------- */
 
 main{
-    background: url(../jpeg/fundo-abstrato.jpg) center  center  no-repeat fixed ;
+    width: 100%;
+    margin: auto;
+    background: url(../jpeg/fundo-abstrato.jpg) center center no-repeat fixed;
     background-size: cover;
-    ;
-}
-
-div#imagemPersonagem{
-    display: none;
-    
+    box-shadow: none;
 }
 
 main  > h1{
@@ -172,126 +95,169 @@ main  > h1{
 }
 
 h1#t1{
-    animation: titulo1 2s linear infinite;
-    padding-top: 30px;
+   font-size: 2.2em;
+   margin-top: 0px;
+   padding-top: 25px;
+
+   color: aliceblue;
+   text-shadow: 0px 0px 7px black;
 }
 
 h1#t2{
-    animation: titulo2 2s linear infinite;
-    font-size: 1.9em;
-    margin-bottom: 20px;
-    margin-top: -10px;
-    color: rgb(139, 0, 0);
-    
+   font-size: 2.2em;
 }
 
-@keyframes titulo1{
-    0%{
-        transform: translateX(-10px);
-    }
-
-    50%{
-        transform: translateX(10px);
-    }
-    
-    100%{
-        transform: translateX(-10px);
-    }
-}
-
-@keyframes titulo2{
-    0%{
-        transform: translateX(5px);
-    }
-
-    50%{
-        transform: translateX(-5px);
-    }
-    100%{
-        transform: translateX(5px);
-    }
-}
-
-section >  div#caracterSelect1, div#caracterSelect2{
+section{
+    width: 100%;
+    padding-left: 20px;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;  
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: start;
+
+    margin: auto;
+    
+}
+
+
+div#caracterSelect1{/* Coluna 1 */
+    width: 30%;
+    
+}
+
+div#caracterSelect2{/* Coluna 2 */
+    width: 30%;
+    
+}
+
+div#imagemPersonagem{/* coluna 3 */
+    width: 30%;
+    height: 100%;
 
 }
 
- div.team{
-    padding: 3.5px;
+div#imagemPersonagem > img{
+    width: 100%;
+    height: 100%;
+    
+
 }
 
+div.team{
+    width: 100%;
+
+}
 
 div.team > img{
-    width: 70px;
-
-    padding: 3px;
-    
-
-    animation: escala 2s linear infinite;
-}
-
-div#timekusanagui{
-
-    padding: 0px 76px;
+    width: 22%;
+    height: auto;
+    margin: 3px;
+    image-rendering: crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    box-sizing: border-box;
     
 }
+
+div.team > img:hover{
+    transform: scale(1.2);  
+}
+
 
 @keyframes escala{
     0%{
-        transform: scale(1);
+        scale: 1;
+        box-shadow: 0px 0px 0px white;
     }
+
     50%{
-        transform: scale(1.05);
+        scale: 1.007;
+        box-shadow: 0px 0px 8px var(--cor0);
     }
+
     100%{
-        transform: scale(1);
+        scale:1;
+        box-shadow: 0px 0px 0px white;
     }
 }
 
-footer{
-    display: none;
+.escala{
+    animation: escala 1s alternate infinite;
 }
 
-div.rodape{
-    background-color: #BD2A2E;
-    width: 100%;
-    height: 35px;
-    margin-top: 20px;
+@keyframes escala2{
+    0%{
+        scale: 1;
+        filter: brightness(1);
+    }
+
+    50%{
+        scale: 1.07;
+        filter: brightness(1.1);
+    }
+   
+    100%{
+        scale: 1;
+        filter: brightness(1);
+    }
 }
+
+.escala2 {
+    animation: escala2 2s alternate infinite;
+}
+
+
+
 
 /*-------------------------------------------PAGINA PERSONAGEM--------------------------------------*/
 
-div.capa{   
+section#capa{
     display: flex;
-    flex-flow: row nowrap ;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+
+    margin-bottom: 15px;
+    padding-top: 10px;
+
+}
+
+div.capa{   /* coluna 1 */
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap ;
+    justify-content: center;
+    align-items: center;
+
+  
 }
 
 div.capa >  img.imagem{
-    width: 50%;
+    width: 60%;
+    display: block;
+
+    border: 3px solid white;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.267);
+    border-radius: 50%;
  
 }
 
 div.capa > img.gif{
-   width: 140px;
+    display: none;
+    width: 100%;
 } 
 
-section > div#abas{
+section#capa > div#abas{ /* coluna 2 */
+    width: 100%;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
-    background-color: var(--cor0);
 
 }
 
-section > div#abas >  p{
-
-    padding: 7px 10px;
+section#capa > div#abas >  p{
+    width: 100%;
+    padding: 10px 2px;
+    margin: 10px 70px;
 
     text-align: center;
     text-transform: uppercase;
@@ -301,6 +267,15 @@ section > div#abas >  p{
     letter-spacing: -0.5px;
 
     color: white;
+    background-color: var(--cor0);
+    border-radius: 20px;
+}
+
+section#capa > div#abas >  p:hover{
+    box-shadow: 0px 0px 5px red;
+}
+div#vazio{
+    width: 100%;
 }
 
 section.conteudo{
@@ -327,12 +302,13 @@ section.conteudo{
     animation: textGlow 1s infinite alternate
 }
 
-
 /*---------------------------------------------HISTORIA-----------------------------------------*/
 
 section.conteudo{
-    background-color: rgba(255, 255, 255, 0);
+    width: 80%;
+    background-color: transparent;
 }
+
 section#c1{
     width: 100%;
     margin-bottom: 15px;
@@ -344,23 +320,22 @@ section#c1{
 }
 
 section#c1 > div{
-    width: 85%;
+    width: 45%;
     
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.274);
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.699);
+    background-color: rgba(255, 255, 255, 0.575);
 
-    margin: 15px 5px;
-    padding: 25px 5px;
+    margin-bottom: 25px;
 }
 
 section#c1 > div > h1{
     font-family: var(--fonte_destaque);
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.2em;
     font-weight: normal;
     color: white;
-    margin: 5px 5px;
+    margin: 0px 5px;
     border-radius: 15px 15px 0px 0px;
     padding: none;
     text-shadow: 00px 0px 3px rgba(0, 0, 0, 0.993);
@@ -373,15 +348,53 @@ section#c1 > div > p{
     background-color: rgba(255, 255, 255, 0.623);
     border-radius: 0px 0px 15px 15px;
     margin: 0px 5px 10px 5px;
-    padding: 2px 12px;
-
-    font-family: var(--fonte_padrao);
-    font-weight: normal;
-    text-indent: 10px;
 
       
 }
-section#c1 > div > a{
+
+
+section.conteudo > h2{
+    padding: 10px;
+    
+    text-align: center;
+    font-weight: normal;
+    font-family: var(--fonte_russo);
+    font-size: 1em;  
+    text-transform: uppercase;
+
+    color: darkred;
+   
+}
+
+section.conteudo > h3{
+    padding: 7px;
+    margin-bottom: -10px;
+    margin-top: 10px;
+    
+    text-align: center;
+    font-weight: normal;
+    font-family: var(--fonte_russo);
+    font-size: 1.15em;  
+
+    color: darkred;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.055);
+}
+
+
+
+section.conteudo > div > p{
+    padding: 10px 30px;
+
+    font-family: var(--fonte_padrao);
+    font-weight: normal;
+    text-align: justify;
+    font-size: 0.9em;
+    text-indent: 10px;
+
+    color: black;
+}
+
+section.conteudo > a{
     display: block;
     
     margin: auto;
@@ -424,11 +437,11 @@ section#c2{
 }
 
 
-section#c2 > img#golpes2{
+section#c2 > img#golpes1{
     display: none;
 }
 
-section#c2 > img#golpes1{
+section#c2 > img#golpes2{
     width: 80%;
     
 
@@ -451,14 +464,7 @@ section#c2 > div.video-full > iframe {
     border: none;
 }
 
-div.rodape{
-    display: none;
-}
-
-
-
 /*-----------------------------------------CURIOSIDADE---------------------------------------------*/
-
 section#c3{
     width: 100%;
     display: flex;
@@ -475,8 +481,6 @@ section#c3 > table#pessoal{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
 
     background-color: rgba(255, 255, 255, 0.582);
-
-    margin-top: 20px;
 
 }
 
@@ -506,6 +510,8 @@ div#relacaoGeral{
     justify-content: center;
     align-items: center;
 
+    
+
 }
 
 div.relacao{
@@ -520,18 +526,19 @@ div.relacao{
     background-color: transparent;
 }
 
-
 div.relacao > div.imagem{
-    width: 80%;
-    margin: auto;
+    width: 100%;
 
 }
 
+
 div.relacao > div.imagem > img{
-    margin: 0px 0px -50px -30px;
-    width: 40%;
+    width: 100px;
+    margin-bottom: -30px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
     border-radius: 50%;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.356);
+
 
     animation: imagem 2s infinite alternate;
 }
@@ -550,35 +557,36 @@ div.relacao > div.texto > h1{
     font-weight: normal;
 
     color: var(--cor4);
+    background-color: transparent;
+    
 
     
 }
 
 div.relacao > div.texto{
     width: 100%;
-    margin: auto;
   
     padding-bottom: 10px;
     
     box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.37);
     border: none;
-    border-radius: none;
-   
+    background-color: rgba(255, 255, 255, 0.616);
     
 }
 
 div.relacao > div.texto> p{
-    height: 140px;
+    height: 150px;
     overflow: scroll;
 
-    padding: 30px 10px;
+    padding: 20px;
     margin: 5px;
     
     text-align: justify;
     font-family: var(--fonte_padrao);
     font-size: 0.9em;
 
-    color: black;   
+    color: black; 
+    background-color: rgba(255, 255, 255, 0.836);  
 }
 
 ::-webkit-scrollbar{
@@ -590,39 +598,18 @@ div.relacao > div.texto> p{
 }
 
 
-
-/*-------------------------------------------FOOTER---------------------------------------*/
+/*-------------------------------------------FOOTER-----------------------------------*/
 footer{
-    background-image: linear-gradient(to right, rgb(36, 36, 36), black , rgb(36, 36, 36));
-    box-shadow: inset 0px 0px 55px black;
+    display: block;
+    background-color: var(--cor0);
 }
 
-footer > ul{
-    margin: auto;
-    width: 700px;
-    columns: 4;
-    padding: 30px 2px;
-}
-
-footer > ul > li{
-    
-    width: 150px;
-    padding: 7px 3px;   
-}
 
 footer > ul > li > a{
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
+    font-size: 0.7em;
+    padding: 5px;
 }
 
 footer > p{
-    text-align: center;
-    padding: 10px 0px;
-    color: white;
-}
-
-footer > p > a{
-    color: yellow;
-    text-decoration: none;
+    font-size: 0.6em;
 }

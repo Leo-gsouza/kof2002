@@ -371,53 +371,7 @@ strong{
 }
 
 /*---------------------------------------------GOLPES-----------------------------------------*/
-section > img#golpes{
-    display: block;
-    margin: auto;
-    width: 100vw;
-    transition: transform 0.5s ease;
-}
 
-section > div.video-full{
-    position: relative;
-    padding: 20px;
-    padding-bottom: 50%;
-    margin-top: -5px;
-}
-
-section > div.video-full > iframe{
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-}
-
-section > p#rodape-video{
-    text-shadow: 0px 2px 10px white;
-    text-align: center;
-    color: black;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    margin: auto;
-    margin-top: -5px;
-
-}
-
-section > p#rodape-video > a{
-    color: darkred;
-    text-decoration: none;
-    
-}
-
-section > p#rodape-video > a:hover{
-    font-weight: bolder;
-    text-shadow: 0px 0px 20px white;
-    text-decoration: none;
-
-    color: red;
-    
-}
 
 
 /*-----------------------------------------CURIOSIDADE---------------------------------------------*/
@@ -448,17 +402,7 @@ section > table#pessoal > tbody > tr > td{
     padding: 10px;
 }
 
-section.conteudo > div.relacao{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: end;
-    margin: auto;
-    width: 300px;
 
-    margin-bottom: 18px;
-    background-color: white;
-}
 
 div.relacao > div.imagem{
     width: 150px;

@@ -6,7 +6,8 @@
     <link rel="shortcut icon" href="../icon/icone.svg" type="image/x-icon">
     <link rel="stylesheet" href="../../estilo/normal.css">
     <link rel="stylesheet" href="../../estilo/mobile.css" media="screen and (max-width: 570px )">
-    <link rel="stylesheet" href="../../estilo/grandes-telas.css"  media="screen and (min-width: 800px) and (max-width: 1280px )">
+    <link rel="stylesheet" href="../../estilo/grandes-1280.css"  media="screen and (min-width: 800px) and (max-width: 1279px )">
+    <link rel="stylesheet" href="../../estilo/grandes-1920.css"  media="screen and (min-width: 1280px) and (max-width: 1920px )">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Golpes K'Dash</title>
 </head> 
@@ -135,19 +136,21 @@
             </div>
         </section>
      
-        <section id="c2" class="conteudo"> <!-- Golpes -->
+        <section id="c2" class="conteudo" style="display: none;"> <!-- Golpes -->
             <img id="golpes1" src="../../jpeg/kgolpes11.png" alt="Golpes Kdash">
             <img id="golpes2" src="../../jpeg/kgolpes.png" alt="Golpes Kdash">
-            <div class="video-full"><iframe width="560" height="315" src="https://www.youtube.com/embed/eA5CGTgHqgU?si=hZLeHzd1ECAlqh8k&amp;start=32" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-            <p id="rodape-video">Este vídeo pertence ao canal <a href="https://www.youtube.com/@KOFdaDepressao" target="_blank"><br>KOF da Depressão</a></p>
-            <div class="rodape"></div>
+            <div class="video-full">
+                <iframe src="https://www.youtube.com/embed/eA5CGTgHqgU?si=hZLeHzd1ECAlqh8k&amp;start=32"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
         </section> 
 
-        </section>
-
-        <section id="c3" class="conteudo"> <!--  Curiosidades -->
+        <div class="rodape"></div>
+        
+        <section id="c3" class="conteudo" style="display: none;"> <!--  Curiosidades -->
            
-            <h2>Informações pessoais:</h2>
             <table id="pessoal"><!-- Criação da tabela -->
                 <thead> <!-- Cabeçalho da tabela -->
                     <tr> <!-- Criar uma linha na tabela -->
@@ -199,10 +202,7 @@
                 </tbody>
             </table>
 
-            <h2>Personagens relacionados:</h2>
-            <p>Os personagens abaixo possuem algum tipo de ligação positiva ou negativa 
-                com K' Dash e estão presentes no Kof 2002</p>
-
+        
             <div id="relacaoGeral">
                 <div class="relacao">
                     <div class="imagem">
