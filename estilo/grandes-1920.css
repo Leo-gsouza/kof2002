@@ -241,7 +241,7 @@ div.capa >  img.imagem{
 }
 
 div.capa > img.gif{
-    display: block;
+    display: none;
     width: 20%;
 } 
 
@@ -312,9 +312,9 @@ section#c1{
     margin-bottom: 15px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: stretch;
-    gap: 10px;
+    gap: 15px;
 
     background-color: transparent;
     
@@ -362,7 +362,6 @@ section#c1 > div > p{
     border-radius: 0px 0px 15px 15px;
     margin: 0px 5px 10px 5px;
     font-size: 1.05em;
-
       
 }
 
@@ -408,22 +407,6 @@ section.conteudo > div > p{
     color: black;
 }
 
-
-@keyframes youtube{
-    0%{
-        scale: 1.03;
-
-    }
-    100%{
-        scale: 1.06;
-    }
-}
-
-strong{
-    color: rgb(175, 1, 1);
-    font-weight: normal;
-}
-
 /*---------------------------------------------GOLPES-----------------------------------------*/
 
 
@@ -455,9 +438,32 @@ section#c2 > div.video-full {
     display: inline-block;
     width: 40%;
     aspect-ratio: 16 / 9;
-
-  
 }
+
+div.video-full > p.tituloVideo{
+    font-size: 1.1em;
+    font-family: var(--fonte_poetsen);
+    padding: 5px;
+    color: var(--cor1);
+    text-align: center;
+}
+
+p.tituloVideo > a{
+    font-size: 1.1em;
+    font-family: var(--fonte_poetsen);
+    padding: 5px;
+    color: var(--cor1);
+    text-shadow: 0px 0px 5px white;
+    text-align: center;
+    text-decoration: none;
+}
+
+p.tituloVideo > a:hover{
+    color: var(--cor0);
+    text-shadow: 0px 0px 3px white;
+}
+
+
 
 section#c2 > div.video-full > iframe {
     width: 100%;
@@ -471,16 +477,16 @@ section#c2 > div.video-full > iframe {
 section#c3{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
-    width: 80%;
+    width: 90%;
     background-color: transparent;
+
+    margin-bottom: 35px;
 }
 
 section#c3 > table#pessoal{
-    width: 25%;
-    height: 100%;
-    margin-bottom: 40px;
+    width: 20%;
     border-collapse: collapse;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
 
@@ -511,7 +517,7 @@ section#c3 > table#pessoal > tbody > tr > td{
 }
 
 div#relacaoGeral{
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -526,9 +532,9 @@ div.relacao{
     justify-content: space-around;
     align-items: end;
     margin: auto;
-    width: 40%;
+    width: 30%;
 
-    margin-bottom: 38px;
+    margin-bottom: 15px;
     background-color: transparent;
 }
 
@@ -540,11 +546,10 @@ div.relacao > div.imagem{
 
 div.relacao > div.imagem > img{
     width: 35%;
-    margin-bottom: -40px;
+    margin-bottom: -35px;
     margin-left: -15px;
-    border: 2px solid white;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
-    border-radius: 50%;
+    
+    
 
 
     animation: imagem 2s infinite alternate;

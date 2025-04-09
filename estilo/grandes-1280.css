@@ -315,32 +315,45 @@ section#c1{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: stretch;
     
 }
 
 section#c1 > div{
-    width: 45%;
+    width: 40%;
     
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.274);
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.575);
 
     margin-bottom: 25px;
+    cursor: pointer;
 }
 
 section#c1 > div > h1{
     font-family: var(--fonte_destaque);
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: normal;
     color: white;
     margin: 0px 5px;
     border-radius: 15px 15px 0px 0px;
-    padding: none;
+    padding: 15px 5px;
     text-shadow: 00px 0px 3px rgba(0, 0, 0, 0.993);
 
-    background-color: rgba(255, 255, 255, 0.678);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+section#c1 > div:hover{
+    transform: scale(1.04);
+    transition: all 0.4s ease;
+}
+
+section#c1 > div:hover h1{
+    color: #7c0d0f;
+    text-shadow: 0px 0px 10px white;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
 }
 
 section#c1 > div > p{
@@ -448,13 +461,44 @@ section#c2 > img#golpes2{
     margin-bottom: 25px;
 }
 
+section#c2 > img#golpes2:hover{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.904);
+    box-shadow: 0px 0px 100px black;
+
+    transition: all 0.3s ease;
+    
+}
+
+div.video-full > p.tituloVideo{
+    font-size: 1.1em;
+    font-family: var(--fonte_poetsen);
+    padding: 5px;
+    color: var(--cor1);
+    text-align: center;
+}
+
+p.tituloVideo > a{
+    font-size: 1.1em;
+    font-family: var(--fonte_poetsen);
+    padding: 5px;
+    color: var(--cor1);
+    text-shadow: 0px 0px 5px white;
+    text-align: center;
+    text-decoration: none;
+}
+
+p.tituloVideo > a:hover{
+    color: var(--cor0);
+    text-shadow: 0px 0px 3px white;
+}
+
 section#c2 > div.video-full {
     display: inline-block;
     width: 80%;
     aspect-ratio: 16 / 9;
 
     margin-bottom: 20px;
-
   
 }
 

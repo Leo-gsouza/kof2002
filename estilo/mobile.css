@@ -40,7 +40,9 @@
 html, body {
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -109,10 +111,12 @@ header > span#pause{
 }
 
 menu {
+    all: unset;
     display: none;
     margin: auto;
     background-color: #BD2A2E;
     padding: 0px;
+    margin: 0px;
 }
 
 menu > div#menu{
@@ -125,7 +129,6 @@ menu > div#menu{
 
 menu > div#menu >  a {
     padding: 8px;
-    margin: 2px;
     flex: auto;
     
    
@@ -151,7 +154,8 @@ menu > div#menu > a:hover{
 main{
     background: url(../jpeg/fundo-abstrato.jpg) center  center  no-repeat fixed ;
     background-size: cover;
-    ;
+    overflow: hidden;
+
 }
 
 div#imagemPersonagem{
@@ -165,15 +169,18 @@ main  > h1{
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 0;
 
     color: gray;
 
     animation: select 0.4s infinite linear;
+    
 }
 
 h1#t1{
     animation: titulo1 2s linear infinite;
-    padding-top: 30px;
+    padding-top: 15px;
+   
 }
 
 h1#t2{
@@ -433,6 +440,29 @@ section#c2 > img#golpes1{
     
 
     margin-bottom: 25px;
+}
+
+div.video-full > p.tituloVideo{
+    font-size: 1em;
+    font-family: var(--fonte_poetsen);
+    padding: 5px;
+    color: var(--cor1);
+    text-align: center;
+}
+
+p.tituloVideo > a{
+    font-size: 1.1em;
+    font-family: var(--fonte_poetsen);
+    padding: 5px;
+    color: var(--cor1);
+    text-shadow: 0px 0px 5px white;
+    text-align: center;
+    text-decoration: none;
+}
+
+p.tituloVideo > a:hover{
+    color: var(--cor0);
+    text-shadow: 0px 0px 3px white;
 }
 
 section#c2 > div.video-full {
