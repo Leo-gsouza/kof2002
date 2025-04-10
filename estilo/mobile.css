@@ -560,8 +560,6 @@ div.relacao > div.imagem{
 div.relacao > div.imagem > img{
     margin: 0px 0px -50px -30px;
     width: 40%;
-    border-radius: 50%;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.356);
 
     animation: imagem 2s infinite alternate;
 }
