@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../icon/icone.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../../estilo/mobile.css">
-    <link rel="stylesheet" href="../../estilo/grandes-telas.css"  media="screen and (min-width: 1200px )">
+    <link rel="stylesheet" href="../../estilo/normal.css">
+    <link rel="stylesheet" href="../../estilo/mobile.css" media="screen and (max-width: 600px )">
+    <link rel="stylesheet" href="../../estilo/grandes-1280.css"  media="screen and (min-width: 601px) and (max-width: 1279px )">
+    <link rel="stylesheet" href="../../estilo/grandes-1920.css"  media="screen and (min-width: 1280px) and (max-width: 1920px )">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Whip</title>
 </head> 
@@ -14,199 +16,259 @@
 <body>
     <header>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <span id="voltar" class="material-symbols-outlined">arrow_back_ios</span>
         <h1>Whip</h1>
-        <span id="play" class="material-symbols-outlined" onclick="playMusic(musicKdash)">play_arrow</span>
-        <span id="pause" class="material-symbols-outlined" onclick="playMusic(musicKdash)">pause</span>
-        <audio  src="../../audio/team-k.mp3" loop id="musicKdash"></audio>
+        <span id="play" class="material-symbols-outlined" onclick="playMusic(tocar)">play_arrow</span>
+        <span id="pause" class="material-symbols-outlined" onclick="playMusic(tocar)">pause</span>
+        <audio  src="../../audio/team-k.mp3" loop id="tocar"></audio>
     </header>
 
     <menu id="itens">
         <div id="menu">
             <a href="../../index.html">Menu</a>
-            <a href="paginas/fightcade.html">Jogue Online</a>
-            <a href="paginas/combates.html">Combates</a>
+            <a href="../kdash/kdash.html">K Dash</a>
+            <a href="../maxima/maxima.html">Maxima</a>
         </div>
     </menu>
 
     <main>
-        <section>
+        <section id="capa">
             <div class="capa">
-                <img src="../../jpeg/whip2.jpg" alt="whip" class="imagem">
-                <img src="../../gif/whip3.gif" alt="" class="gif" >
+                <img src="../../jpeg/whipcapa.png" alt="maxima" class="imagem">
+                <img src="../../gif/whipgif.gif" alt="maxima" class="gif" style="width: 37%;">
             </div>
             <div id="abas">
-                <p id="b1" onclick="aba(this,c1,[b2,b3,b4],[c2,c3,c4])" >Historia</p>
-                <p id="b2" onclick="aba(this,c2,[b1,b3,b4],[c1,c3,c4])">Golpes</p>
-                <p id="b3" onclick="aba(this,c3,[b2,b1,b4],[c2,c1,c4])">Dicas</p>
-                <p id="b4" onclick="aba(this,c4,[b2,b3,b1],[c2,c3,c1])">Curiosidades</p>
-            </div>  
+                <p id="b1" class="glow" onclick="aba(this,c1,[b2,b3],[c2,c3])" >Historia</p>
+                <p id="b2" onclick="aba(this,c2,[b1,b3],[c1,c3])">Golpes</p>
+                <p id="b3" onclick="aba(this,c3,[b2,b1],[c2,c1])">Curiosidades</p>
+            </div> 
+            <div id="vazio"></div> 
         </section>
 
+        
         <section id="c1" class="conteudo"> <!-- Historia -->
-            <p>Whip foi introduzida em The King of Fighters '99 como membro da equipe de <strong>K'</strong>, junto com <strong>Maxima</strong> e <strong>Benimaru</strong>. Seu verdadeiro nome é <strong>Seirah</strong>, e ela é a irmã mais nova de K's. Quando criança, Whip foi sequestrada pela organização <strong>NESTS</strong> e transformada em uma assassina cibernética, com habilidades aprimoradas e memória alterada. Ela adotou o nome "Whip" devido ao seu estilo de luta único, que utiliza um chicote como arma principal.</p>
-
-            <p>Em KOF '99, Whip se junta a K', Maxima e Benimaru para destruir NESTS. Ao longo dos jogos KOF 2000 e KOF 2001, ela descobre a verdade sobre seu passado e sua relação com K'. Apesar disso, Whip mantém seu papel como soldado e permanece ao lado de K' na luta contra NESTS e seus líderes, incluindo <strong>Zero</strong> e <strong>Igniz</strong>.</p>
-
-            <p>Com a queda de NESTS em KOF 2001, Whip continua a participar dos torneios KOF, agora focada em proteger K' e lutar contra novas ameaças. Em KOF 2003 e KOF XI, Whip, ao lado de K' e Maxima, enfrenta <strong>Ash Crimson</strong> e outros personagens que buscam controlar o poder de Orochi. Embora sua missão original tenha terminado, Whip permanece leal aos seus companheiros.</p>
-
-            <p>Em KOF XIII, Whip ajuda a combater as forças que tentam ressuscitar Orochi, enquanto continua a proteger K' e os outros membros de sua equipe. Ela demonstra um forte senso de responsabilidade e lealdade, tanto à sua equipe quanto àqueles que foram afetados por NESTS.</p>
-
-            <p>Nos jogos mais recentes, KOF XIV e KOF XV, Whip continua a lutar ao lado de K' e Maxima, enfrentando novos vilões como <strong>Antonov</strong> e <strong>Verse</strong>. Embora seja mais reservada sobre seus sentimentos, Whip demonstra grande habilidade e dedicação em proteger seus amigos e garantir que ninguém mais sofra como ela sofreu nas mãos de NESTS.</p>
-
-            <p>Ao longo da série, Whip é retratada como uma guerreira habilidosa e leal, que luta não apenas por redenção, mas também para garantir a segurança daqueles que ama. Sua história é marcada por tragédias pessoais, mas também por sua força e determinação em superar seu passado.</p>
+            <div>
+                <h1>KOF '99</h1>
+                <p>
+                  Whip estreia como membro da Ikari Team, ao lado de Leona, Ralf e 
+                  Clark. Sua postura séria e uso do chicote logo a destacam. 
+                  Ela parece ter um passado misterioso ligado ao novo personagem 
+                  K'. A conexão com a organização NESTS é sugerida, mas ainda vaga.
+                </p>
+              </div>
+              
+              <div>
+                <h1>KOF 2000</h1>
+                <p>
+                  Whip retorna e o jogo aprofunda sua relação com K' e os 
+                  experimentos da NESTS. Descobre-se que ela é um clone da irmã de K', Seirah. 
+                  Sua busca por identidade se intensifica, e sua luta deixa 
+                  de ser apenas militar, tornando-se pessoal.
+                </p>
+              </div>
+              
+              <div>
+                <h1>KOF 2001</h1>
+                <p>
+                  Ela continua na equipe Ikari e se envolve diretamente na 
+                  queda da NESTS. A ligação emocional com K' é mais evidente. 
+                  Whip começa a questionar seu papel na luta e busca entender 
+                  o que significa ser um clone.
+                </p>
+              </div>
+              
+              <div>
+                <h1>KOF 2002</h1>
+                <p>
+                  Sem história oficial, Whip volta como personagem jogável. 
+                  Seu estilo técnico e ataques à distância continuam intactos. 
+                  A presença dela reforça sua importância no arco NESTS e 
+                  como membro respeitada dos Ikari Warriors.
+                </p>
+              </div>
+              
+              <div>
+                <h1>KOF 2003</h1>
+                <p>
+                  Whip não participa do torneio. Com o início da saga de Ash, 
+                  o foco muda para novos personagens. 
+                  Supõe-se que ela continue atuando em missões dos Ikari fora 
+                  das arenas do torneio.
+                </p>
+              </div>
+              
+              <div>
+                <h1>KOF XI</h1>
+                <p>
+                  Novamente ausente, Whip é mencionada apenas em materiais 
+                  suplementares. 
+                  Ela permanece operando como agente de campo, possivelmente 
+                  vigiando movimentos suspeitos em nome dos Ikari.
+                </p>
+              </div>
+              
+              <div>
+                <h1>KOF XII</h1>
+                <p>
+                  Whip não retorna neste título, que prioriza reformulação gráfica 
+                  e um elenco reduzido. 
+                  Apesar disso, sua ausência é notada pelos fãs, que esperam sua 
+                  volta em jogos futuros.
+                </p>
+              </div>
+              
+              <div>
+                <h1>KOF XIII</h1>
+                <p>
+                  Com foco na conclusão da saga de Ash, Whip novamente fica de 
+                  fora do torneio. 
+                  Ainda assim, é sugerido que ela acompanha os eventos por trás
+                   das cortinas, como parte das forças de inteligência.
+                </p>
+              </div>
+              
+              <div>
+                <h1>KOF XIV</h1>
+                <p>
+                  Após anos, Whip retorna como personagem DLC. Com 
+                  gráficos renovados e sua jogabilidade clássica, ela 
+                  agrada os fãs. 
+                  Atua mais nos bastidores, investigando ameaças enquanto 
+                  mantém sua ligação com K' e os Ikari.
+                </p>
+              </div>
+              
+              <div>
+                <h1>KOF XV</h1>
+                <p>
+                  Whip retorna oficialmente à equipe Ikari, lutando ao lado 
+                  de Ralf e Clark. Enfrenta ameaças dimensionais com profissionalismo. 
+                  Sua experiência como agente é valorizada, e ela reforça seu 
+                  papel essencial na franquia.
+                </p>
+              </div>
+              
+              
+            
         </section>
      
-        <section id="c2" class="conteudo"> <!-- Golpes -->
-            <img id="golpes" src="../../jpeg/whip-golpes.jpg" alt="Golpes Kdash">
-            <div class="video-full"><iframe width="560" height="315" src="https://www.youtube.com/embed/Yo-hWtA9DPA?si=ri4ISVhzYlpcIAdd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-            <p id="rodape-video">Este vídeo pertence ao canal <a href="https://www.youtube.com/channel/UCon5Kc18wi53fdl5W0zjIqQ" target="_blank"><br>Kof da Depressão</a></p>
+        <section id="c2" class="conteudo" style="display: none;"> <!-- Golpes -->
+            <img id="golpes1" src="../../jpeg/maxima-golpes-mobile.png" alt="Golpes Kdash">
+            <img id="golpes2" src="../../jpeg/maxima-golpes-desktop.png" alt="Golpes Kdash">
+            <div class="video-full">
+                <p class="tituloVideo">Video do canal <a href="https://www.youtube.com/channel/UC2ukZGouDCK_gO9O8Y8xeWA" target="_blank">Javier Jesus Alvarez</a></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rhXsitfKGa8?si=A_0rjVr9_995X9Ga" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe> 
+              </div>
         </section> 
 
-        <section id="c3" class="conteudo"><!--  Combates -->
-            <p class="descricao">Nesta pagina temos varias dicas relacionadas ao personagem escolhido, como vídeos de combates entre jogadores, explições detalhadas sobre os pontos positivos e negativos. Clique nos botões para ter acesso as informações desejadas</p>
-            <div class="botoes">
-                <p class="opcao" id="op1" onclick="aba(this, tex1, [op2, op3],  [tex2, tex3])">Vídeos</p>
-                <p class="opcao" id="op2" onclick="aba(this, tex2, [op1, op3],  [tex1, tex3])">Desvantagens</p>
-                <p class="opcao" id="op3" onclick="aba(this, tex3, [op1, op2],  [tex2, tex1])">Vantagens</p>
-            </div>
-            <section class="conteudo" id="tex1">
-                <p class="titulo-video"><a href="https://www.fightcade.com/id/laihung92133197" target="_blank">laihung92133197</a> vs <a href="https://www.fightcade.com/id/ddubi" target="_blank">ddubi</a></p>
-                <div class="video-full"><iframe width="560" height="315" src="https://www.youtube.com/embed/s2QxgEkBDMk?si=6eAi3Gw2RqYdjWXR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                
-                <p>O link abaixo direcionará você ao nosso canal, onde encontrará inúmeros combates entre jogadores que utilizam a Whip.</p>
-                <a href="https://www.youtube.com/channel/UChGvAzfQ5QywdY-WRMP1QIw" target="_blank">Youtube</a>
-            </section>
-
-            <section class="conteudo" id="tex2">
-                <h2>Desvantagens</h2>
-                <h3>Mobilidade Limitada</h3>
-                <p>Apesar de sua habilidade com o chicote, Whip pode ter dificuldade em se movimentar rapidamente devido à sua animação de ataque mais lenta. Isso pode torná-la vulnerável a ataques rápidos de oponentes ágeis.</p>
-                <h3>Ataques de Longo Alcance</h3>
-                <p>Embora Whip use um chicote para ataques de longo alcance, alguns dos seus movimentos podem ser facilmente esquivados ou bloqueados se o oponente conseguir manter uma distância segura. Isso pode ser problemático contra adversários com bons ataques de proximidade.</p>
-                <h3>Exposição ao Ataque</h3>
-                <p> Alguns dos ataques de Whip, como o <strong>"Whip’s Chain"</strong> e o <strong>"Whip's Grab"</strong>, podem deixá-la exposta se não forem executados corretamente ou se forem bloqueados pelo oponente. Isso pode levar a contra-ataques, especialmente se ela errar um movimento importante.</p>
-                <h3>Dependência de Comandos Específicos</h3>
-                <p>Whip possui vários movimentos que requerem comandos específicos para executar efetivamente. Se o jogador errar esses comandos ou for interrompido durante a execução, Whip pode se tornar vulnerável a ataques.</p>
-                <h3>Ataques Previsíveis</h3>
-                <p>Alguns dos ataques de Whip podem se tornar previsíveis se o oponente aprender a lidar com suas rotinas de ataque. Isso pode facilitar a defesa e a contra-ofensiva contra ela.</p>
-                <h3>Falta de Defesas Robusta</h3>
-                <p>Whip não tem muitos movimentos defensivos ou maneiras eficazes de se proteger contra ataques pesados. Jogadores que conseguem pressionar e manter a ofensiva podem sobrecarregar Whip, aproveitando sua falta de opções defensivas.</p>
-
-                <p>Essas vulnerabilidades fazem de Whip uma personagem que exige uma boa leitura do jogo e timing preciso para ser jogada de forma eficaz em KOF 2002. Jogadores que conhecem essas fraquezas podem usar estratégias específicas para explorá-las e ganhar vantagem na partida.</p>
-            </section>
-
-            <section class="conteudo" id="tex3">
-                <h3>Alcance Extenso</h3>
-                <p>Whip possui um alcance excepcional graças ao seu chicote, o que permite manter os oponentes à distância. Isso é vantajoso contra personagens que dependem de ataques corpo a corpo.</p>
-                <h3>Zoning</h3>
-                <p>Com o seu arsenal de ataques de longa distância, Whip é excelente para zoning (controle de espaço). Ela pode impedir que oponentes se aproximem, controlando o ritmo da partida.</p>
-                <h3>Variedade de Ataques</h3>
-                <p>Whip tem uma boa variedade de ataques com seu chicote, incluindo golpes de média e longa distância, ataques anti-aéreos, e movimentos rápidos que surpreendem o oponente.</p>
-                <h3>Combo Versátil</h3>
-                <p>Ela possui combos que são relativamente fáceis de executar, mas que causam dano significativo. Além disso, é possível encadear ataques de longa distância em combos para manter a pressão.</p>
-                <h3>Boa Defesa</h3>
-                <p>O alcance e a velocidade dos ataques de Whip tornam difícil para os oponentes romperem sua defesa, especialmente aqueles que não têm ataques de longa distância.</p>
-                <h3>Movimentos Especiais</h3>
-                <p>Whip tem alguns movimentos especiais únicos, como o "Boomerang Shot", que permite controlar ainda mais o espaço na tela, e o "Sonic Slaughter", que pode ser usado para finalizações poderosas.</p>
-                <h3>Versatilidade no Jogo de Pé</h3>
-                <p>Ela se sai bem tanto em ataques aéreos quanto em golpes no chão, o que a torna uma personagem equilibrada para jogadores que gostam de uma abordagem mais estratégica.</p>
-                <p>Essas vantagens tornam Whip uma personagem forte para jogadores que preferem um estilo de jogo baseado em controle de espaço e ataques de longa distância.</p>
-            </section>
-    
-            
-    
-        </section>
-
-        <section id="c4" class="conteudo"> <!--  Curiosidades -->
-            
-            <p>Embora seja difícil determinar uma única inspiração principal para a criação de Whip em "The King of Fighters", é possível destacar certas influências que podem ter contribuído significativamente para o seu design e conceito. Entre essas influências, uma das mais proeminentes é Ivy Valentine da série "Soul Calibur".</p>
-
-            <h2>Informações pessoais:</h2>
+        <div class="rodape"></div>
+        
+        <section id="c3" class="conteudo" style="display: none;"> <!--  Curiosidades -->
+           
             <table id="pessoal">
                 <thead>
                     <tr>
-                        <th colspan="2">Whip</th>
+                        <th colspan="2">Maxima</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Nome Completo</td>
-                        <td>Seirah (também conhecida como Muchiko em algumas versões)</td>
+                        <td>Maxima (não é conhecido um sobrenome; ele é geralmente referido apenas como "Maxima").</td>
                     </tr>
                     <tr>
                         <td>Data de nascimento</td>
-                        <td>Aproximadamente 20-22 anos (a idade pode variar dependendo da versão do jogo)</td>
+                        <td>2 de março</td>
                     </tr>
                     <tr>
                         <td>Local de nascimento</td>
-                        <td>Desconhecida</td>
+                        <td>Canadá</td>
                     </tr>
                     <tr>
                         <td>Altura</td>
-                        <td>1,73</td>
+                        <td>2,04</td>
                     </tr>
                     <tr>
                         <td>Peso</td>
-                        <td>59kg</td>
+                        <td>219kg</td>
+                    </tr>
+                    <tr>
+                        <td>Não gosta</td>
+                        <td>Gente intrometida</td>
                     </tr>
                     <tr>
                         <td>Comida favorita</td>
-                        <td>Macarraão tailandes</td>
+                        <td>Curry</td>
+                    </tr>
+                    <tr>
+                        <td>Esporte</td>
+                        <td> Hóquei (um esporte muito popular no Canadá, que é seu país natal).</td>
                     </tr>
                     <tr>
                         <td>Arma</td>
-                        <td>Chicote</td>
+                        <td>Maxima não usa armas convencionais, mas seus braços cibernéticos são equipados com canhões de plasma que ele utiliza em combate.</td>
                     </tr>
                     <tr>
                         <td>Estilo de Luta</td>
-                        <td>técnicas de combate militar e manejo especializado de chicote</td>
+                        <td>Maxima combina força bruta com técnicas de boxe e habilidades cibernéticas avançadas, utilizando seus implantes tecnológicos para realizar ataques poderosos e defensivos.</td>
                     </tr>
                 </tbody>
             </table>
 
-            <h2>Personagens relacionados:</h2>
-            <p>Os personagens abaixo possuem algum tipo de ligação positiva ou negativa com Whip e estão presentes no Kof 2002</p>
-
-            <div class="relacao">
-                <div class="imagem">
-                    <img src="../../jpeg/k-int.jpg" alt="kdash">
-                </div>  
-                <div class="texto">
-                    <h1>K Dash</h1>
-                    <p>Apesar de terem sido separados por muitos anos, Whip tem um laço profundo com seu irmão, K'. Quando eles se reencontram, é um momento emocionalmente carregado para ambos. Embora inicialmente tenha acreditado que K' estava morto, Whip está aliviada por vê-lo vivo e determinada a protegê-lo. Eles compartilham uma conexão única como irmãos que enfrentaram desafios semelhantes nas mãos da NESTS.</p>
+        
+            <div id="relacaoGeral">
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../../jpeg/whipcapa.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <h1>Whip</h1>
+                        <p>Whip se junta a K' e Máxima na luta contra a NESTS. Eles compartilham o objetivo comum de derrubar a organização e libertar-se de sua influência. Máxima respeita e confia em Whip como uma valiosa companheira de equipe.</p>
+                    </div>
+                </div>
+    
+                
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../../jpeg/kcapa.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <h1>K Dash</h1>
+                        <p> Máxima e K' têm uma relação de confiança mútua e trabalham juntos desde que traíram a NESTS. Máxima age como um irmão mais velho e protetor para K', apoiando-o em suas batalhas e na busca por liberdade.</p>
+                    </div>
+                </div>
+    
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../../jpeg/kulacapa.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <h1>Kula</h1>
+                        <p>Apesar de Kula inicialmente ser enviada pela NESTS para caçar K' e Máxima, ela eventualmente se junta a eles. Máxima desenvolve um sentimento protetor em relação a Kula, tratando-a quase como uma irmã mais nova.</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="relacao">
-                <div class="imagem">
-                    <img src="../../jpeg/clark-int.jpg" alt="Clark">
-                </div>
-                <div class="texto">
-                    <h1>Clark</h1>
-                    <p> Clark, assim como Ralf, desempenha um papel de figura paternal na vida de Whip. Sua presença tranquila e sua experiência como soldado veterano proporcionam conforto e segurança para Whip, especialmente em momentos de perigo. Ele é um mentor para Whip, oferecendo orientação e conselhos em suas missões. Ele a ajuda a aprimorar suas habilidades de combate e a se adaptar às complexidades do campo de batalha. Além disso, ele se dedica a protegê-la a todo custo, agindo como seu protetor dedicado.</p>
-                </div>
-            </div>
-
-            <div class="relacao">
-                <div class="imagem">
-                    <img src="../../jpeg/ralf-int.jpg" alt="Ralf">
-                </div>
-                <div class="texto">
-                    <h1>Ralf</h1>
-                    <p>Como membros dos Ikari Warriors, Whip e Ralf compartilham uma profunda camaradagem como colegas de equipe. Eles enfrentam desafios juntos, confiando um no outro em batalha e trabalhando em conjunto para alcançar seus objetivos. Ralf respeita as habilidades de Whip como combatente e confia nela para cumprir sua missão. Da mesma forma, Whip admira a força e a habilidade de Ralf em combate, vendo-o como um aliado valioso e um modelo a seguir.</p>
-                </div>
-            </div>
-
-            <div class="relacao">
-                <div class="imagem">
-                    <img src="../../jpeg/leona-int.jpg" alt="Leona">
-                </div>
-                <div class="texto">
-                    <h1>Leona</h1>
-                    <p>Whip compartilha uma forte conexão com Leona, que também teve sua vida afetada pela NESTS. Elas compartilham experiências semelhantes de trauma e perda, e encontram conforto e apoio uma na outra.</p>
-                </div>
-            </div>
+            <div class="rodape"></div>
         </section>
+
+        <footer>
+       
+            <ul type="none">
+                <li><a href="index.html">Personagens</li>
+                <li><a href="paginas/galeria.html">Galeria</li>
+                <li><a href="paginas/fightcade.html">Jogue Online</li>
+                <li><a href="paginas/combates.html">Combates</li>
+                <li><a href="paginas/enquete.html">Enquetes</li>
+                <li><a href="paginas/fatal-fury_curiosidades.html">Fatal Fury</li>
+                <li><a href="paginas/fatal-fury_curiosidades.html">Fatal Fury</li>
+            </ul>
+            <p>site criado por <a href="https://github.com/Leo-gsouza?tab=repositories" target="_blank">Leonardo Souza</p>
+        </footer>
             
         
     </main>

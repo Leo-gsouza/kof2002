@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../icon/icone.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../../estilo/mobile.css">
-    <link rel="stylesheet" href="../../estilo/grandes-telas.css"  media="screen and (min-width: 1200px )">
+    <link rel="stylesheet" href="../../estilo/normal.css">
+    <link rel="stylesheet" href="../../estilo/mobile.css" media="screen and (max-width: 600px )">
+    <link rel="stylesheet" href="../../estilo/grandes-1280.css"  media="screen and (min-width: 601px) and (max-width: 1279px )">
+    <link rel="stylesheet" href="../../estilo/grandes-1920.css"  media="screen and (min-width: 1280px) and (max-width: 1920px )">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Golpes Maxima</title>
+    <title>Máxima</title>
 </head> 
 
 
 <body>
     <header>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <span id="voltar" class="material-symbols-outlined">arrow_back_ios</span>
         <h1>Maxima</h1>
         <span id="play" class="material-symbols-outlined" onclick="playMusic(musicKdash)">play_arrow</span>
         <span id="pause" class="material-symbols-outlined" onclick="playMusic(musicKdash)">pause</span>
@@ -23,108 +26,146 @@
     <menu id="itens">
         <div id="menu">
             <a href="../../index.html">Menu</a>
-            <a href="paginas/fightcade.html">Jogue Online</a>
-            <a href="paginas/combates.html">Combates</a>
+            <a href="../kdash/kdash.html">K Dash</a>
+            <a href="../whip/whip.html">Whip</a>
         </div>
     </menu>
 
     <main>
-        <section>
+        <section id="capa">
             <div class="capa">
-                <img src="../../jpeg/maxima2.jpg" alt="kdash" class="imagem">
-                <img src="../../gif/maxima4.gif" alt="" class="gif">
+                <img src="../../jpeg/maximacapa.png" alt="maxima" class="imagem">
+                <img src="../../gif/maximagif.gif" alt="maxima" class="gif" style="width: 27%;">
             </div>
             <div id="abas">
-                <p id="b1" onclick="aba(this,c1,[b2,b3,b4],[c2,c3,c4])" >Historia</p>
-                <p id="b2" onclick="aba(this,c2,[b1,b3,b4],[c1,c3,c4])">Golpes</p>
-                <p id="b3" onclick="aba(this,c3,[b2,b1,b4],[c2,c1,c4])">Dicas</p>
-                <p id="b4" onclick="aba(this,c4,[b2,b3,b1],[c2,c3,c1])">Curiosidades</p>
-            </div>  
+                <p id="b1" class="glow" onclick="aba(this,c1,[b2,b3],[c2,c3])" >Historia</p>
+                <p id="b2" onclick="aba(this,c2,[b1,b3],[c1,c3])">Golpes</p>
+                <p id="b3" onclick="aba(this,c3,[b2,b1],[c2,c1])">Curiosidades</p>
+            </div> 
+            <div id="vazio"></div> 
         </section>
 
+        
         <section id="c1" class="conteudo"> <!-- Historia -->
-            <p>Maxima foi introduzido em The King of Fighters '99 como parte da nova equipe de heróis liderada por <strong>K'</strong>. Antes dos eventos de KOF, Maxima era um policial canadense que se juntou ao projeto "K" para investigar as atividades da organização <strong>NESTS</strong>. Durante o processo, ele foi transformado em um ciborgue pela própria NESTS, perdendo parte de sua humanidade, mas ganhando habilidades sobre-humanas.</p>
-
-            <p>Em KOF '99, Maxima se alia a K' e <strong>Whip</strong> para se rebelar contra NESTS. Ele se torna o parceiro e protetor de K', ajudando-o a lutar contra a organização. Nos eventos de KOF 2000 e KOF 2001, Maxima continua lutando contra NESTS, eventualmente contribuindo para a queda da organização.</p>
-
-            <p>Após a derrota de NESTS, Maxima e K' continuam participando dos torneios de KOF, agora como uma dupla inseparável. Em KOF 2003 e KOF XI, eles se envolvem na luta contra <strong>Ash</strong> <strong>Crimson</strong>, que está tentando roubar os poderes dos guerreiros KOF.</p>
-
-            <p>Em KOF XIII, Maxima e K' continuam sua batalha contra as forças de Ash e aqueles que tentam dominar o mundo usando poderosas entidades conhecidas como <strong>Orochi</strong>. No entanto, Maxima mantém sua lealdade a K', sempre o protegendo e ajudando em suas missões.</p>
-
-            <p>Em KOF XIV e KOF XV, Maxima segue ao lado de K' e sua equipe, enfrentando novos desafios e vilões, incluindo <strong>Antonov</strong> e <strong>Verse</strong>. Maxima permanece um personagem de suporte, usando sua força e habilidades tecnológicas para garantir que K' e os outros membros da equipe possam focar na luta principal.</p>
-
-            <p>Ao longo de todos os jogos, Maxima é retratado como um aliado fiel e um lutador poderoso, cuja principal motivação é proteger K' e garantir que eles possam ter uma vida normal após a destruição de NESTS. Mesmo com sua natureza cibernética, Maxima conserva uma personalidade humana, mostrando compaixão e um forte senso de justiça.</p>
+            <div>
+                <h1>KOF 99</h1>
+                <p>Maxima faz sua estreia em KOF 99 como parceiro de K', ambos 
+                    fugitivos da organização NESTS. Ele é um cyborg com aparência 
+                    humana, carregando um passado trágico e um forte senso de 
+                    justiça. No torneio, ele ajuda K' a enfrentar os planos da 
+                    NESTS e o vilão Krizalid. Maxima mostra força, lealdade e 
+                    estratégia, tornando-se uma figura chave no novo time 
+                    protagonista da série.</p>
+            </div>
+            
+            <div>
+                <h1>KOF 2000</h1>
+                <p>Maxima retorna ao lado de K' para continuar lutando contra a 
+                    NESTS. Ele enfrenta Zero e suas forças, agindo como um escudo 
+                    protetor de seus companheiros. Apesar das dificuldades, Maxima 
+                    mantém seu foco em acabar com a organização e proteger K'. Ele 
+                    também demonstra mais humanidade, reforçando sua ligação com a 
+                    equipe.</p>
+            </div>
+            
+            <div>
+                <h1>KOF 2001</h1>
+                <p>Maxima participa da ofensiva final contra a NESTS, ao lado de 
+                    K', Whip e Lin. Enfrenta K9999, clones e soldados da organização
+                     até chegarem ao líder Igniz. Durante a batalha, Maxima 
+                     demonstra grande resistência física e emocional, enfrentando
+                      seus traumas como criação da NESTS. Após a queda da 
+                      organização, seu caminho ganha novos rumos.</p>
+            </div>
+            
+            <div>
+                <h1>KOF 2002</h1>
+                <p>KOF 2002 não tem enredo canônico, mas Maxima está presente 
+                    com seu estilo de luta poderoso e firme. Ele aparece junto 
+                    de K' no tradicional time Anti-NESTS, reforçando seu papel 
+                    como aliado confiável. Seus ataques pesados e sua personalidade 
+                    protetora fazem dele um dos favoritos dos fãs.</p>
+            </div>
+            
+            <div>
+                <h1>KOF 2003</h1>
+                <p>Maxima não participa oficialmente do torneio, mas sua ausência 
+                    se dá pela reorganização do foco narrativo, que passa a girar 
+                    em torno de Ash Crimson. Mesmo fora do torneio, ele permanece 
+                    ao lado de K', ajudando em investigações sobre novos inimigos. 
+                    Seu papel continua nos bastidores.</p>
+            </div>
+            
+            <div>
+                <h1>KOF XI</h1>
+                <p>Maxima retorna ao lado de K' e Kula Diamond como parte do 
+                    time Anti-K', enfrentando os novos vilões ligados ao clã 
+                    de Orochi e a figura misteriosa Magaki. Ele mantém sua 
+                    função de protetor do grupo e mostra mais desenvolvimento 
+                    pessoal, destacando sua moral e preocupação com seus 
+                    companheiros.</p>
+            </div>
+            
+            <div>
+                <h1>KOF XII</h1>
+                <p>Maxima não está presente em KOF XII, já que o jogo conta com 
+                    elenco reduzido e foco no reboot gráfico da série. Apesar 
+                    disso, sua ausência é notada pelos fãs, e ele permanece 
+                    relevante na trama geral, aguardando seu retorno nos próximos 
+                    títulos.</p>
+            </div>
+            
+            <div>
+                <h1>KOF XIII</h1>
+                <p>Maxima volta com força total ao lado de K' e Kula. 
+                    Ele enfrenta o plano final de Those From the Past, lutando 
+                    contra clones e enfrentando Saiki, o vilão principal. D
+                    urante o torneio, mostra amadurecimento e se consolida 
+                    como o pilar emocional da equipe. Sua força bruta e 
+                    capacidade estratégica são essenciais para o sucesso da missão.</p>
+            </div>
+            
+            <div>
+                <h1>KOF XIV</h1>
+                <p>Maxima participa do novo torneio ao lado de K' e Kula 
+                    novamente. Enfrenta uma nova ameaça: Verse, uma entidade que
+                     manipula almas e distorce o tempo. Durante os confrontos, 
+                     Maxima mostra ainda mais evolução emocional, reforçando sua
+                      lealdade à equipe. Sua força mecânica continua sendo um 
+                      trunfo nas batalhas decisivas.</p>
+            </div>
+            
+            <div>
+                <h1>KOF XV</h1>
+                <p>Maxima retorna com o time de sempre: K' e Kula. Desta 
+                    vez, enfrentam Re:Verse e a entidade Otoma=Raga. Com novos 
+                    visuais e ajustes em suas habilidades, Maxima se destaca 
+                    como o tanque do time, protegendo seus aliados com ataques
+                     precisos e defesas firmes. Seu vínculo com K' e Kula se 
+                     fortalece ainda mais, consolidando-o como um verdadeiro 
+                     guerreiro de coração humano e corpo de aço.</p>
+            </div>
+            
         </section>
      
-        <section id="c2" class="conteudo"> <!-- Golpes -->
-            <img id="golpes" src="../../jpeg/maxima-golpes.jpg" alt="Golpes Kdash">
-            <div class="video-full"><iframe width="560" height="315" src="https://www.youtube.com/embed/rhXsitfKGa8?si=A_0rjVr9_995X9Ga" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-            <p id="rodape-video">Este vídeo pertence ao canal <a href="https://www.youtube.com/@JavierJesusAlvarez" target="_blank"><br>Javier Jesus Alvarez</a></p>
+        <section id="c2" class="conteudo" style="display: none;"> <!-- Golpes -->
+            <img id="golpes1" src="../../jpeg/maxima-golpes-mobile.png" alt="Golpes Kdash">
+            <img id="golpes2" src="../../jpeg/maxima-golpes-desktop.png" alt="Golpes Kdash">
+            <div class="video-full">
+                <p class="tituloVideo">Video do canal <a href="https://www.youtube.com/channel/UC2ukZGouDCK_gO9O8Y8xeWA" target="_blank">Javier Jesus Alvarez</a></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rhXsitfKGa8?si=A_0rjVr9_995X9Ga" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe> 
+              </div>
         </section> 
 
-        <section id="c3" class="conteudo"><!--  Combates -->
-            <p class="descricao">Nesta pagina temos varias dicas relacionadas ao personagem escolhido, como vídeos de combates entre jogadores, explições detalhadas sobre os pontos positivos e negativos. Clique nos botões para ter acesso as informações desejadas</p>
-            <div class="botoes">
-                <p class="opcao" id="op1" onclick="aba(this, tex1, [op2, op3],  [tex2, tex3])">Vídeos</p>
-                <p class="opcao" id="op2" onclick="aba(this, tex2, [op1, op3],  [tex1, tex3])">Desvantagens</p>
-                <p class="opcao" id="op3" onclick="aba(this, tex3, [op1, op2],  [tex2, tex1])">Vantagens</p>
-            </div>
-            <section class="conteudo" id="tex1">
-                <p>O vídeo abaixo é um combate realizado no FIGHTCADE.</p>
-                
-
-                <p>Este é apenas um dos muitos vídeos disponíveis em nosso canal no YouTube! Se você gosta de lutas emocionantes, siga-nos e compartilhe nosso conteúdo. No canal, você encontrará diversos combates entre lutadores talentosos e, quem sabe, até um duelo seu. Confira o link para o nosso canal logo abaixo e não perca nenhuma batalha!</p>
-                <a href="https://www.youtube.com/channel/UChGvAzfQ5QywdY-WRMP1QIw" target="_blank">Youtube</a>
-            </section>
-
-            <section class="conteudo" id="tex2">
-                <h3>Movimentação Lenta</h3>
-                <p>Maxima é um dos personagens mais lentos do jogo. Sua velocidade reduzida tanto no chão quanto no ar o torna vulnerável a personagens mais rápidos que podem facilmente contorná-lo e puni-lo.</p>
-                <h3>Previsibilidade</h3>
-                <p>Muitos dos ataques de Maxima são lentos e previsíveis, o que facilita para os oponentes esquivar ou bloquear e contra-atacar. Isso o coloca em desvantagem contra personagens com bons reflexos ou opções defensivas rápidas.</p>
-                <h3>Dependência de Proximidade</h3>
-                <p>Embora Maxima cause grande dano em combates próximos, ele tem dificuldades para se aproximar de oponentes que conseguem manter a distância, especialmente aqueles com bons ataques de zoning ou projéteis.</p>
-                <h3>Vulnerabilidade a Pressão</h3>
-                <p>Devido à sua movimentação lenta e falta de reversais rápidos, Maxima pode ser facilmente pressionado por oponentes que utilizam ataques rápidos e constantes. Ele tem dificuldade em sair de situações de pressão intensa.</p>
-                <h3>Limitado no Jogo Aéreo</h3>
-                <p>Maxima tem poucas opções aéreas eficazes, o que o torna vulnerável a personagens que dominam o combate aéreo. Sua falta de agilidade no ar também o torna suscetível a cross-ups.</p>
-
-                <p>Essas desvantagens fazem de Maxima um personagem que depende de uma boa leitura do oponente e uma execução precisa para ser eficaz em combate, especialmente contra personagens mais rápidos e ágeis.</p>
-            </section>
-
-            <section class="conteudo" id="tex3">
-                <h3>Dano Alto</h3>
-                <p>Maxima é conhecido por seu grande poder de ataque. Seus golpes causam muito dano, especialmente quando ele consegue conectar seus combos ou ataques especiais como o "Maxima Press" e "M-11."</p>
-                <h3>Resistência Elevada</h3>
-                <p>Maxima possui uma das maiores barras de vida do jogo, o que permite que ele suporte mais golpes antes de ser derrotado. Isso lhe dá uma margem de erro maior e permite absorver mais dano enquanto planeja contra-ataques.</p>
-                <h3>Super Armadura</h3>
-                <p>Alguns dos ataques de Maxima, como o "Vapor Cannon," têm super armadura, o que significa que ele pode absorver um golpe enquanto ainda executa o seu próprio ataque. Isso o torna muito perigoso em trocas diretas de golpes.</p>
-                <h3>Facilidade em Punir</h3>
-                <p>Devido ao alcance e ao poder de seus golpes, Maxima é excelente para punir erros dos oponentes. Sua capacidade de infligir grande dano com poucos golpes o torna ideal para jogadores que sabem esperar a oportunidade certa.</p>
-                <h3>Boa Defesa contra Projéteis</h3>
-                <p>Maxima pode neutralizar projéteis com seu movimento "M-4 Vapor Cannon," o que o torna eficaz contra personagens que dependem de ataques à distância. Isso força oponentes a se aproximarem, onde ele é mais perigoso.</p>
-                
-                <p>Essas vantagens fazem de Maxima um personagem que recompensa uma abordagem estratégica e paciente, punindo severamente os erros dos oponentes e dominando em combate corpo a corpo.</p>
-            </section>
-        </section>
-
-        <section id="c4" class="conteudo"> <!--  Curiosidades -->
-            <h2>Inspiração</h2>
-            <p>O personagem Maxima, da série The King of Fighters (KOF), foi introduzido pela primeira vez em The King of Fighters '99 como parte do novo time de heróis liderado por <strong>K'</strong> (K-Dash). Maxima é um ciborgue, e seu design e conceito foram inspirados por uma combinação de estereótipos de personagens poderosos e a estética cyberpunk.</p>
-
-            <p>Aqui estão alguns pontos de inspiração e características de Maxima:</p>
-
-            <p><strong>Influências Cibernéticas:</strong> Maxima é um ciborgue com habilidades aprimoradas por tecnologia, o que reflete a popularidade de temas cyberpunk em videogames e mídia durante os anos 90. Sua origem como uma fusão de homem e máquina remete a personagens de ficção científica que exploram o impacto da tecnologia na humanidade.</p>
-
-            <p><strong>Estereótipo do "Strongman":</strong> Fisicamente, Maxima é representado como um personagem grande e musculoso, refletindo o arquétipo do "strongman" (homem forte). Ele é o tanque da equipe, capaz de absorver danos e usar sua força bruta em combate.</p>
-
-            <p><strong>Design Inspirado em "Mecha":</strong> Alguns elementos do design de Maxima, como sua armadura e habilidades tecnológicas, foram influenciados pelo gênero "mecha", que é popular em animes e mangás. Esse estilo reflete o fascínio pela integração de humanos com armaduras robóticas.</p>
-
-            <p><strong>Personalidade: </strong>Apesar de sua aparência robusta e mecânica, Maxima tem uma personalidade protetora e um forte senso de justiça, o que o torna um aliado leal a K'. Isso cria um contraste interessante entre sua aparência cibernética e sua natureza humana.</p>
-
-            <p>Maxima foi criado para complementar K' em termos de gameplay e narrativa, formando uma parceria equilibrada onde K' é o personagem ágil e ofensivo, enquanto Maxima é mais defensivo e baseado em força.</p>
+        <div class="rodape"></div>
         
-            <h2>Informações pessoais:</h2>
+        <section id="c3" class="conteudo" style="display: none;"> <!--  Curiosidades -->
+           
             <table id="pessoal">
                 <thead>
                     <tr>
@@ -175,41 +216,55 @@
                 </tbody>
             </table>
 
-            <h2>Personagens relacionados:</h2>
-            <p>Os personagens abaixo possuem algum tipo de ligação positiva ou negativa com Maxima e estão presentes no Kof 2002</p>
-
-            
-            <div class="relacao">
-                <div class="imagem">
-                    <img src="../../jpeg/whip-int.jpg" alt="">
+        
+            <div id="relacaoGeral">
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../../jpeg/whipcapa.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <h1>Whip</h1>
+                        <p>Whip se junta a K' e Máxima na luta contra a NESTS. Eles compartilham o objetivo comum de derrubar a organização e libertar-se de sua influência. Máxima respeita e confia em Whip como uma valiosa companheira de equipe.</p>
+                    </div>
                 </div>
-                <div class="texto">
-                    <h1>Whip</h1>
-                    <p>Whip se junta a K' e Máxima na luta contra a NESTS. Eles compartilham o objetivo comum de derrubar a organização e libertar-se de sua influência. Máxima respeita e confia em Whip como uma valiosa companheira de equipe.</p>
+    
+                
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../../jpeg/kcapa.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <h1>K Dash</h1>
+                        <p> Máxima e K' têm uma relação de confiança mútua e trabalham juntos desde que traíram a NESTS. Máxima age como um irmão mais velho e protetor para K', apoiando-o em suas batalhas e na busca por liberdade.</p>
+                    </div>
+                </div>
+    
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../../jpeg/kulacapa.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <h1>Kula</h1>
+                        <p>Apesar de Kula inicialmente ser enviada pela NESTS para caçar K' e Máxima, ela eventualmente se junta a eles. Máxima desenvolve um sentimento protetor em relação a Kula, tratando-a quase como uma irmã mais nova.</p>
+                    </div>
                 </div>
             </div>
-
-            
-            <div class="relacao">
-                <div class="imagem">
-                    <img src="../../jpeg/k-int.jpg" alt="">
-                </div>
-                <div class="texto">
-                    <h1>K Dash</h1>
-                    <p> Máxima e K' têm uma relação de confiança mútua e trabalham juntos desde que traíram a NESTS. Máxima age como um irmão mais velho e protetor para K', apoiando-o em suas batalhas e na busca por liberdade.</p>
-                </div>
-            </div>
-
-            <div class="relacao">
-                <div class="imagem">
-                    <img src="../../jpeg/kula-int.jpg" alt="">
-                </div>
-                <div class="texto">
-                    <h1>Kula</h1>
-                    <p>Apesar de Kula inicialmente ser enviada pela NESTS para caçar K' e Máxima, ela eventualmente se junta a eles. Máxima desenvolve um sentimento protetor em relação a Kula, tratando-a quase como uma irmã mais nova.</p>
-                </div>
-            </div>
+            <div class="rodape"></div>
         </section>
+
+        <footer>
+       
+            <ul type="none">
+                <li><a href="index.html">Personagens</li>
+                <li><a href="paginas/galeria.html">Galeria</li>
+                <li><a href="paginas/fightcade.html">Jogue Online</li>
+                <li><a href="paginas/combates.html">Combates</li>
+                <li><a href="paginas/enquete.html">Enquetes</li>
+                <li><a href="paginas/fatal-fury_curiosidades.html">Fatal Fury</li>
+                <li><a href="paginas/fatal-fury_curiosidades.html">Fatal Fury</li>
+            </ul>
+            <p>site criado por <a href="https://github.com/Leo-gsouza?tab=repositories" target="_blank">Leonardo Souza</p>
+        </footer>
             
         
     </main>

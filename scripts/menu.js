@@ -3,7 +3,8 @@ var buttonPause = document.getElementById('pause')
 
 window.addEventListener('pageshow', function(event){
         if (event.persisted){
-                window.location.reload()/* se a pagina foi restaurada do cache de historico, recarregue-a */
+                window.location.reload()
+                /* se a pagina foi restaurada do cache de historico, recarregue-a */
          }
 })
 

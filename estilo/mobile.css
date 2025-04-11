@@ -111,7 +111,6 @@ header > span#pause{
 }
 
 menu {
-    all: unset;
     display: none;
     margin: auto;
     background-color: #BD2A2E;
@@ -219,6 +218,11 @@ h1#t2{
     }
 }
 
+section{
+    max-width: 400px;
+    margin: auto;
+}
+
 section >  div#caracterSelect1, div#caracterSelect2{
     display: flex;
     flex-flow: row wrap;
@@ -272,6 +276,13 @@ div.rodape{
 
 /*-------------------------------------------PAGINA PERSONAGEM--------------------------------------*/
 
+section#capa{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.336);
+}
+
 div.capa{   
     display: flex;
     flex-flow: row nowrap ;
@@ -280,25 +291,28 @@ div.capa{
 }
 
 div.capa >  img.imagem{
-    width: 50%;
+    width: 45%;
  
 }
 
 div.capa > img.gif{
-   width: 140px;
+   width: 22%;
+   margin-right: 10%;
 } 
 
-section > div#abas{
+
+section#capa > div#abas{
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     background-color: var(--cor0);
+    margin: 0;
+    
 
 }
-
 section > div#abas >  p{
-
-    padding: 7px 10px;
+    padding: 8px 10px;
 
     text-align: center;
     text-transform: uppercase;
@@ -308,6 +322,11 @@ section > div#abas >  p{
     letter-spacing: -0.5px;
 
     color: white;
+   
+}
+
+div#vazio{
+    display: none;
 }
 
 section.conteudo{
@@ -558,7 +577,7 @@ div.relacao > div.imagem{
 }
 
 div.relacao > div.imagem > img{
-    margin: 0px 0px -50px -30px;
+    margin: 0px 0px -28px -50px;
     width: 40%;
 
     animation: imagem 2s infinite alternate;
