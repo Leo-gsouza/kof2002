@@ -256,7 +256,7 @@ section#capa > div#abas{ /* coluna 2 */
 
 section#capa > div#abas >  p{
     width: 30%;
-    padding: 10px 5px;
+    padding: 5px 5px;
     margin: 10px 70px;
 
     text-align: center;
@@ -268,7 +268,7 @@ section#capa > div#abas >  p{
 
     color: white;
     background-color: var(--cor0);
-    border-radius: 8px;
+    border-radius: 8px 0px;
     box-sizing: 3px 3px 5px rgba(0, 0, 0, 0.37);
     cursor: pointer;
 }
@@ -312,7 +312,7 @@ section#c1{
     margin-bottom: 15px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: stretch;
     gap: 15px;
 
@@ -321,18 +321,19 @@ section#c1{
 }
 
 section#c1 > div{
-    width: 23%;
+    width: 30%;
     
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.274);
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.575);
 
     margin-bottom: 25px;
+    transition: all 0.3s ease;
 }
 
 section#c1 > div:hover{
     transform: scale(1.07);
-    transition: all 0.3s ease;
+    
 }
 
 section#c1 > div:hover h1{
@@ -419,7 +420,7 @@ section#c2 {
     width: 80%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     background-color: transparent;
@@ -428,13 +429,17 @@ section#c2 {
 }
 
 section#c2 > img#golpes2 {
-    max-width: 60%;
-    
+    max-width: 45%;
+    transition: all 0.6s ease;
+}
+
+section#c2 > img#golpes2:hover {
+    transform: scale(1.17);
 }
 
 section#c2 > div.video-full {
     display: inline-block;
-    width: 35%;
+    width: 45%;
     aspect-ratio: 16 / 9;
 }
 
@@ -475,24 +480,31 @@ section#c2 > div.video-full > iframe {
 section#c3{
     display: flex;
     flex-flow: row wrap;
-    justify-content: start;
-    align-items: start;
+    justify-content: space-evenly;
+    align-items: flex-start;
     width: 90%;
     background-color: transparent;
 
     margin-bottom: 35px;
+
 }
 
-section#c3 > table#pessoal{
-    width: 20%;
+section#c3 > div#pessoal{
+    width: 25%;
+
+}
+
+section#c3 > div#pessoal > table{
     border-collapse: collapse;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
 
     background-color: rgba(255, 255, 255, 0.603);
-    cursor: cell;
+    cursor: pointer;
 }
 
-section#c3 > table#pessoal > thead >tr >th{
+
+
+section#c3 > div#pessoal > table > thead >tr >th{
     
     color: var(--cor4);
     padding: 5px;
@@ -502,19 +514,28 @@ section#c3 > table#pessoal > thead >tr >th{
     background-color: white;
 }
 
-section#c3 > table#pessoal:hover >thead > tr > th{
+section#c3 > div#pessoal > table:hover >thead > tr > th{
     color: var(--cor0);
 
 }
 
-section#c3 > table#pessoal > tbody > tr {
+section#c3 > div#pessoal > table > tbody > tr {
     padding: 15px;
     
 }
 
-section#c3 > table#pessoal > tbody > tr > td{
+section#c3 > div#pessoal > table > tbody > tr > td:first-child{
     padding: 10px;
-    font-size: 1.2em;
+    font-size: 0.9em;
+    font-variant: small-caps;
+    color: var(--cor0);
+
+}
+
+section#c3 > div#pessoal > table > tbody > tr > td:last-child{
+    padding: 15px;
+    font-size: 0.9em;
+    font-family: var(--fonte_padrao);
 }
 
 div#relacaoGeral{
@@ -530,7 +551,7 @@ div.relacao{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    align-items: end;
+    align-items: flex-start;
     margin: auto;
     width: 30%;
 

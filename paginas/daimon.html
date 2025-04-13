@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon/icone.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../estilo/normal.css">
+    <link rel="stylesheet" href="../estilo/mobile.css" media="screen and (max-width: 600px )">
+    <link rel="stylesheet" href="../estilo/grandes-1280.css"  media="screen and (min-width: 601px) and (max-width: 1279px )">
+    <link rel="stylesheet" href="../estilo/grandes-1920.css"  media="screen and (min-width: 1280px) and (max-width: 1920px )">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Daimon</title>
+</head> 
+
+
+<body>
+    <header>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <span id="voltar" class="material-symbols-outlined">arrow_back_ios</span>
+        <h1>Daimon</h1>
+        <span id="play" class="material-symbols-outlined" onclick="playMusic(tocar)">play_arrow</span>
+        <span id="pause" class="material-symbols-outlined" onclick="playMusic(tocar)">pause</span>
+        <audio  src="../audio/team-kyo.mp3" loop id="tocar"></audio>
+    </header>
+
+    <menu id="itens">
+        <div id="menu">
+            <a href="../index.html">Menu</a>
+            <a href="../kyo/kyo.html">Kyo</a>
+            <a href="../benimaru/benimaru.html">Benimaru</a>
+        </div>
+    </menu>
+
+    <main>
+        <section id="capa">
+            <div class="capa">
+                <img src="../jpeg/daimoncapa.png" alt="maxima" class="imagem">
+                <img src="../gif/daimongif.gif" alt="maxima" class="gif" style="width: 28%;">
+            </div>
+            <div id="abas">
+                <p id="b1" class="glow" onclick="aba(this,c1,[b2,b3],[c2,c3])" >Historia</p>
+                <p id="b2" onclick="aba(this,c2,[b1,b3],[c1,c3])">Golpes</p>
+                <p id="b3" onclick="aba(this,c3,[b2,b1],[c2,c1])">Curiosidades</p>
+            </div> 
+            <div id="vazio"></div> 
+        </section>
+
+        
+        <section id="c1" class="conteudo"> <!-- Historia -->
+          <div>
+            <h1>KOF 94</h1>
+            <p>
+              Goro Daimon estreia como membro do Time Japão, junto de Kyo e Benimaru.  
+              Representando o judô, ele é o lutador de agarre e força bruta do trio.  
+              Sua postura séria equilibra a energia dos colegas durante o torneio.  
+              O time vence o campeonato, marcando sua importância na série.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 95</h1>
+            <p>
+              Retorna ao Time Japão para enfrentar o novo torneio de Rugal Bernstein.  
+              Atua como base sólida com seus agarrões e técnicas defensivas.  
+              Mantém sua função de equilíbrio dentro da equipe.  
+              Sua lealdade e seriedade continuam marcantes.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 96</h1>
+            <p>
+              Participa da luta contra Goenitz na nova fase da saga Orochi.  
+              Seu judô tradicional segue sendo uma peça importante no time.  
+              Age como um pilar de apoio para Kyo e Benimaru.  
+              Enfrenta inimigos mais poderosos com firmeza.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 97</h1>
+            <p>
+              No auge da saga Orochi, Goro permanece firme ao lado dos aliados.  
+              Tenta manter o time unido frente às revelações de Kyo e Iori.  
+              Combate os seguidores de Orochi com bravura.  
+              Mostra disciplina mesmo diante do caos.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 98</h1>
+            <p>
+              Em um jogo sem história, retorna como parte do Time Japão clássico.  
+              É valorizado por sua consistência e força no combate corpo a corpo.  
+              Seu estilo de judô se mantém inalterado e eficaz.  
+              Representa a tradição da franquia.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 99</h1>
+            <p>
+              Goro está ausente nesta edição, focando em seu dojo.  
+              O Time Japão é reformulado com a chegada de novos membros.  
+              Sua ausência marca o início de uma nova geração.  
+              Ainda assim, é lembrado com respeito.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2000</h1>
+            <p>
+              Continua ausente enquanto o Time Japão segue com nova formação.  
+              O foco da série se volta para a organização NESTS.  
+              É citado como mestre de judô em seu dojo.  
+              Fica à margem, mas ainda presente no universo.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2001</h1>
+            <p>
+              Retorna ao Time Japão para enfrentar a ameaça da NESTS.  
+              Mesmo após o tempo afastado, mostra força e lealdade.  
+              Sua presença fortalece o retorno do trio clássico.  
+              Prova seu valor com experiência e técnica.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2002</h1>
+            <p>
+              Em mais um título sem história, volta com o Time Japão.  
+              Seus golpes de agarrão seguem entre os mais poderosos.  
+              É uma escolha confiável para jogadores experientes.  
+              Reflete a força da velha guarda de KOF.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2003</h1>
+            <p>
+              Goro novamente está ausente do torneio oficial.  
+              O novo sistema favorece lutadores mais ágeis.  
+              Seu dojo continua ativo fora das arenas.  
+              A ausência marca a fase de transição da série.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XI</h1>
+            <p>
+              Retorna com o Time Japão, mantendo a formação clássica.  
+              Atua com solidez em meio às novas ameaças da saga Ash.  
+              Sua presença equilibra o time em estilo e postura.  
+              Mostra que sua força ainda é relevante.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XII</h1>
+            <p>
+              Volta com visual redesenhado e mesmo estilo tradicional.  
+              O jogo não possui história, focando em jogabilidade.  
+              Goro mantém seus agarrões e defesa pesada.  
+              É símbolo da tradição mesmo na nova era.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XIII</h1>
+            <p>
+              Continua no Time Japão, agora durante a saga de Ash.  
+              Sua participação na história é menor, mas importante.  
+              O estilo judoca clássico se mantém intacto.  
+              Representa estabilidade entre tantos novos rostos.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XIV</h1>
+            <p>
+              Goro volta ao lado de Kyo e Benimaru no Time Japão.  
+              Enfrenta novas ameaças globais com o trio original.  
+              Seu estilo permanece poderoso e confiável.  
+              Traz equilíbrio frente à nova geração.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XV</h1>
+            <p>
+              Permanece no Time Japão, agora com visuais modernos.  
+              Enfrenta novas ameaças junto de Kyo e Benimaru.  
+              Seu papel como mestre e guerreiro se mantém forte.  
+              Goro representa a continuidade e a tradição da série.
+            </p>
+          </div>
+          
+          
+              
+              
+            
+        </section>
+     
+        <section id="c2" class="conteudo" style="display: none;"> <!-- Golpes -->
+            <img id="golpes1" src="../jpeg/Daimon-golpes-mobile.png" alt="">
+            <img id="golpes2" src="../jpeg/Daimon-golpes-desktop.png" alt="">
+            <div class="video-full">
+                <p class="tituloVideo">Video do canal <a href="https://www.youtube.com/c/KOFdaDepress%C3%A3o" target="_blank">KOF da Depressão</a></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/74GOBNJQmbA?si=DoUPN7L7SNzYOjFt&amp;start=41" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe> 
+              </div>
+        </section> 
+
+        <div class="rodape"></div>
+        
+        <section id="c3" class="conteudo" style="display: none;"> <!--  Curiosidades -->
+           
+          <div id="pessoal">
+            <table >
+              <thead>
+                  <tr>
+                      <th colspan="2">Daimon</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nome</td>
+                  <td>Goro Daimon</td>
+              </tr>
+              <tr>
+                  <td>Nascimento</td>
+                  <td>5 de maio de 1969</td>
+              </tr>
+              <tr>
+                  <td>Nacionalidade</td>
+                  <td>Tóquio, Japão</td>
+              </tr>
+              <tr>
+                  <td>Altura</td>
+                  <td>2,04m</td>
+              </tr>
+              <tr>
+                  <td>Peso</td>
+                  <td>138kg</td>
+              </tr>
+              <tr>
+                  <td>Arma</td>
+                  <td>Nenhuma</td>
+              </tr>
+              <tr>
+                  <td>Estilo de Luta</td>
+                  <td>Judô tradicional japonês (fortemente baseado no Kōdōkan Judo, 
+                    com uso de arremessos e agarrões potentes)</td>
+              </tr>
+              <tr>
+                  <td>Personalidade</td>
+                  <td>Calmo, disciplinado e dedicado. Goro é sério quanto ao judô, valoriza 
+                    a honra e o trabalho em equipe. Costuma agir como o pilar estável do time.</td>
+              </tr>
+              
+              </tbody>
+            </table>
+          </div>
+
+          <div id="relacaoGeral">
+
+            <div class="relacao">
+              <div class="imagem">
+                  <img src="../jpeg/kyocapa.png" alt="Kyo">
+              </div>  
+              <div class="texto">
+                  <h1>Kyo</h1>
+                  <p>Daimon é companheiro de Kyo desde o primeiro torneio King of Fighters. Ele o 
+                    respeita como líder natural e observa seu talento com seriedade. Costuma 
+                    agir como um apoio mais maduro nas estratégias de equipe. A relação entre 
+                    os dois é de confiança mútua, mesmo com os impulsos de Kyo.</p>
+              </div>
+            </div>
+
+            <div class="relacao">
+                <div class="imagem">
+                    <img src="../jpeg/benimarucapa.png" alt="Benimaru">
+                </div>
+                <div class="texto">
+                    <h1>Benimaru</h1>
+                    <p> Apesar de suas personalidades contrastantes, Daimon e Benimaru 
+                      formam uma dupla eficiente. Enquanto Benimaru é extrovertido e 
+                      vaidoso, Daimon é calmo e centrado. Juntos com Kyo, formam o 
+                      Japan Team. A convivência fez nascer uma amizade sólida.</p>
+                </div>
+            </div>
+
+            <div class="relacao">
+                <div class="imagem">
+                    <img src="../jpeg/ryocapa.png" alt="Ralf">
+                </div>
+                <div class="texto">
+                    <h1>Ryo</h1>
+                    <p>Daimon vê Ryo como um jovem promissor e disciplinado. 
+                      Os dois compartilham o mesmo espírito de luta tradicional 
+                      e treinam com intensidade. Apesar de não serem aliados diretos, 
+                      possuem respeito recíproco e admiração técnica.</p>
+                </div>
+            </div>
+
+            <div class="relacao">
+                <div class="imagem">
+                    <img src="../jpeg/takumacapa.png" alt="Leona">
+                </div>
+                <div class="texto">
+                    <h1>Takuma</h1>
+                    <p>Embora não sejam próximos diretamente, Daimon reconhece em 
+                      Takuma um mestre disciplinado das artes marciais. Ambos seguem 
+                      filosofias tradicionais e valorizam o treino e a honra. Há 
+                      respeito mútuo entre os dois veteranos dos ringues.</p>
+                </div>
+            </div>
+            <div class="rodape"></div>
+        </section>
+
+        <footer>
+       
+            <ul type="none">
+                <li><a href="index.html">Personagens</li>
+                <li><a href="paginas/galeria.html">Galeria</li>
+                <li><a href="paginas/fightcade.html">Jogue Online</li>
+                <li><a href="paginas/combates.html">Combates</li>
+                <li><a href="paginas/enquete.html">Enquetes</li>
+                <li><a href="paginas/fatal-fury_curiosidades.html">Fatal Fury</li>
+                <li><a href="paginas/fatal-fury_curiosidades.html">Fatal Fury</li>
+            </ul>
+            <p>site criado por <a href="https://github.com/Leo-gsouza?tab=repositories" target="_blank">Leonardo Souza</p>
+        </footer>
+            
+        
+    </main>
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/paginas2.js"></script> 
+</body>
+</html>

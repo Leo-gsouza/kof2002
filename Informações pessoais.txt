@@ -1,0 +1,41 @@
+Gostaria de informações pesoais do personagem goro daimon do the king of fighters.
+- Nome completo
+-Data de nascimento completa
+-Local de nascimento, cidade e Pais
+-altura 
+-peso
+-arma 
+-estilo de luta 
+-Personalidade 
+
+Monte nessa estrutura:
+
+<tr>
+                      <td>Nome</td>
+                      <td>Goro Daimon</td>
+                  </tr>
+                  <tr>
+                      <td>Nascimento</td>
+                      <td>5 de maio de 1969</td>
+                  </tr>
+                  <tr>
+                      <td>Nacionalidade</td>
+                      <td>Tóquio, Japão</td>
+                  </tr>
+                  <tr>
+                      <td>Altura</td>
+                      <td>2,04</td>
+                  </tr>
+                  <tr>
+                      <td>Peso</td>
+                      <td>138kg</td>
+                  </tr>
+                  <tr>
+                      <td>Arma</td>
+                      <td>Nenhuma</td>
+                  </tr>
+                  <tr>
+                      <td>Estilo de Luta</td>
+                      <td>Judô tradicional japonês (fortemente baseado no Kōdōkan Judo,
+                        com uso de arremessos e agarrões potentes)</td>
+                  </tr>

@@ -517,19 +517,22 @@ section#c3{
 }
 
 
-section#c3 > table#pessoal{
+section#c3 > div#pessoal{
     width: 80%;
     margin-bottom: 40px;
+    margin-top: 20px;
+
+}
+
+section#c3 > div#pessoal > table{
     border-collapse: collapse;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
 
     background-color: rgba(255, 255, 255, 0.582);
 
-    margin-top: 20px;
-
 }
 
-section > table#pessoal > thead >tr >th{
+section > div#pessoal > table > thead >tr >th{
     
     color: var(--cor4);
     padding: 5px;
@@ -539,12 +542,12 @@ section > table#pessoal > thead >tr >th{
     background-color: white;
 }
 
-section > table#pessoal > tbody > tr {
+section > div#pessoal > table > tbody > tr {
     padding: 8px 5px;
     font-size: 0.7em;
 }
 
-section > table#pessoal > tbody > tr > td{
+section > div#pessoal > table > tbody > tr > td{
     padding: 10px;
 }
 
@@ -577,7 +580,7 @@ div.relacao > div.imagem{
 }
 
 div.relacao > div.imagem > img{
-    margin: 0px 0px -28px -50px;
+    margin: 0px 0px -28px -26px;
     width: 40%;
 
     animation: imagem 2s infinite alternate;

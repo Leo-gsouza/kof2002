@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon/icone.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../estilo/normal.css">
+    <link rel="stylesheet" href="../estilo/mobile.css" media="screen and (max-width: 600px )">
+    <link rel="stylesheet" href="../estilo/grandes-1280.css"  media="screen and (min-width: 601px) and (max-width: 1279px )">
+    <link rel="stylesheet" href="../estilo/grandes-1920.css"  media="screen and (min-width: 1280px) and (max-width: 1920px )">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Kyo</title>
+</head> 
+
+
+<body>
+    <header>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <span id="voltar" class="material-symbols-outlined">arrow_back_ios</span>
+        <h1>Kyo</h1>
+        <span id="play" class="material-symbols-outlined" onclick="playMusic(tocar)">play_arrow</span>
+        <span id="pause" class="material-symbols-outlined" onclick="playMusic(tocar)">pause</span>
+        <audio  src="../audio/team-kyo.mp3" loop id="tocar"></audio>
+    </header>
+
+    <menu id="itens">
+        <div id="menu">
+            <a href="../index.html">Menu</a>
+            <a href="../benimaru/benimaru.html">Benimaru</a>
+            <a href="../daimon/daimon.html">Daimon</a>
+        </div>
+    </menu>
+
+    <main>
+        <section id="capa">
+            <div class="capa">
+                <img src="../jpeg/kyocapa.png" alt="whip" class="imagem">
+                <img src="../gif/kyogif.gif" alt="kyo" class="gif">
+            </div>
+            <div id="abas">
+                <p id="b1" class="glow" onclick="aba(this,c1,[b2,b3],[c2,c3])" >Historia</p>
+                <p id="b2" onclick="aba(this,c2,[b1,b3],[c1,c3])">Golpes</p>
+                <p id="b3" onclick="aba(this,c3,[b2,b1],[c2,c1])">Curiosidades</p>
+            </div> 
+            <div id="vazio"></div> 
+        </section>
+
+        
+        <section id="c1" class="conteudo"> <!-- Historia -->
+            <div>
+                <h1>KOF 94</h1>
+                <p>Kyo representa o Japão ao lado de Benimaru e Goro Daimon. 
+                    Ele descobre o torneio KOF e aceita participar para testar 
+                    suas habilidades. No final, enfrentam o chefe Rugal Bernstein. 
+                    Kyo se destaca ao derrotar o vilão, chamando atenção mundial 
+                    como um prodígio.</p>
+            </div>
+
+            <div>
+                <h1>KOF 95</h1>
+                <p>O time do Japão é convidado para outro torneio KOF, agora com 
+                    o misterioso Rugal retornando. Kyo descobre o clã Orochi por 
+                    trás das ameaças e enfrenta Iori Yagami, seu rival. A rivalidade 
+                    entre os Kusanagi e os Yagami é revelada. Kyo vence Rugal 
+                    novamente, que morre ao tentar absorver poder demais.</p>
+            </div>
+
+            <div>
+                <h1>KOF 96</h1>
+                <p>Kyo continua a competir, agora investigando o crescente poder 
+                    de Orochi. Enfrenta Goenitz, um dos Quatro Reis Celestiais. 
+                    Goenitz derrota vários lutadores com facilidade, mas é 
+                    vencido por Kyo com a ajuda de Iori e Chizuru. Essa união 
+                    dos três herdeiros sagrados inicia a resistência contra Orochi.</p>
+            </div>
+
+            <div>
+                <h1>KOF 97</h1>
+                <p>Kyo se junta a Iori e Chizuru oficialmente para selar Orochi. 
+                    Eles enfrentam a New Faces Team, que se revela como servos 
+                    de Orochi. Após batalhas intensas, Orochi desperta usando 
+                    o corpo de Yashiro. Kyo, com ajuda de Iori, consegue selar 
+                    Orochi novamente, mas o esforço é imenso.</p>
+            </div>
+
+            <div>
+                <h1>KOF 98</h1>
+                <p>Esse torneio é um especial sem continuidade oficial. 
+                    Todos os personagens aparecem apenas por diversão. 
+                    Kyo participa com sua versão clássica e também com 
+                    novos golpes. A história não avança nesse título.</p>
+            </div>
+
+            <div>
+                <h1>KOF 99</h1>
+                <p>Kyo é sequestrado pela NESTS, uma organização que clona 
+                    seus poderes. K  aparece como o novo protagonista com 
+                    habilidades baseadas em Kyo. Kyo escapa do cativeiro, 
+                    mas se esconde enquanto observa os planos da NESTS. 
+                    Ele retorna no final para enfrentar Krizalid, o vilão.</p>
+            </div>
+
+            <div>
+                <h1>KOF 2000</h1>
+                <p>Kyo ainda age nos bastidores, caçando a NESTS. 
+                    Apesar de não estar no time oficial, ele é 
+                    selecionável e continua sua missão secreta. Vários clones 
+                    seus ainda aparecem em ação. A NESTS começa a ruir por dentro.</p>
+            </div>
+
+            <div>
+                <h1>KOF 2001</h1>
+                <p>Kyo retorna oficialmente como parte do time Japan. 
+                    Ajuda na luta contra os últimos planos da NESTS. 
+                    Enfrenta K9999 e Igniz, o líder final da organização. 
+                    Após a queda da NESTS, Kyo volta a viver mais tranquilamente.</p>
+            </div>
+
+            <div>
+                <h1>KOF 2002</h1>
+                <p>Mais um torneio comemorativo sem continuidade oficial. 
+                    Kyo participa com diversas versões, incluindo a clássica. 
+                    Não há história principal, mas ele é um dos personagens 
+                    mais populares.</p>
+            </div>
+            <div>
+                <h1>KOF 2003</h1>
+                <p>Agora com sistema de times de 3, Kyo não faz parte do time 
+                    principal do enredo. Ash Crimson entra como novo protagonista. 
+                    Kyo participa do torneio, mas não está diretamente envolvido 
+                    na trama de Mukai e do novo clã que ameaça os herdeiros sagrados.</p>
+            </div>
+            <div>
+                <h1>KOF XI</h1>
+                <p>Kyo volta a ser mais ativo, tentando proteger o selo de Orochi. 
+                    Percebe que Ash Crimson é uma ameaça, pois rouba os poderes de 
+                    Chizuru. A trama se intensifica, e Kyo se prepara para possíveis 
+                    confrontos futuros. A tensão entre os herdeiros sagrados aumenta.</p>
+            </div>
+            <div>
+                <h1>KOF XIII</h1>
+                <p>Kyo enfrenta Ash, que já roubou os poderes de Iori e Chizuru. 
+                    O clã Orochi tenta retornar mais uma vez. Ash desaparece após 
+                    o clímax da batalha, e a ameaça é selada. Kyo retoma sua 
+                    posição como um dos maiores heróis da série.</p>
+            </div>
+            <div>
+                <h1>KOF XIV</h1>
+                <p>Uma nova organização misteriosa organiza o torneio. 
+                    Kyo participa novamente com o time clássico do Japão. 
+                    Ele investiga os novos lutadores e o fenômeno que ameaça o mundo. 
+                    Enfrenta Verse, uma entidade ligada a almas perdidas.</p>
+            </div>
+            <div>
+                <h1>KOF XV</h1>
+                <p>Kyo retorna com o time Japan para enfrentar a ameaça de Re:Verse 
+                    e Otoma=Raga. Reforça sua rivalidade com Iori e seu papel como 
+                    herdeiro Kusanagi. Apesar de novas ameaças, continua protegendo 
+                    o equilíbrio entre os poderes antigos. Sua chama continua 
+                    essencial para o mundo.</p>
+            </div>
+        </section>
+     
+        <section id="c2" class="conteudo" style="display: none;"> <!-- Golpes -->
+            <img id="golpes1" src="../jpeg/kyo-golpes-mobile.png" alt="Golpes Kdash">
+            <img id="golpes2" src="../jpeg/kyo-golpes-desktop.png" alt="Golpes Kdash">
+            <div class="video-full">
+                <p class="tituloVideo">Video do canal <a href="https://www.youtube.com/c/KOFdaDepress%C3%A3o" target="_blank">KOF DA DEPRESSÃO</a></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zV_9wJebYzo?si=djIs-JgcbIIrC-wa&amp;start=33" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe>
+              </div>
+        </section> 
+
+        <div class="rodape"></div>
+        
+        <section id="c3" class="conteudo" style="display: none;"> <!--  Curiosidades -->
+           
+            <div id="pessoal">
+                <table ><!-- Criação da tabela -->
+                    <thead>
+                        <tr>
+                            <th colspan="2">Kyo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nome</td>
+                            <td>Kyo Kusanagi</td>
+                        </tr>
+                        <tr>
+                            <td>Nascimento</td>
+                            <td>12 de dezembro de 1976</td>
+                        </tr>
+                        <tr>
+                            <td>Nacionalidade</td>
+                            <td>Quioto, Japão</td>
+                        </tr>
+                        <tr>
+                            <td>Altura</td>
+                            <td>1,81m</td>
+                        </tr>
+                        <tr>
+                            <td>Peso</td>
+                            <td>75kg</td>
+                        </tr>
+                        <tr>
+                            <td>Arma</td>
+                            <td>Nenhuma</td>
+                        </tr>
+                        <tr>
+                            <td>Estilo de Luta</td>
+                            <td>Estilo Kusanagi de artes marciais com manipulação de chamas</td>
+                        </tr>
+                        <tr>
+                            <td>Personalidade</td>
+                            <td>Confiante, às vezes arrogante. Kyo é destemido, impulsivo, mas protetor com seus aliados.</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+        
+            <div id="relacaoGeral">
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../jpeg/benimarucapa.png" alt="Benimaru">
+                    </div>
+                
+                    <div class="texto">
+                        <h1>Benimaru </h1>
+                        <p> Benimaru é um dos aliados mais confiáveis de Kyo. Os dois têm uma amizade que se desenvolveu a
+                            o longo dos vários torneios de KOF. Benimaru é conhecido por seu estilo flamboyant e comportamento 
+                            extrovertido, o que contrasta com a personalidade mais séria e focada de Kyo. Apesar das diferenças de 
+                            personalidade, eles têm uma forte sinergia em combate, muitas vezes formando uma equipe eficaz. O respeito 
+                            mútuo e a lealdade são evidentes na forma como trabalham juntos e enfrentam desafios como uma unidade coesa.</p>
+                    </div>
+                </div>
+    
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../jpeg/daimoncapa.png" alt="Daimon">
+                    </div>
+                    
+                    <div class="texto">
+                        <h1>Daimon</h1>
+                        <p>Goro Daimon é o terceiro membro da equipe japonesa junto com Kyo e Benimaru. Embora ele seja mais reservado e 
+                            menos comunicativo do que os outros dois, há um forte senso de camaradagem e respeito entre ele e Kyo. 
+                            Goro frequentemente age como o pilar de apoio da equipe, e sua habilidade defensiva e força bruta complementam 
+                            bem o estilo ofensivo de Kyo e o caráter ágil de Benimaru. A relação deles é baseada na confiança e no trabalho 
+                            em equipe, o que é crucial para seu sucesso nas competições.</p>
+                    </div>
+                </div>
+    
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../jpeg/ioricapa.png" alt="Iori">
+                    </div>
+                    <div class="texto">
+                        <h1>Iori</h1>
+                        <p> A rivalidade entre Kyo e Iori é uma das mais intensas e complexas da série KOF. Esta rivalidade tem raízes profundas 
+                            em suas histórias familiares e nos conflitos ancestrais entre seus clãs. Iori, possuído por um ódio profundo e uma 
+                            maldição que amplifica suas emoções negativas, vê Kyo como a encarnação do que ele mais despreza. Essa inimizade não é 
+                            apenas física, mas também emocional e ideológica. Os encontros entre Kyo e Iori são carregados de tensão e ódio, e suas 
+                            batalhas são frequentemente epicentros de grandes conflitos na série.</p>
+                    </div>
+                </div>
+    
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../jpeg/kcapa.png" alt="k Dash">
+                    </div>
+                   
+                    <div class="texto">
+                        <h1>K Dash</h1>
+                        <p> K' é um clone criado pela NESTS usando o DNA de Kyo, o que cria uma rivalidade intrínseca e uma complexa relação entre os 
+                            dois. K' carrega um ressentimento devido ao seu status de clone e ao fato de ter sido manipulado. Ele busca afirmar sua 
+                            própria identidade e superar a sombra de Kyo. Embora K' tenha seu próprio estilo de luta e habilidades distintas, há uma 
+                            tensão subjacente e uma sensação de competição constante com Kyo. A rivalidade entre eles é tanto pessoal quanto ideológica, 
+                            refletindo questões de identidade e legado.</p>
+                    </div>
+                </div>
+    
+                <div class="relacao">
+                    <div class="imagem">
+                        <img src="../jpeg/k9capa.png" alt="k999">
+                    </div>
+                 
+                    <div class="texto">
+                        <h1>K999</h1>
+                        <p> Kyo tem um histórico de confronto com a organização NESTS, que tentou usar suas habilidades para seus próprios fins. 
+                            Krizalid é um dos principais antagonistas associados a essa organização e foi responsável por causar grandes problemas 
+                            para Kyo e sua equipe. K9999, outro membro da NESTS, também é um inimigo direto, e sua relação com Kyo é marcada por 
+                            hostilidade. A NESTS representa uma ameaça constante, e Kyo, como herói e defensor, está sempre em conflito com seus 
+                            membros, que tentam roubar suas habilidades e manipular sua vida.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rodape"></div>
+        </section>
+
+        <footer>
+       
+            <ul type="none">
+                <li><a href="index.html">Personagens</li>
+                <li><a href="paginas/galeria.html">Galeria</li>
+                <li><a href="paginas/fightcade.html">Jogue Online</li>
+                <li><a href="paginas/combates.html">Combates</li>
+                <li><a href="paginas/enquete.html">Enquetes</li>
+                <li><a href="paginas/fatal-fury_curiosidades.html">Fatal Fury</li>
+                <li><a href="paginas/fatal-fury_curiosidades.html">Fatal Fury</li>
+            </ul>
+            <p>site criado por <a href="https://github.com/Leo-gsouza?tab=repositories" target="_blank">Leonardo Souza</p>
+        </footer>
+            
+        
+    </main>
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/paginas2.js"></script> 
+</body>
+</html>

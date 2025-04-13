@@ -1,6 +1,6 @@
 
 document.getElementById("voltar").addEventListener("click", ()=> {
-    window.location.href = '../../index.html';
+    window.location.href = '../index.html';
 })
 
 function aba( botao, conteudo, desativados, fechadas){
