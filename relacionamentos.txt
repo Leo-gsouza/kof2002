@@ -1,0 +1,11 @@
+crie um texto com no máximo 6 personagens no kof 2002 que o Benimaru um relacionamento promixo, pode ser relacionamente positivo ou negativo. A estrutura deve ser a seguinte.
+
+<div class="relacao">
+              <div class="imagem">
+                  <img src="../jpeg/vazio.png" alt="vazio"> 
+              </div>  
+              <div class="texto">
+                  <h1>nome do personagem</h1> 
+                  <p>texto sobre a relação com personagem com Benimaru </p> 
+              </div>
+            </div>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon/icone.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../estilo/normal.css">
+    <link rel="stylesheet" href="../estilo/mobile.css" media="screen and (max-width: 600px )">
+    <link rel="stylesheet" href="../estilo/grandes-1280.css"  media="screen and (min-width: 601px) and (max-width: 1279px )">
+    <link rel="stylesheet" href="../estilo/grandes-1920.css"  media="screen and (min-width: 1280px) and (max-width: 1920px )">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Benimaru</title>
+</head> 
+
+
+<body>
+    <header>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <span id="voltar" class="material-symbols-outlined">arrow_back_ios</span>
+        <h1>Benimaru</h1>
+        <span id="play" class="material-symbols-outlined" onclick="playMusic(tocar)">play_arrow</span>
+        <span id="pause" class="material-symbols-outlined" onclick="playMusic(tocar)">pause</span>
+        <audio  src="../audio/team-kyo.mp3" loop id="tocar"></audio>
+    </header>
+
+    <menu id="itens">
+        <div id="menu">
+            <a href="../index.html">Menu</a>
+            <a href="kyo.html">Kyo</a>
+            <a href="daimon.html">Benimaru</a>
+        </div>
+    </menu>
+
+    <main>
+        <section id="capa">
+            <div class="capa">
+                <img src="../jpeg/Benimarucapa.png" alt="maxima" class="imagem">
+                <img src="../gif/Benimarugif.gif" alt="maxima" class="gif" style="width: 22%;">
+            </div>
+            <div id="abas">
+                <p id="b1" class="glow" onclick="aba(this,c1,[b2,b3],[c2,c3])" >Historia</p>
+                <p id="b2" onclick="aba(this,c2,[b1,b3],[c1,c3])">Golpes</p>
+                <p id="b3" onclick="aba(this,c3,[b2,b1],[c2,c1])">Curiosidades</p>
+            </div> 
+            <div id="vazio"></div> 
+        </section>
+
+        
+        <section id="c1" class="conteudo"> <!-- Historia -->
+          <div>
+            <h1>KOF '94</h1>
+            <p>
+              Benimaru estreia como membro do time do Japão, ao lado de Kyo e Goro Daimon.  
+              Sua personalidade extrovertida contrasta com o comportamento mais sério de seus colegas.  
+              Mostra grande habilidade com ataques elétricos e estilo aéreo, sendo uma peça importante do trio.  
+              Mesmo com diferenças pessoais, coopera para levar seu time à vitória no torneio.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF '95</h1>
+            <p>
+              Benimaru retorna ao time do Japão, agora enfrentando a ameaça de Rugal pela segunda vez.  
+              Apesar do grupo ainda ter tensões internas, Benimaru continua leal à equipe.  
+              Demonstra mais maturidade e dedicação ao trabalho em equipe.  
+              Sua performance ajuda na vitória sobre o poderoso vilão Rugal Bernstein.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF '96</h1>
+            <p>
+              Permanece com o time do Japão na nova era do torneio, enfrentando a estreia do Orochi Team.  
+              Benimaru começa a aceitar melhor seus companheiros e a entender a importância da missão.  
+              Seu combate com Chizuru e os demais o coloca frente a frente com elementos sobrenaturais.  
+              Continua como um dos principais lutadores do torneio, com destaque para sua agilidade e técnica.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF '97</h1>
+            <p>
+              Enfrenta o clímax da saga Orochi ao lado de Kyo e Daimon, mantendo-se no time do Japão.  
+              Apoia Kyo na batalha contra Iori e os seguidores de Orochi, mesmo com os riscos envolvidos.  
+              Sua confiança e coragem são fundamentais na resistência contra o despertar de Orochi.  
+              Termina o torneio mais maduro, tendo enfrentado uma das maiores ameaças da história.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF '98</h1>
+            <p>
+              O torneio de KOF '98 não tem enredo oficial, mas Benimaru está presente como membro clássico.  
+              Representa novamente o time do Japão com seu estilo carismático e explosivo.  
+              Mantém sua popularidade entre os fãs pela agilidade e visual marcante.  
+              A presença dele reforça o espírito da era clássica de KOF.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF '99</h1>
+            <p>
+              Benimaru entra no torneio como parte da Equipe de Suporte, junto com Shingo e K'.  
+              Ele é escolhido para monitorar K', um novo lutador ligado à misteriosa organização NESTS.  
+              Benimaru aceita o papel, mesmo não gostando da ideia de trabalhar com estranhos.  
+              Durante o torneio, se mostra mais responsável e cuidadoso com os perigos ocultos.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2000</h1>
+            <p>
+              Permanece como parte da Equipe de Suporte da Ikari Team, ajudando na luta contra a NESTS.  
+              Benimaru mostra confiança e habilidade, mesmo fora de seu time tradicional.  
+              Age como um intermediário entre os novos membros e veteranos da série.  
+              Sua atuação reforça seu papel como um lutador experiente e adaptável.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2001</h1>
+            <p>
+              Volta à ativa com o Team Japão, ao lado de Shingo e Kyo, enfrentando o ápice da saga NESTS.  
+              Participa ativamente na luta contra os planos da organização, mostrando seu senso de justiça.  
+              Mesmo diante de novas ameaças como Igniz, Benimaru mantém sua confiança habitual.  
+              É crucial para garantir a sobrevivência e vitória do time nas fases finais do torneio.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2002</h1>
+            <p>
+              Em KOF 2002, que não possui enredo oficial, Benimaru está presente como membro clássico.  
+              Traz de volta seus movimentos rápidos e ataques elétricos, sendo popular entre os jogadores.  
+              Sua presença marca o retorno da formação clássica do time do Japão.  
+              Representa a continuidade da tradição dos torneios anteriores.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2003</h1>
+            <p>
+              Benimaru não participa da formação principal do time Japão, sendo substituído por Ash Crimson.  
+              Sua ausência marca o início de uma nova fase com a saga de Ash e mudança de protagonistas.  
+              Apesar de não lutar no torneio, sua importância como personagem veterano permanece.  
+              Fans especulam sobre seu paradeiro, enquanto a história toma novos rumos.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XI</h1>
+            <p>
+              Novamente ausente da formação principal do time Japão, cedendo espaço para novos personagens.  
+              Sua ausência indica a continuidade do foco na saga Ash e em outros lutadores.  
+              Benimaru continua presente no universo KOF, mas sem participação direta neste torneio.  
+              Mesmo fora da ação, sua popularidade entre os fãs segue intacta.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XII</h1>
+            <p>
+              Retorna ao time Japão junto de Kyo e Daimon, numa formação clássica e nostálgica.  
+              O jogo não possui enredo definido, mas traz Benimaru com visual redesenhado e fluido.  
+              Seus golpes continuam focados na velocidade e manipulação elétrica.  
+              Reafirma sua posição como um dos pilares da franquia.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XIII</h1>
+            <p>
+              Participa com o time do Japão enfrentando os desdobramentos finais da saga de Ash Crimson.  
+              Benimaru mostra mais maturidade, funcionando como conselheiro em momentos de tensão.  
+              Ajuda a combater as forças de Saiki e os planos da organização Those from the Past.  
+              Mantém sua postura confiante e leal aos companheiros, lutando ao lado de Kyo até o fim.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XIV</h1>
+            <p>
+              Forma novamente o time Japão com Kyo e Goro Daimon, reforçando o retorno à formação clássica.  
+              Enfrenta os mistérios por trás de Antonov e da entidade Verse.  
+              Sua participação é marcada por firmeza e estilo, ajudando a manter a coesão do time.  
+              Benimaru prova que ainda é um dos lutadores mais confiáveis e versáteis da série.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XV</h1>
+            <p>
+              Permanece com o time Japão ao lado de Kyo e Shingo, devido à ausência de Daimon.  
+              Luta contra a nova ameaça representada por Re Verse e a misteriosa Isla.  
+              Benimaru demonstra evolução, servindo como elo entre gerações de lutadores.  
+              Sua lealdade ao time e estilo marcante continuam sendo destaques no torneio.
+            </p>
+          </div>  
+            
+        </section>
+     
+        <section id="c2" class="conteudo" style="display: none;"> <!-- Golpes -->
+            <img id="golpes1" src="../jpeg/benimaru-golpes-mobile.png" alt="">
+            <img id="golpes2" src="../jpeg/benimaru-golpes-desktop.png" alt="">
+            <div class="video-full">
+                <p class="tituloVideo">Video do canal <a href="https://www.youtube.com/c/KOFdaDepress%C3%A3o" target="_blank">KOF da Depressão</a></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/74GOBNJQmbA?si=DoUPN7L7SNzYOjFt&amp;start=41" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe> 
+              </div>
+        </section> 
+
+        <div class="rodape"></div>
+        
+        <section id="c3" class="conteudo" style="display: none;"> <!--  Curiosidades -->
+           
+          <div id="pessoal">
+            <table >
+              <thead>
+                  <tr>
+                      <th colspan="2">Benimaru</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nome</td>
+                  <td>Benimaru Nikaido</td>
+                </tr>
+                <tr>
+                  <td>Nascimento</td>
+                  <td>6 de junho de 1969</td>
+                </tr>
+                <tr>
+                  <td>Nacionalidade</td>
+                  <td>Tóquio, Japão</td>
+                </tr>
+                <tr>
+                  <td>Altura</td>
+                  <td>1,80m</td>
+                </tr>
+                <tr>
+                  <td>Peso</td>
+                  <td>63kg</td>
+                </tr>
+                <tr>
+                  <td>Arma</td>
+                  <td>Nenhuma</td>
+                </tr>
+                <tr>
+                  <td>Estilo de Luta</td>
+                  <td>Shin-ryuuken (estilo próprio de luta com manipulação de eletricidade e golpes aéreos)</td>
+                </tr>
+                <tr>
+                  <td>Personalidade</td>
+                  <td>Confiante, vaidoso e extrovertido. Apesar da aparência arrogante, Benimaru é leal e corajoso, sendo um aliado confiável em batalha.</td>
+                </tr>
+              
+              
+              </tbody>
+            </table>
+          </div>
+
+          <div id="relacaoGeral">
+            <div class="relacao">
+              <div class="imagem">
+                <img src="../jpeg/kyocapa.png" alt=""> 
+              </div>  
+              <div class="texto">
+                <h1>Kyo </h1> 
+                <p>Companheiro inseparável de equipe desde 1994, Kyo é o aliado mais próximo de Benimaru. 
+                  Embora se provoquem com frequência, compartilham uma forte confiança em batalha.</p> 
+              </div>
+            </div>
+            
+            <div class="relacao">
+              <div class="imagem">
+                <img src="../jpeg/daimoncapa.png" alt=""> 
+              </div>  
+              <div class="texto">
+                <h1> Daimon</h1> 
+                <p>Parceiro silencioso mas essencial do Time Japão. Benimaru 
+                  admira a força e a disciplina de Daimon, e apesar de não 
+                  serem íntimos fora das lutas, confia totalmente nele.</p> 
+              </div>
+            </div>
+            
+            <div class="relacao">
+              <div class="imagem">
+                <img src="../jpeg/kcapa.png" alt=""> 
+              </div>  
+              <div class="texto">
+                <h1>K'</h1> 
+                <p>Benimaru trabalhou com K' durante a saga NESTS, e mesmo com as diferenças, 
+                  passou a reconhecer sua força e determinação. A relação é tensa, 
+                  mas marcada por respeito.</p> 
+              </div>
+            </div>
+            
+            <div class="relacao">
+              <div class="imagem">
+                <img src="../jpeg/maximacapa.png" alt=""> 
+              </div>  
+              <div class="texto">
+                <h1>Maxima</h1> 
+                <p>Companheiro de K', Maxima teve contato direto com Benimaru nas 
+                  investigações contra a NESTS. A postura séria e protetora de 
+                  Maxima gerou empatia e respeito mútuo.</p> 
+              </div>
+            </div>
+            
+            <div class="relacao">
+              <div class="imagem">
+                <img src="../jpeg/sethcapa.png" alt=""> 
+              </div>  
+              <div class="texto">
+                <h1>Seth</h1> 
+                <p>Seth integrou a Equipe de Suporte ao lado de Benimaru em KOF 2000.
+                   Apesar da relação profissional, os dois compartilham objetivos 
+                   comuns contra a organização NESTS.</p> 
+              </div>
+            </div>
+
+          </div>
+            <div class="rodape"></div>
+        </section>
+
+        <footer>
+       
+            <ul type="none">
+                <li><a href="index.html">Personagens</li>
+                <li><a href="paginas/galeria.html">Galeria</li>
+                <li><a href="paginas/fightcade.html">Jogue Online</li>
+                <li><a href="paginas/combates.html">Combates</li>
+                <li><a href="paginas/enquete.html">Enquetes</li>
+                <li><a href="paginas/fatal-fury_curiosidades.html">Fatal Fury</li>
+                <li><a href="paginas/fatal-fury_curiosidades.html">Fatal Fury</li>
+            </ul>
+            <p>site criado por <a href="https://github.com/Leo-gsouza?tab=repositories" target="_blank">Leonardo Souza</p>
+        </footer>
+            
+        
+    </main>
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/paginas2.js"></script> 
+</body>
+</html>
