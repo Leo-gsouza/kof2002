@@ -463,8 +463,7 @@ section#c2 > img#golpes2{
 }
 
 section#c2 > img#golpes2:hover{
-    width: 100%;
-    
+    filter: saturate(1.2);
 }
 
 div.video-full > p.tituloVideo{

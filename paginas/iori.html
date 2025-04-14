@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon/icone.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../estilo/normal.css">
+    <link rel="stylesheet" href="../estilo/mobile.css" media="screen and (max-width: 600px )">
+    <link rel="stylesheet" href="../estilo/grandes-1280.css"  media="screen and (min-width: 601px) and (max-width: 1279px )">
+    <link rel="stylesheet" href="../estilo/grandes-1920.css"  media="screen and (min-width: 1280px) and (max-width: 1920px )">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>iori</title>
+</head> 
+
+
+<body>
+    <header>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <span id="voltar" class="material-symbols-outlined">arrow_back_ios</span>
+        <h1>iori</h1>
+        <span id="play" class="material-symbols-outlined" onclick="playMusic(tocar)">play_arrow</span>
+        <span id="pause" class="material-symbols-outlined" onclick="playMusic(tocar)">pause</span>
+        <audio  src="../audio/team-kyo.mp3" loop id="tocar"></audio>
+    </header>
+
+    <menu id="itens">
+        <div id="menu">
+            <a href="../index.html">Menu</a>
+            <a href="mature.html">Mature</a>
+            <a href="vice.html">Vice</a>
+        </div>
+    </menu>
+
+    <main>
+        <section id="capa">
+            <div class="capa">
+                <img src="../jpeg/ioricapa.png" alt="maxima" class="imagem">
+                <img src="../gif/iorigif.gif" alt="maxima" class="gif" style="width: 22%;">
+            </div>
+            <div id="abas">
+                <p id="b1" class="glow" onclick="aba(this,c1,[b2,b3],[c2,c3])" >Historia</p>
+                <p id="b2" onclick="aba(this,c2,[b1,b3],[c1,c3])">Golpes</p>
+                <p id="b3" onclick="aba(this,c3,[b2,b1],[c2,c1])">Curiosidades</p>
+            </div> 
+            <div id="vazio"></div> 
+        </section>
+
+        
+        <section id="c1" class="conteudo"> <!-- Historia -->
+          <div>
+            <h1>KOF 95</h1>
+            <p>
+              Iori Yagami faz sua estreia na série como um rival direto de Kyo Kusanagi. 
+              Ele entra no torneio como parte do Team Rivals, junto de Billy Kane e Eiji 
+              Kisaragi, com o objetivo de derrotar Kyo. Sua presença marca o início da saga 
+              Orochi, revelando suas ligações com o clã Yagami e o pacto sombrio com Orochi. 
+              Seu estilo de luta é selvagem e agressivo, destacando-se pelo uso das chamas púrpuras.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 96</h1>
+            <p>
+              Iori retorna como parte do novo "Team of Rage", ao lado de Mature e Vice, 
+              secretamente agentes de Goenitz. Durante os eventos do torneio, Iori entra 
+              em modo Riot of the Blood, perdendo o controle e matando suas companheiras 
+              de equipe. Essa transformação revela o peso da maldição Orochi. Ele continua 
+              obcecado por derrotar Kyo, mesmo sendo usado como peão na trama maior.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 97</h1>
+            <p>
+              A saga Orochi atinge seu clímax. Iori luta ao lado de Kyo e Chizuru como 
+              parte do "Sacred Treasures Team" para selar Orochi. Apesar de sua rivalidade 
+              com Kyo, ele coopera temporariamente para impedir o despertar do deus Orochi. 
+              No final, ele novamente entra em modo berserker e ajuda a conter Orochi com 
+              sua fúria. Essa aliança temporária se torna um momento icônico da série.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 98</h1>
+            <p>
+              KOF '98 é um torneio especial sem conexão direta com a história principal. 
+              Iori retorna com seu estilo clássico e pode ser jogado tanto em sua forma 
+              normal quanto na versão "Orochi Iori", em modo berserker. Essa versão é 
+              baseada nos eventos de KOF '96 e '97. Ele continua sendo um dos personagens 
+              mais populares do jogo e símbolo do caos controlado.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 99</h1>
+            <p>
+              Iori não participa oficialmente da história principal de KOF '99. O torneio 
+              introduz um novo protagonista, K’, iniciando a saga NESTS. Apesar disso, 
+              Iori está presente como personagem jogável em versões alternativas ou especiais. 
+              Sua ausência na narrativa principal destaca a mudança de foco da série, mas 
+              sua popularidade o mantém relevante.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2000</h1>
+            <p>
+              Novamente fora da história principal, Iori ainda é um personagem jogável em 
+              modos especiais. A saga NESTS continua, e Iori observa os acontecimentos à 
+              distância, mantendo-se como um observador sombrio. Sua ausência narrativa 
+              serve para criar tensão sobre seu futuro retorno. Apesar disso, os fãs 
+              continuam esperando seu confronto com os novos vilões.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2001</h1>
+            <p>
+              Iori retorna como personagem jogável, mas não faz parte do enredo central. 
+              A saga NESTS está em seu auge, e ele continua agindo por conta própria. 
+              Mesmo sem envolvimento direto, sua presença serve como lembrete da rivalidade 
+              eterna com Kyo. Ele é frequentemente usado como rival secreto ou especial em confrontos.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2002</h1>
+            <p>
+              Assim como KOF '98, KOF 2002 é uma edição especial sem enredo canônico. 
+              Iori aparece novamente em sua forma clássica, além de Orochi Iori como 
+              personagem extra. Seu retorno com todas as suas habilidades faz dele um 
+              dos mais escolhidos pelos jogadores. Ele se mantém como ícone da série 
+              mesmo fora da linha principal da história.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2003</h1>
+            <p>
+              Iori participa da história e junta-se a Kyo e Chizuru para enfrentar 
+              uma nova ameaça: o clã Those from the Past. A união dos três guardiões 
+              sagrados retorna, revivendo a aliança forçada de KOF '97. Sua motivação 
+              ainda é derrotar Kyo, mas a ameaça maior o obriga a cooperar. Ele se 
+              mostra mais instável, com sinais constantes da influência Orochi.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XI</h1>
+            <p>
+              Iori é corrompido ainda mais pela energia Orochi e ataca seus aliados 
+              após uma luta. Ele entra no modo Riot of the Blood novamente e se isola, 
+              temendo machucar outros. Seu papel na história é breve, mas marcante, 
+              mostrando o quanto está perdendo o controle. A instabilidade crescente
+               sugere que algo maior está por vir para o personagem.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XII</h1>
+            <p>
+              Iori perde temporariamente suas chamas, tornando-se mais vulnerável e 
+              mudando seu estilo de luta. Seu visual e comportamento são mais contidos, 
+              mas ele mantém a rivalidade com Kyo. O jogo, embora com poucos personagens 
+              e sem enredo definido, apresenta essa mudança como marco importante. 
+              Sua relação com os poderes de Orochi está em transição.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XIII</h1>
+            <p>
+              Iori recupera suas chamas ao rejeitar sua herança Orochi, com a ajuda de 
+              Chizuru. Ele participa como parte do time dos tesouros sagrados mais uma 
+              vez, enfrentando os planos do clã Those from the Past. Essa fase marca 
+              uma espécie de redenção para ele, mais consciente de seu papel na batalha 
+              contra forças maiores. Sua rivalidade com Kyo continua intensa, mas há 
+              sinais de amadurecimento.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XIV</h1>
+            <p>
+              Iori entra sozinho no torneio, buscando novos confrontos e mantendo sua 
+              obsessão por Kyo. Ele recuperou totalmente o controle de suas chamas e 
+              exibe mais estabilidade emocional. Apesar disso, continua solitário e 
+              hostil. O enredo envolve uma nova ameaça interdimensional, mas Iori se 
+              mantém à margem, apenas interessado em batalhas fortes.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XV</h1>
+            <p>
+              Iori se junta ao Team Sacred Treasures novamente, ao lado de Kyo e Chizuru. 
+              O trio trabalha junto para conter o surgimento de uma nova entidade ligada a 
+              Orochi. Seu domínio das chamas está completo, e ele demonstra maior controle 
+              sobre sua fúria interior. Sua presença é crucial para o equilíbrio entre os 
+              poderes místicos, reafirmando sua importância na série.
+            </p>
+          </div>
+          
+            
+        </section>
+     
+        <section id="c2" class="conteudo" style="display: none;"> <!-- Golpes -->
+            <img id="golpes1" src="../jpeg/iori-golpes-mobile.png" alt="">
+            <img id="golpes2" src="../jpeg/iori-golpes-desktop.png" alt="">
+            <div class="video-full">
+                <p class="tituloVideo">Video do canal <a href="https://www.youtube.com/c/KOFdaDepress%C3%A3o" target="_blank">KOF da Depressão</a></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-GS3kyi3lcc?si=ZwpawD5Y8T6Y5Bqv&amp;start=24" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe> 
+              </div>
+        </section> 
+
+        <div class="rodape"></div>
+        
+        <section id="c3" class="conteudo" style="display: none;"> <!--  Curiosidades -->
+           
+          <div id="pessoal">
+            <table >
+              <thead>
+                  <tr>
+                      <th colspan="2">iori</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nome</td>
+                  <td>Iori Yagami</td>
+                </tr>
+                <tr>
+                  <td>Nascimento</td>
+                  <td>25 de março de 1973</td>
+                </tr>
+                <tr>
+                  <td>Nacionalidade</td>
+                  <td>Japão (cidade não especificada oficialmente)</td>
+                </tr>
+                <tr>
+                  <td>Altura</td>
+                  <td>1,82m</td>
+                </tr>
+                <tr>
+                  <td>Peso</td>
+                  <td>76kg</td>
+                </tr>
+                <tr>
+                  <td>Arma</td>
+                  <td>Garras (formadas pela energia das chamas de Orochi)</td>
+                </tr>
+                <tr>
+                  <td>Estilo de Luta</td>
+                  <td>Estilo Yagami de artes marciais ancestrais com manipulação de chamas 
+                    (baseado no estilo Kusanagi, mas mais violento e distorcido pelo pacto com Orochi)</td>
+                </tr>
+                <tr>
+                  <td>Personalidade</td>
+                  <td>Solitário, agressivo e obcecado por derrotar Kyo Kusanagi. 
+                    Apesar da fachada fria e violenta, demonstra consciência do 
+                    fardo que carrega por causa da maldição Orochi. Seu comportamento 
+                    oscila entre controle e fúria descontrolada.</td>
+                </tr>
+              
+              
+              
+              </tbody>
+            </table>
+          </div>
+
+          <div id="relacaoGeral">
+            <div class="relacao">
+              <div class="imagem">
+                  <img src="../jpeg/kyocapa.png" alt=""> 
+              </div>  
+              <div class="texto">
+                  <h1>Kyo </h1> 
+                  <p>
+                      Iori tem uma rivalidade mortal com Kyo, alimentada por gerações de ódio entre os 
+                      clãs Yagami e Kusanagi. Apesar disso, ocasionalmente unem forças contra ameaças 
+                      maiores, mostrando um respeito implícito e perigoso. Kyo é o único que Iori 
+                      realmente quer derrotar em combate justo.
+                  </p> 
+              </div>
+          </div>
+          
+          <div class="relacao">
+              <div class="imagem">
+                  <img src="../jpeg/maturecapa.png" alt=""> 
+              </div>  
+              <div class="texto">
+                  <h1>Mature</h1> 
+                  <p>
+                      Mature é uma das poucas pessoas próximas a Iori. Ela o 
+                      acompanha como agente de Orochi, mas também demonstra uma 
+                      lealdade peculiar. Iori a respeita de forma silenciosa, 
+                      e sua relação é marcada por cumplicidade e um toque sombrio de confiança.
+                  </p> 
+              </div>
+          </div>
+          
+          <div class="relacao">
+              <div class="imagem">
+                  <img src="../jpeg/vicecapa.png" alt=""> 
+              </div>  
+              <div class="texto">
+                  <h1>Vice</h1> 
+                  <p>
+                      Assim como Mature, Vice acompanha Iori como sua parceira de equipe e 
+                      agente de Orochi. A relação entre os dois é intensa e violenta, mas 
+                      funcional. Vice parece compreender a instabilidade de Iori e sabe como 
+                      lidar com sua fúria destrutiva.
+                  </p> 
+              </div>
+          </div>
+          
+          
+          
+          <div class="relacao">
+              <div class="imagem">
+                  <img src="../jpeg/orochicapa.png" alt=""> 
+              </div>  
+              <div class="texto">
+                  <h1>Orochi</h1> 
+                  <p>
+                      Orochi é a fonte da maldição e do poder que atormenta Iori. 
+                      A relação é negativa, marcada por ódio e resistência. Mesmo usando as chamas 
+                      herdadas de Orochi, Iori rejeita sua influência e luta contra o destino 
+                      imposto ao seu sangue.
+                  </p> 
+              </div>
+          </div>
+          
+          <div class="relacao">
+              <div class="imagem">
+                  <img src="../jpeg/benimarucapa.png" alt=""> 
+              </div>  
+              <div class="texto">
+                  <h1>Benimaru </h1> 
+                  <p>
+                      Apesar de não terem uma ligação direta, Benimaru frequentemente 
+                      participa dos mesmos torneios que Iori. Ele desconfia de Iori e 
+                      sua instabilidade, mas reconhece sua força. A relação é distante, 
+                      mas marcada por tensão e respeito mútuo.
+                  </p> 
+              </div>
+          </div>
+          
+
+          </div>
+            <div class="rodape"></div>
+        </section>
+
+        <footer>
+       
+            <ul type="none">
+                <li><a href="index.html">Personagens</li>
+                <li><a href="paginas/galeria.html">Galeria</li>
+                <li><a href="paginas/fightcade.html">Jogue Online</li>
+                <li><a href="paginas/combates.html">Combates</li>
+                <li><a href="paginas/enquete.html">Enquetes</li>
+                <li><a href="paginas/fatal-fury_curiosidades.html">Fatal Fury</li>
+                <li><a href="paginas/fatal-fury_curiosidades.html">Fatal Fury</li>
+            </ul>
+            <p>site criado por <a href="https://github.com/Leo-gsouza?tab=repositories" target="_blank">Leonardo Souza</p>
+        </footer>
+            
+        
+    </main>
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/paginas2.js"></script> 
+</body>
+</html>

@@ -1,7 +1,7 @@
 Gostaria de informações pesoais do personagem goro daimon do the king of fighters.
-- Nome completo
--Data de nascimento completa
--Local de nascimento, cidade e Pais
+- Nome
+-Nascimento
+-Nacionalidade, cidade e Pais
 -altura 
 -peso
 -arma 
