@@ -5,7 +5,7 @@ document.getElementById("voltar").addEventListener("click", ()=> {
 
 function aba( botao, conteudo, desativados, fechadas){
     if (conteudo.style.display == 'flex'){
-        conteudo.style.display = 'none'
+        conteudo.style.display = 'flex'
 
     }else{
         conteudo.style.display = 'flex'
