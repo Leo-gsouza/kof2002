@@ -1,4 +1,4 @@
-crie um texto com no máximo 6 personagens no kof 2002 que o Benimaru um relacionamento promixo, pode ser relacionamente positivo ou negativo. A estrutura deve ser a seguinte.
+crie um texto com no máximo 6 personagens no kof 2002 que o PERSONAGEM tem um relacionamento promixo, pode ser relacionamente positivo ou negativo. A estrutura deve ser a seguinte.
 
 <div class="relacao">
               <div class="imagem">
