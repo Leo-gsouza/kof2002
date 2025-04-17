@@ -15,27 +15,37 @@ html, body{
 header{
     width: 100%;
     height: 55px;
+    cursor: pointer;
 }
 
 header > h1{
     font-size: 3em;
+    transition: all 1s ease ;
+}
+header > h1:hover{
+    text-shadow: 0px 0px 10px white;
+    transform: scale(1.1);
+    
 }
 
 header > span#burguer{
     display: none;
     color: rgba(240, 248, 255, 0);
+    cursor: pointer;
 }
+
+
 
 header > span#voltar{
     color: white;
     padding: 10px 10px 12px 25px;
     margin: 0px;
+    cursor: pointer;
 }
 header > span#voltar:hover{
     background-color: #7c0d0f; 
     font-size: 1.5;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.384);
-    scale: 1.15;
 }
 
 
@@ -47,6 +57,12 @@ header > span#play{
     text-shadow: 0px 0px 2px white;
 
     color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 1s ease;
+}
+header > span#play:hover{
+    text-shadow: 0px 0px 10px white;
+    transform: scale(1.1);
 }
 
 header > span#pause{
@@ -59,6 +75,7 @@ header > span#pause{
     color: white;
 
     animation: pause 1s alternate infinite;
+    cursor: pointer;
 }
 
 @keyframes pause{
@@ -66,9 +83,12 @@ header > span#pause{
         transform: scale(1);
     }
 
-    100%{
-        transform: scale(1.1);
+    50%{
+        transform: scale(1.08);
         text-shadow: 0px 0px 15px white;
+    }
+    100%{
+        transform: scale(1);
     }
 }
 
@@ -238,7 +258,6 @@ div.capa >  img.imagem{
     border: 3px solid white;
     box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.267);
     border-radius: 50%;
- 
 }
 
 div.capa > img.gif{
@@ -267,7 +286,8 @@ section#capa > div#abas >  p{
     letter-spacing: -0.5px;
 
     color: white;
-    background-color: var(--cor0);
+    background-color: var(--cor2);
+    cursor: pointer;
     
 }
 
@@ -287,6 +307,7 @@ section.conteudo{
 }
 
 #b1{
+    background-color: var(--cor0);
     text-shadow: 0px 0px 10px white;
     scale: 1.1;
    
@@ -457,12 +478,13 @@ section#c2 > img#golpes1{
 section#c2 > img#golpes2{
     width: 80%;
     
-
     margin-bottom: 25px;
     transition: all 1s ease;
+    cursor: pointer;
 }
 
-section#c2 > img#golpes2:hover{
+section#c2 > img#golpes2:hover {
+    transform: scale(1.15);
     filter: saturate(1.2);
 }
 
