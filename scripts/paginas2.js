@@ -12,6 +12,7 @@ function aba( botao, conteudo, desativados, fechadas){
         conteudo.style.display = 'flex'
         botao.style.scale = '1.1'
         botao.style.backgroundColor = 'var(--cor0)'
+        botao.style.boxShadow = '0px 0px 5px rgba(0, 0, 0, 0.425)'
         botao.classList.add('glow')
 
         }
@@ -20,12 +21,24 @@ function aba( botao, conteudo, desativados, fechadas){
             fechada.style.display = 'none'
         });
 
-        desativados.forEach(desativado =>{
+
+        if (window.innerWidth >= 600){
+            desativados.forEach(desativado =>{
             desativado.style.scale = '1'
             desativado.style.backgroundColor = 'var(--cor2)'
-            desativado.classList.remove('glow')
+            desativado.style.boxShadow = 'none'
+            desativado.classList.remove('glow') 
+            })
+
+        }else{
+            desativados.forEach(desativado =>{
+            desativado.style.scale = '1'
+            desativado.style.backgroundColor = 'var(--cor0)'
+            desativado.style.boxShadow = 'none'
+            desativado.classList.remove('glow') 
         })
     }
+}
 
 var golpe = document.getElementById('golpes2')
 

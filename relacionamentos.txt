@@ -2,7 +2,7 @@ crie um texto com no máximo 6 personagens no kof 2002 que o PERSONAGEM tem um r
 
 <div class="relacao">
               <div class="imagem">
-                  <img src="../jpeg/personagemcapa.png" alt="personagem"> 
+                  <img src="../jpeg/personagem.capa.png" alt="PERSONAGEM"> 
               </div>  
               <div class="texto">
                   <h1>nome do personagem</h1> 

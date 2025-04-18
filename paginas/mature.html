@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=demature-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon/icone.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../estilo/normal.css">
+    <link rel="stylesheet" href="../estilo/mobile.css" media="screen and (max-width: 600px )">
+    <link rel="stylesheet" href="../estilo/grandes-1280.css"  media="screen and (min-width: 601px) and (max-width: 1279px )">
+    <link rel="stylesheet" href="../estilo/grandes-1920.css"  media="screen and (min-width: 1280px) and (max-width: 1920px )">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>mature</title>
+</head> 
+
+
+<body>
+    <header>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <span id="voltar" class="material-symbols-outlined">arrow_back_ios</span>
+        <h1>mature</h1>
+        <span id="play" class="material-symbols-outlined" onclick="playMusic(tocar)">play_arrow</span>
+        <span id="pause" class="material-symbols-outlined" onclick="playMusic(tocar)">pause</span>
+        <audio  src="../audio/team-iori.mp3" loop id="tocar"></audio>
+    </header>
+
+    <menu id="itens">
+        <div id="menu">
+            <a href="../index.html">Menu</a>
+            <a href="iori.html">Iori</a>
+            <a href="vice.html">Vice</a>
+        </div>
+    </menu>
+
+    <main>
+        <section id="capa">
+            <div class="capa">
+                <img src="../jpeg/maturecapa.png" alt="mature capa" class="imagem">
+                <img src="../gif/maturegif.gif" alt=" mature gif" class="gif" style="width: 22%;">
+            </div>
+            <div id="abas">
+                <p id="b1" class="glow" onclick="aba(this,c1,[b2,b3],[c2,c3])" >Historia</p>
+                <p id="b2" onclick="aba(this,c2,[b1,b3],[c1,c3])">Golpes</p>
+                <p id="b3" onclick="aba(this,c3,[b2,b1],[c2,c1])">Curiosidades</p>
+            </div> 
+            <div id="vazio"></div> 
+        </section>
+
+        
+        <section id="c1" class="conteudo"> <!-- Historia -->
+          <div>
+            <h1>KOF '96</h1>
+            <p>
+              Mature aparece pela primeira vez como parte do time das Secretárias, 
+              ao lado de Vice e Iori Yagami. Ela trabalha para Rugal Bernstein, 
+              mas neste jogo passa a servir Iori. Mature se destaca por seu 
+              estilo elegante e mortal, usando facas em seus ataques. Durante o 
+              torneio, ela e Vice ajudam Iori, mas acabam sendo brutalmente 
+              assassinadas por ele em um acesso de fúria causado pelo sangue Orochi.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF '97</h1>
+            <p>
+              Mature não aparece como personagem jogável, pois a história dá a entender 
+              que ela foi morta por Iori no final do torneio anterior. No entanto, 
+              sua influência permanece por meio do enredo envolvendo o despertar do 
+              Orochi. Ela é mencionada brevemente como uma das vítimas do frenesi de 
+              Iori, reforçando o impacto trágico do sangue maligno em seus aliados.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF '99</h1>
+            <p>
+              Mature não aparece neste jogo, nem é mencionada diretamente. A história passa 
+              a focar na saga NESTS, com novos personagens e enredos. Ainda assim, fãs 
+              especulam sobre sua possível sobrevivência, dado o mistério em torno de sua 
+              "morte" e a ausência de confirmação oficial até então.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2000</h1>
+            <p>
+              Mais uma vez, Mature não participa do torneio, mantendo-se ausente tanto do elenco 
+              jogável quanto do enredo principal. O foco continua na organização NESTS, deixando 
+              de lado os eventos relacionados ao clã Orochi. No entanto, seu legado como uma 
+              serva de Orochi e parceira de Vice segue vivo entre os fãs.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2002</h1>
+            <p>
+              Mature retorna como personagem jogável em KOF 2002, um título sem história oficial 
+              (Dream Match). Ela é incluída como parte do time de Orochi junto com Vice e Iori. 
+              Essa versão celebra o legado dos personagens clássicos da saga Orochi, permitindo 
+              aos jogadores reviver confrontos épicos em combates sem a limitação de enredo.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2003</h1>
+            <p>
+              Mature não aparece no elenco jogável e não tem envolvimento na história principal. 
+              A saga Ash tem início, trazendo novos elementos místicos e personagens. Apesar disso, 
+              fãs ainda esperam um retorno oficial de Mature, devido à sua popularidade e ligação 
+              com os eventos do passado envolvendo Orochi.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XI</h1>
+            <p>
+              Assim como nos jogos anteriores da saga Ash, Mature não aparece neste título. O foco 
+              recai sobre os novos times e a rivalidade entre Ash Crimson e os descendentes dos 
+              seladores de Orochi. Mesmo com sua ausência, o mistério sobre sua sobrevivência 
+              continua alimentando teorias entre os fãs da série.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XII</h1>
+            <p>
+              Mature não participa deste jogo, que é mais limitado em conteúdo e considerado
+              uma espécie de reboot gráfico. Com poucos personagens e sem enredo definido,
+              o título serviu como uma base para o próximo jogo principal, onde Mature 
+              faria um retorno importante.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XIII</h1>
+            <p>
+              Mature retorna de forma inesperada, aparecendo ao lado de Vice como aparições 
+              espirituais que auxiliam Iori. Após perder seu poder Orochi, Iori se une a elas 
+              como um time alternativo. A presença das duas sugere que talvez nunca tenham morrido 
+              completamente, ou estejam existindo entre a vida e a morte, reforçando o mistério ao 
+              redor das personagens.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XIV</h1>
+            <p>
+              Mature volta como personagem jogável, agora com um visual mais moderno e refinado. 
+              Ela forma equipe com Vice e Iori novamente, atuando como sua aliada em meio ao caos 
+              do novo torneio. Embora o mistério sobre sua sobrevivência persista, ela mostra estar 
+              em plena forma, usando suas técnicas cortantes e sua personalidade fria e sedutora.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XV</h1>
+            <p>
+              Em KOF XV, Mature continua como membro do time de Iori ao lado de Vice. A narrativa 
+              ainda deixa em aberto sua condição de existência, insinuando que pode ser uma manifestação 
+              espiritual ou uma ressurreição. Sua lealdade a Iori permanece, assim como seu papel de agente 
+              de caos silencioso nos bastidores dos eventos atuais.
+            </p>
+          </div>
+          
+          
+          
+            
+        </section>
+     
+        <section id="c2" class="conteudo" style="display: none;"> <!-- Golpes -->
+            <img id="golpes1" src="../jpeg/mature-golpes-mobile.png" alt="">
+            <img id="golpes2" src="../jpeg/mature-golpes-desktop.png" alt="">
+            <div class="video-full">
+                <p class="tituloVideo">Video do canal <a href="https://www.youtube.com/c/KOFdaDepress%C3%A3o" target="_blank">KOF Da Depressão</a></p>
+                <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/HStJ9srD4l4?si=7jYufsOOuUyghNNf&amp;start=61" title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe> 
+              </div>
+        </section> 
+
+        <div class="rodape"></div>
+        
+        <section id="c3" class="conteudo" style="display: none;"> <!--  Curiosidades -->
+           
+          <div id="pessoal">
+            <table >
+              <thead>
+                  <tr>
+                      <th colspan="2">mature</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nome</td>
+                  <td>Mature</td>
+                </tr>
+                <tr>
+                  <td>Nascimento</td>
+                  <td>14 de abril (ano desconhecido)</td>
+                </tr>
+                <tr>
+                  <td>Nacionalidade</td>
+                  <td>Desconhecida (associada à Europa)</td>
+                </tr>
+                <tr>
+                  <td>Altura</td>
+                  <td>1,75m</td>
+                </tr>
+                <tr>
+                  <td>Peso</td>
+                  <td>59kg</td>
+                </tr>
+                <tr>
+                  <td>Arma</td>
+                  <td>Facas</td>
+                </tr>
+                <tr>
+                  <td>Estilo de Luta</td>
+                  <td>Combate corpo a corpo com técnicas rápidas e uso de lâminas, combinadas com energia Orochi</td>
+                </tr>
+                <tr>
+                  <td>Personalidade</td>
+                  <td>Elegante, fria e sarcástica. Mature é leal a Iori e age com uma calma perturbadora, mesmo em situações violentas. Seu comportamento sugere um prazer sutil em causar dor e manipular os outros com sofisticação.</td>
+                </tr>
+              
+              </tbody>
+            </table>
+          </div>
+
+          <div id="relacaoGeral">
+            <div class="relacao">
+              <div class="imagem">
+                <img src="../jpeg/ioricapa.png" alt="personagem"> 
+              </div>  
+              <div class="texto">
+                <h1>Iori </h1> 
+                <p>Mature é uma das seguidoras mais fiéis de Iori, mesmo após ele ter perdido o controle e a ferido gravemente. Ela continua ao seu lado, demonstrando uma lealdade incomum. A relação entre os dois é marcada por respeito mútuo e um vínculo sombrio ligado ao sangue Orochi.</p> 
+              </div>
+            </div>
+            
+            <div class="relacao">
+              <div class="imagem">
+                <img src="../jpeg/vicecapa.png" alt="personagem"> 
+              </div>  
+              <div class="texto">
+                <h1>Vice</h1> 
+                <p>Mature e Vice formam uma dupla inseparável, trabalhando juntas como secretárias de Rugal e, depois, seguidoras de Iori. Elas têm uma química natural, agindo como parceiras leais e cruéis. Compartilham o mesmo destino e ligação com o clã Orochi.</p> 
+              </div>
+            </div>
+            
+            <div class="relacao">
+              <div class="imagem">
+                <img src="../jpeg/rugalcapa.png" alt="personagem"> 
+              </div>  
+              <div class="texto">
+                <h1>Rugal </h1> 
+                <p>Mature serviu como secretária e subordinada de Rugal antes de se aliar a Iori. Embora obediente, ela claramente via Rugal como um meio para um fim. Sua relação com ele era profissional, mas sem a devoção que mostra a Iori.</p> 
+              </div>
+            </div>
+            
+            <div class="relacao">
+              <div class="imagem">
+                <img src="../jpeg/leonacapa.png" alt="personagem"> 
+              </div>  
+              <div class="texto">
+                <h1>Leona </h1> 
+                <p>Mature vê Leona como uma ameaça potencial por também carregar o sangue Orochi. Apesar de não interagirem diretamente, existe uma tensão latente entre elas, como se Mature observasse de longe a instabilidade de Leona com um misto de curiosidade e desprezo.</p> 
+              </div>
+            </div>
+            
+            <div class="relacao">
+              <div class="imagem">
+                <img src="../jpeg/orochicapa.png" alt="personagem"> 
+              </div>  
+              <div class="texto">
+                <h1>Orochi</h1> 
+                <p>Como uma das servas do clã Orochi, Mature é influenciada diretamente por essa força ancestral. Sua conexão com Orochi molda sua identidade e motivações, mesmo que ela nunca o sirva de forma fanática. Orochi representa tanto poder quanto destino para ela.</p> 
+              </div>
+            </div>
+          </div>
+
+            <div class="rodape"></div>
+        </section>
+
+        <footer>
+       
+            <ul type="none">
+                <li><a href="index.html">Personagens</li>
+                <li><a href="paginas/galeria.html">Galeria</li>
+                <li><a href="paginas/fightcade.html">Jogue Online</li>
+                <li><a href="paginas/combates.html">Combates</li>
+                <li><a href="paginas/enquete.html">Enquetes</li>
+                <li><a href="paginas/fatal-fury_curiosidades.html">Fatal Fury</li>
+                <li><a href="paginas/fatal-fury_curiosidades.html">Fatal Fury</li>
+            </ul>
+            <p>site criado por <a href="https://github.com/Leo-gsouza?tab=repositories" target="_blank">Leonardo Souza</p>
+        </footer>
+            
+        
+    </main>
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/paginas2.js"></script> 
+</body>
+</html>
