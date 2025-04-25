@@ -14,9 +14,11 @@ document.addEventListener("DOMContentLoaded", function(){
             imagemExibida.classList.add('escala2')
             imagemVazia.style.display = 'none'
             personagem.classList.add('escala')
-
-            som.currentTime = 0;
-            som.play();
+            
+            if(window.innerWidth > 600){
+                som.currentTime = 0;
+                som.play(); 
+            }
         })
         personagem.addEventListener("mouseout", function (){
             imagemExibida.style.display = 'none'

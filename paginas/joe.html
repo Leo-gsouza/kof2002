@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=dejoe-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon/icone.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../estilo/normal.css">
+    <link rel="stylesheet" href="../estilo/mobile.css" media="screen and (max-width: 600px )">
+    <link rel="stylesheet" href="../estilo/grandes-1280.css"  media="screen and (min-width: 601px) and (max-width: 1279px )">
+    <link rel="stylesheet" href="../estilo/grandes-1920.css"  media="screen and (min-width: 1280px) and (max-width: 1920px )">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>joe</title>
+</head> 
+
+
+<body>
+    <header>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <span id="voltar" class="material-symbols-outlined">arrow_back_ios</span>
+        <h1>joe</h1>
+        <span id="play" class="material-symbols-outlined" onclick="playMusic(tocar)">play_arrow</span>
+        <span id="pause" class="material-symbols-outlined" onclick="playMusic(tocar)">pause</span>
+        <audio  src="../audio/team-terry.mp3" loop id="tocar"></audio>
+    </header>
+
+    <menu id="itens">
+        <div id="menu">
+            <a href="../index.html">Menu</a>
+            <a href="terry.html">Terry</a>
+            <a href="andy.html">Andy</a>
+        </div>
+    </menu>
+
+    <main>
+        <section id="capa">
+            <div class="capa">
+                <img src="../jpeg/joecapa.png" alt="joe capa" class="imagem">
+                <img src="../gif/joegif.gif" alt=" joe gif" class="gif" style="width: 30%;">
+            </div>
+            <div id="abas">
+                <p id="b1" class="glow" onclick="aba(this,c1,[b2,b3],[c2,c3])" >Historia</p>
+                <p id="b2" onclick="aba(this,c2,[b1,b3],[c1,c3])">Golpes</p>
+                <p id="b3" onclick="aba(this,c3,[b2,b1],[c2,c1])">Curiosidades</p>
+            </div> 
+            <div id="vazio"></div> 
+        </section>
+
+        
+        <section id="c1" class="conteudo"> <!-- Historia -->
+          
+          <div>
+            <h1>KOF '94</h1>
+            <p>
+              Joe Higashi estreia na série como membro do time Japão junto com os irmãos Bogard, Terry e Andy.
+              Seu papel é o do lutador descontraído e brincalhão, mas ainda assim muito habilidoso.
+              Representando o estilo Muay Thai, Joe traz ataques velozes e chutes devastadores para o torneio.
+              A equipe se destaca e avança no torneio, enfrentando diversos desafios pelo caminho.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF '95</h1>
+            <p>
+              Joe retorna ao torneio ao lado de Terry e Andy, mantendo a formação original do time Fatal Fury.
+              Com a introdução do sistema de equipes editáveis, o jogador pode manter a formação clássica ou misturá-la.
+              Ele mantém seu bom humor, mas demonstra preocupação com os perigos do torneio, como o misterioso Rugal.
+              O trio enfrenta uma competição acirrada, mostrando mais entrosamento e técnica.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF '96</h1>
+            <p>
+              Joe continua ao lado dos irmãos Bogard no novo torneio, agora enfrentando uma nova ameaça: a família Orochi.
+              O enredo começa a escurecer, mas Joe mantém o clima leve, servindo como alívio cômico do time.
+              Apesar da mudança de clima na história, Joe mostra-se um lutador confiável e valente.
+              Seu espírito competitivo brilha nas batalhas, mesmo em meio à tensão crescente.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF '97</h1>
+            <p>
+              Joe e os irmãos Bogard retornam mais uma vez para enfrentar o caos causado por Orochi.
+              Ele demonstra mais seriedade em alguns momentos, percebendo o quão perigoso o torneio se tornou.
+              Joe participa ativamente das batalhas decisivas que culminam no confronto contra Orochi.
+              Mesmo assim, não perde seu bom humor e continua como um dos membros mais vibrantes do time.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF '98</h1>
+            <p>
+              KOF '98 não possui enredo, sendo uma celebração com personagens de diversos jogos anteriores.
+              Joe está presente com sua jogabilidade clássica e estilo irreverente.
+              Ele continua formando o trio Fatal Fury, mantendo sua química com os irmãos Bogard.
+              É uma oportunidade para os fãs curtirem Joe em sua forma mais pura e nostálgica.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF '99</h1>
+            <p>
+              Joe Higashi não participa do elenco principal em KOF '99, sendo temporariamente substituído.
+              O foco da história muda para K', Maxima e a luta contra a NESTS, colocando outros personagens em destaque.
+              Ainda assim, sua ausência é notada pelos fãs que estavam acostumados com sua presença constante.
+              Ele permanece ativo no universo da série, mas fora do torneio neste ano.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2000</h1>
+            <p>
+              Joe retorna como um striker, não como personagem jogável principal.
+              Sua participação é limitada, mas serve como suporte aos outros lutadores com ataques rápidos.
+              Ele aparece como parte do sistema de assistências, onde os jogadores podem convocar personagens extras.
+              Ainda que secundário, seu retorno agrada os fãs que sentiam falta de seu carisma.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2001</h1>
+            <p>
+              Joe volta como personagem jogável, participando novamente ao lado de Terry e Andy.
+              O torneio agora é controlado pela organização NESTS, colocando os lutadores em grandes perigos.
+              Apesar disso, Joe encara tudo com sua típica irreverência e determinação.
+              Ele prova que mesmo após sua ausência, continua sendo uma peça valiosa do time.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2002</h1>
+            <p>
+              KOF 2002 é um jogo comemorativo, sem enredo, reunindo personagens icônicos de várias edições.
+              Joe está de volta com todos os seus golpes clássicos e postura descontraída.
+              Seu entrosamento com os Bogard está em alta, e o trio se mantém coeso e popular.
+              É mais uma oportunidade para os jogadores reviverem o melhor da jogabilidade de Joe.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF 2003</h1>
+            <p>
+              Joe participa como membro do time Fatal Fury, ao lado de Terry e Tizoc (Griffon Mask).
+              Andy fica de fora, mas Joe mantém o espírito da equipe com sua energia contagiante.
+              O torneio começa a introduzir a saga de Ash, com novas ameaças surgindo.
+              Mesmo com a mudança de tom, Joe continua sendo um personagem carismático e determinado.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XI</h1>
+            <p>
+              Joe forma o time Fatal Fury novamente com Terry e Kim Kaphwan, trazendo uma nova dinâmica.
+              A história avança na saga de Ash, mas Joe continua com seu foco em vencer lutas e se divertir.
+              Seu papel é mais leve, servindo como apoio aos companheiros e trazendo equilíbrio ao grupo.
+              Seu estilo Muay Thai segue afiado, contribuindo com força e velocidade às lutas.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XII</h1>
+            <p>
+              KOF XII é mais focado na reformulação gráfica e não possui um enredo definido.
+              Joe faz parte do elenco jogável com seus golpes clássicos redesenhados em alta qualidade.
+              Ele permanece ao lado de Terry e Andy, mantendo a tradição do time Fatal Fury.
+              Sua presença ajuda a manter a essência da série mesmo em meio a mudanças visuais.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XIII</h1>
+            <p>
+              Joe retorna com o time Fatal Fury completo: Terry e Andy.
+              A saga de Ash chega ao clímax, com revelações e batalhas intensas.
+              Joe continua focado em lutar com paixão, mesmo diante dos desafios mais sombrios.
+              Seu humor serve como contraponto à atmosfera mais séria, trazendo leveza ao time.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XIV</h1>
+            <p>
+              Joe participa do torneio como parte do time Fatal Fury mais uma vez.
+              O jogo inicia uma nova saga, apresentando Shun’ei e Kukri como protagonistas da vez.
+              Joe demonstra maturidade, mas sem perder seu lado cômico e estilo de luta vibrante.
+              Sua experiência é fundamental para o equilíbrio e força do grupo.
+            </p>
+          </div>
+          
+          <div>
+            <h1>KOF XV</h1>
+            <p>
+              Joe retorna com força total, integrando novamente o time Fatal Fury com Terry e Andy.
+              Mesmo com novas gerações em destaque, Joe prova que ainda tem muito a mostrar.
+              Seus golpes clássicos retornam com fluidez, reforçando sua presença no elenco veterano.
+              Continua sendo um dos personagens mais carismáticos e constantes da franquia.
+            </p>
+          </div>
+          
+         
+        </section>
+     
+        <section id="c2" class="conteudo" style="display: none;"> <!-- Golpes -->
+            <img id="golpes1" src="../jpeg/joe-golpes-mobile.png" alt="">
+            <img id="golpes2" src="../jpeg/joe-golpes-desktop.png" alt="">
+            <div class="video-full">
+                <p class="tituloVideo">Video do canal <a href="https://www.youtube.com/c/KOFdaDepress%C3%A3o" target="_blank">KOF Da Depressão</a></p>
+                <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/4AhP8F8PGmQ?si=eOUhvwDxMjpYTfWt&amp;start=28" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe>
+              </div>
+        </section> 
+
+        <div class="rodape"></div>
+        
+        <section id="c3" class="conteudo" style="display: none;"> <!--  Curiosidades -->
+           
+          <div id="pessoal">
+            <table >
+              <thead>
+                  <tr>
+                      <th colspan="2">joe</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nome</td>
+                  <td>Joe Higashi</td>
+                </tr>
+                <tr>
+                  <td>Nascimento</td>
+                  <td>29 de março de 1973</td>
+                </tr>
+                <tr>
+                  <td>Nacionalidade</td>
+                  <td>Bangkok, Tailândia</td>
+                </tr>
+                <tr>
+                  <td>Altura</td>
+                  <td>1,80m</td>
+                </tr>
+                <tr>
+                  <td>Peso</td>
+                  <td>72kg</td>
+                </tr>
+                <tr>
+                  <td>Arma</td>
+                  <td>Nenhuma</td>
+                </tr>
+                <tr>
+                  <td>Estilo de Luta</td>
+                  <td>Muay Thai</td>
+                </tr>
+                <tr>
+                  <td>Personalidade</td>
+                  <td>Extrovertido, brincalhão e competitivo. Joe adora lutar e se exibir, mantendo um 
+                    bom humor constante. Apesar do tom cômico, leva o Muay Thai a sério e 
+                    respeita seus adversários. É leal aos amigos, especialmente aos irmãos Bogard.</td>
+                </tr>
+              
+              </tbody>
+            </table>
+          </div>
+
+          <div id="relacaoGeral">
+            <div class="relacao">
+              <div class="imagem">
+                <img src="../jpeg/terrycapa.png" alt="Terry Bogard"> 
+              </div>  
+              <div class="texto">
+                <h1>Terry </h1> 
+                <p>Joe Higashi é grande amigo de Terry. Eles se respeitam profundamente e 
+                  formam, junto com Andy, o time Fatal Fury. Joe admira a força e 
+                  determinação de Terry, e ambos compartilham um espírito aventureiro.</p> 
+              </div>
+            </div>
+            
+            <div class="relacao">
+              <div class="imagem">
+                <img src="../jpeg/andycapa.png" alt="Andy Bogard"> 
+              </div>  
+              <div class="texto">
+                <h1>Andy </h1> 
+                <p>Joe vê Andy como um irmão, apesar da natureza séria dele contrastar com 
+                  seu jeito brincalhão. A relação é de respeito e parceria, sendo 
+                  companheiros de equipe há anos nos torneios.</p> 
+              </div>
+            </div>
+            
+            <div class="relacao">
+              <div class="imagem">
+                <img src="../jpeg/maicapa.png" alt="Mai Shiranui"> 
+              </div>  
+              <div class="texto">
+                <h1>Mai </h1> 
+                <p>Joe costuma provocar Mai com piadas sobre sua relação com Andy, o que rende 
+                  momentos cômicos. Apesar disso, ele respeita suas habilidades e a vê como 
+                  parte da família Fatal Fury.</p> 
+              </div>
+            </div>
+            
+            <div class="relacao">
+              <div class="imagem">
+                <img src="../jpeg/kimcapa.png" alt="Kim Kaphwan"> 
+              </div>  
+              <div class="texto">
+                <h1>Kim </h1> 
+                <p>Joe admira o senso de justiça de Kim, mas acha seu comportamento rígido 
+                  um tanto exagerado. Eles já lutaram juntos, mas têm abordagens bem diferentes 
+                  sobre disciplina e combate.</p> 
+              </div>
+            </div>
+            
+            <div class="relacao">
+              <div class="imagem">
+                <img src="../jpeg/yuricapa.png" alt="Yuri Sakazaki"> 
+              </div>  
+              <div class="texto">
+                <h1>Yuri </h1> 
+                <p>Joe e Yuri têm uma relação divertida, cheia de brincadeiras. Ele aprecia 
+                  seu estilo de luta ousado e o senso de humor dela, embora às vezes exagere 
+                  nas cantadas.</p> 
+              </div>
+            </div>
+            
+            <div class="relacao">
+              <div class="imagem">
+                <img src="../jpeg/billycapa.png" alt="Billy Kane"> 
+              </div>  
+              <div class="texto">
+                <h1>Billy </h1> 
+                <p>Joe vê Billy como um rival perigoso, já que representa o lado sombrio de 
+                  South Town. Os confrontos entre eles são intensos, com Joe mantendo vigilância constante contra seus truques sujos.</p> 
+              </div>
+            </div>
+            
+          </div>  
+            <div class="rodape"></div>
+        </section>
+
+        <footer>
+       
+            <ul type="none">
+                <li><a href="index.html">Personagens</li>
+                <li><a href="paginas/galeria.html">Galeria</li>
+                <li><a href="paginas/fightcade.html">Jogue Online</li>
+                <li><a href="paginas/combates.html">Combates</li>
+                <li><a href="paginas/enquete.html">Enquetes</li>
+                <li><a href="paginas/fatal-fury_curiosidades.html">Fatal Fury</li>
+                <li><a href="paginas/fatal-fury_curiosidades.html">Fatal Fury</li>
+            </ul>
+            <p>site criado por <a href="https://github.com/Leo-gsouza?tab=repositories" target="_blank">Leonardo Souza</p>
+        </footer>
+            
+        
+    </main>
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/paginas2.js"></script> 
+</body>
+</html>
